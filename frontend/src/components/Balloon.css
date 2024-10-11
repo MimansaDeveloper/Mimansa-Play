@@ -1,0 +1,110 @@
+.balloon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  position: relative;
+}
+
+.balloon {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  animation: none;
+}
+
+.balloon:active {
+  transform: scale(1.2);
+}
+
+@keyframes balloon-burst {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.popped-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.animal-reveal {
+  font-size: 100px;
+  animation: reveal 0.5s forwards;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Balloon fragments */
+.fragment-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.balloon-fragment {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  animation: scatter 1s ease-out forwards;
+}
+
+@keyframes scatter {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--fragment-final-x), var(--fragment-final-y)) scale(0.2);
+    opacity: 0;
+  }
+}
+
+/* Confetti styles */
+.confetti-container {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-55%, -50%);
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  animation: confetti-pop 0.8s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes confetti-pop {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--confetti-final-x), var(--confetti-final-y)) rotate(720deg);
+    opacity: 0;
+  }
+}
