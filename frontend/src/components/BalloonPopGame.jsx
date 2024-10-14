@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import Balloon from './Balloon'; // Balloon component import
+import GameOverScreen from './GameOverScreen'; // Import the new GameOverScreen component
 import './BalloonPopGame.css'; // Import the custom CSS
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function BalloonPopGame() {
-  const [balloons, setBalloons] = useState([]); // Balloon state
+  const [balloons, setBalloons] = useState([]);
   const [recognition, setRecognition] = useState(null);
   const [listening, setListening] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [isRising, setIsRising] = useState(false);
 
   const popSound = new Audio('/burst.wav');
   const cheerSound = new Audio('/kids_cheering.mp3');
 
-  // Define balloon images based on the index
   const balloonImages = [
     '/balloon1.png',
     '/balloon2.png',
@@ -50,21 +51,33 @@ function BalloonPopGame() {
       setRecognition(recognitionInstance);
     }
 
-    // Add 5 balloons initially when the game starts
     addInitialBalloons();
   }, []);
 
+  useEffect(() => {
+    // Stop listening when the game is over
+    if (gameOver && recognition) {
+      recognition.stop();
+      setListening(false);
+    }
+  }, [gameOver, recognition]);
+
   const addInitialBalloons = () => {
+    setIsRising(true);
     const initialBalloons = Array.from({ length: 5 }, (_, i) => ({
       id: i,
       popped: false,
-      image: balloonImages[i], // Assign specific image based on index
+      image: balloonImages[i],
     }));
     setBalloons(initialBalloons);
+
+    setTimeout(() => {
+      setIsRising(false);
+    }, 1000);
   };
 
   const startListening = () => {
-    if (recognition && !listening) {
+    if (recognition && !listening && !gameOver) {
       recognition.start();
       setListening(true);
     }
@@ -89,9 +102,11 @@ function BalloonPopGame() {
           balloon.id === firstUnpopped.id ? { ...balloon, popped: true } : balloon
         );
 
-        // Check if all balloons are popped
         if (updatedBalloons.every((balloon) => balloon.popped)) {
-          setGameOver(true);
+          setTimeout(()=>{
+            setGameOver(true);
+          },1000);
+          
         }
 
         return updatedBalloons;
@@ -107,20 +122,17 @@ function BalloonPopGame() {
   };
 
   const goToWaitlist = () => {
-    // Logic to navigate to the waitlist screen
     alert("Navigating to the waitlist screen...");
   };
 
-  // Format the score to display as '000'
   const formattedScore = score.toString().padStart(3, '0').split('');
 
-  // Function to calculate zigzag position
   const getBalloonStyle = (index) => {
-    const zigzagOffset =90; // Increased offset for larger gaps
+    const zigzagOffset = 90;
     const verticalOffset = index % 2 === 0 ? zigzagOffset : -zigzagOffset;
     return {
       transform: `translateY(${verticalOffset}px)`,
-      margin: '60px', // Added margin for extra spacing
+      margin: '60px',
     };
   };
 
@@ -131,57 +143,51 @@ function BalloonPopGame() {
           <img src="/back.png" alt="Back" />
         </button>
 
-        <div className="flex flex-col items-center justify-center ml-28">
-          <h1 className="font-bold text-xl">Score</h1>
-          <div className="score-box-container">
-            {formattedScore.map((digit, index) => (
-              <div key={index} className="score-box">
-                {digit}
-              </div>
-            ))}
+        {/* Hide score display and reset/play buttons when game over */}
+        {!gameOver && (
+          <div className="flex flex-col items-center justify-center ml-28">
+            <h1 className="font-bold text-xl">Score</h1>
+            <div className="score-box-container">
+              {formattedScore.map((digit, index) => (
+                <div key={index} className="score-box">
+                  {digit}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="flex gap-4">
-          <button className="icon-button" onClick={resetGame}>
-            <img src="/reset.png" alt="Reset" />
-          </button>
-          <button className="icon-button" onClick={listening ? stopListening : startListening}>
-            <img src={listening ? '/play.png' : '/play.png'} alt="Play/Pause" />
-          </button>
+          {/* Hide reset and play buttons when game over */}
+          {!gameOver && (
+            <>
+              <button className="icon-button" onClick={resetGame}>
+                <img src="/reset.png" alt="Reset" />
+              </button>
+              <button className="icon-button" onClick={listening ? stopListening : startListening}>
+                <img src={listening ? '/play.png' : '/play.png'} alt="Play/Pause" />
+              </button>
+            </>
+          )}
           <button className="icon-button" onClick={goToWaitlist}>
             <img src="/home.png" alt="Home" />
           </button>
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-40">
-        <div className="flex justify-center items-center">
-          {balloons.map((balloon, index) => (
-            <div key={balloon.id} style={getBalloonStyle(index)}>
-              <Balloon isPopped={balloon.popped} imageSrc={balloon.image} /> {/* Use specific balloon image */}
-            </div>
-          ))}
-        </div>
-
-        {gameOver && (
-          <div className="game-over text-4xl font-bold text-center text-[#FF3D00] mt-10">
-            Hurray, game over!
-            <button
-              onClick={resetGame}
-              className="bg-[#FFABC4] text-black py-2 px-6 mt-4 rounded-full shadow-lg hover:bg-[#FF8DAA]"
-            >
-              Play Again
-            </button>
-            <button
-              onClick={goToWaitlist}
-              className="bg-[#C6F1BA] text-black py-2 px-6 mt-4 rounded-full shadow-lg hover:bg-[#A0D8A5]"
-            >
-              Exit
-            </button>
+      {gameOver ? (
+        <GameOverScreen onPlayAgain={resetGame} onExit={goToWaitlist} />
+      ) : (
+        <div className="flex justify-center items-center mt-40">
+          <div className="flex justify-center items-center">
+            {balloons.map((balloon, index) => (
+              <div key={balloon.id} style={getBalloonStyle(index)}>
+                <Balloon isPopped={balloon.popped} imageSrc={balloon.image} isRising={isRising} />
+              </div>
+            ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {listening && (
         <p className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-2xl text-[#101010]">

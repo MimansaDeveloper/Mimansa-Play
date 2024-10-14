@@ -68,6 +68,7 @@
   padding: 10px 20px;
 }
 
+/* Add this to your balloon.css or BalloonPopGame.css */
 @keyframes balloonRise {
   0% {
     transform: translateY(100vh); /* Start from the bottom of the screen */
@@ -77,8 +78,6 @@
   }
 }
 
-.balloon {
+.balloon-rise {
   animation: balloonRise 1s ease forwards; /* Apply the animation */
 }
-
-
