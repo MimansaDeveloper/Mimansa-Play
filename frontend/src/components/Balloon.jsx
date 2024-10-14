@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Balloon.css';
 
-const Balloon = ({ isPopped }) => {
+const Balloon = ({ isPopped , imageSrc }) => {
   const generateConfettiStyles = () => {
     const randomRotation = Math.floor(Math.random() * 360);
     const randomScale = Math.random() * 1 + 0.5;
@@ -30,7 +30,7 @@ const Balloon = ({ isPopped }) => {
     <div className="balloon-container">
       {!isPopped ? (
         <div className="balloon">
-          🎈
+          <img src={imageSrc} alt="Balloon" />
         </div>
       ) : (
         <div className="popped-container">

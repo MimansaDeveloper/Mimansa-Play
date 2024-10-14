@@ -7,10 +7,16 @@
 }
 
 .balloon {
-  font-size: 100px;
+  width: 100px; /* Adjust the width to fit your image */
+  height: 150px; /* Adjust the height to fit your image */
   cursor: pointer;
   transition: transform 0.2s;
   animation: none;
+}
+
+.balloon img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
 }
 
 .balloon:active {
