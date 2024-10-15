@@ -125,13 +125,16 @@ function BalloonPopGame() {
   const goToWaitlist = () => {
     navigate('/waitlist'); // Navigate to the Waitlist
   };
+  const goToHome = () => {
+    navigate('/'); // Navigate to the Website
+  };
 
   const goToStartScreen = () => {
     if(gameOver){
       setGameOver(false);
     }
     else{
-    navigate('/'); // Navigate to the BalloonStartScreen
+    navigate('/start'); // Navigate to the BalloonStartScreen
     }
   };
 
@@ -179,7 +182,7 @@ function BalloonPopGame() {
               </button>
             </>
           )}
-          <button className="icon-button" onClick={goToStartScreen}>
+          <button className="icon-button" onClick={goToHome}>
             <img src="/home.png" alt="Home" />
           </button>
         </div>
