@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import Balloon from './Balloon'; // Balloon component import
 import GameOverScreen from './GameOverScreen'; // Import the new GameOverScreen component
 import './BalloonPopGame.css'; // Import the custom CSS
@@ -6,6 +7,7 @@ import './BalloonPopGame.css'; // Import the custom CSS
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function BalloonPopGame() {
+  const navigate = useNavigate(); // Create navigate function
   const [balloons, setBalloons] = useState([]);
   const [recognition, setRecognition] = useState(null);
   const [listening, setListening] = useState(false);
@@ -103,10 +105,9 @@ function BalloonPopGame() {
         );
 
         if (updatedBalloons.every((balloon) => balloon.popped)) {
-          setTimeout(()=>{
+          setTimeout(() => {
             setGameOver(true);
-          },1000);
-          
+          }, 1000);
         }
 
         return updatedBalloons;
@@ -122,7 +123,16 @@ function BalloonPopGame() {
   };
 
   const goToWaitlist = () => {
-    alert("Navigating to the waitlist screen...");
+    navigate('/waitlist'); // Navigate to the Waitlist
+  };
+
+  const goToStartScreen = () => {
+    if(gameOver){
+      setGameOver(false);
+    }
+    else{
+    navigate('/'); // Navigate to the BalloonStartScreen
+    }
   };
 
   const formattedScore = score.toString().padStart(3, '0').split('');
@@ -139,7 +149,7 @@ function BalloonPopGame() {
   return (
     <div className="flex flex-col h-screen bg-gradient-to-b from-[#FFEBDA] to-[#FBD5B5] relative">
       <div className="flex w-full justify-between items-center px-5 py-2">
-        <button className="icon-button" onClick={goToWaitlist}>
+        <button className="icon-button" onClick={goToStartScreen}>
           <img src="/back.png" alt="Back" />
         </button>
 
@@ -169,7 +179,7 @@ function BalloonPopGame() {
               </button>
             </>
           )}
-          <button className="icon-button" onClick={goToWaitlist}>
+          <button className="icon-button" onClick={goToStartScreen}>
             <img src="/home.png" alt="Home" />
           </button>
         </div>

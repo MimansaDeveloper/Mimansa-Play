@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import background from '/backgroun.png';  // Background image for the whole screen
 import buttonImage from '/imagebg.png';   // Image to be used as Play Now button
 
-const BalloonStartScreen = () => {
+const Waitlist = () => { 
   const navigate = useNavigate(); // Create navigate function
 
-  const handlePlayNow = () => {
-    console.log("helllo")
-    navigate('/game'); // Navigate to the game screen
+  const handleSignUp = () => {
+    console.log("hello");
+    navigate('/signup'); // Navigate to the game screen
   };
 
   return (
@@ -19,27 +19,26 @@ const BalloonStartScreen = () => {
       {/* Inner div styled with Tailwind */}
       <div className="absolute w-[1200px] h-[680px] bg-[#FFEBDA] rounded-[100px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center shadow-xl p-10">
         
-        {/* Header with specified styles */}
-        <h1 className=" w-[285px] h-[72px] mb-12  font-poppins font-bold text-[48px] leading-[72px] text-[#264195]">
-          How to Play
+        {/* Header with updated content */}
+        <h1 className="w-[285px] h-[72px] mb-12 font-poppins font-bold text-[44px] leading-[72px] text-[#264195]">
+          That was fun!
         </h1>
         
-        {/* Instructions */}
-        <ul className="w-[600px] text-black list-disc list-inside mb-12 font-bold text-3xl" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
-          <li className='mb-4'>Every time you say <span className="font-bold text-pink-600">POP</span>, one balloon on the screen will burst.</li>
-          <li className='mb-4'>Get your kid to say <span className="font-bold text-pink-600">POP</span> with you and try to burst as many balloons as possible.</li>
+        {/* Updated instructions */}
+        <ul className="w-[800px] text-black list-disc list-inside mb-12 font-bold text-3xl" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
+          <li className='mb-4'>Simple sounds like <span className="font-bold text-pink-600">POP</span> are building blocks for toddlers, helping them connect actions to words and strengthening their speech skills, one joyful sound at a time.</li>
+          <li className='mb-4'>We are building the best games based on the science of speech to help our children speak on time. Join our waitlist now for early access to many more such fun games!</li>
         </ul>
 
         {/* Play Now Button (using image) */}
-        <div className="relative " onClick={handlePlayNow}>
+        <div className="relative" onClick={handleSignUp}>
           <img 
             src={buttonImage} 
             alt="Play Now" 
             className="w-[300px] h-[100px] object-contain cursor-pointer" // Add cursor pointer
-             // Add onClick to navigate
           />
           <span className="absolute inset-0 flex justify-center items-center text-4xl text-white font-bold" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
-            Play Now
+            Sign Up
           </span>
         </div>
       </div>
@@ -47,4 +46,4 @@ const BalloonStartScreen = () => {
   );
 };
 
-export default BalloonStartScreen;
+export default Waitlist;

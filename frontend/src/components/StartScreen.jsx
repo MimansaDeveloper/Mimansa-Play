@@ -1,16 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import background from '/backgroun.png';  // Background image for the whole screen
 import buttonImage from '/imagebg.png';   // Image to be used as Play Now button
 
-const BalloonStartScreen = () => {
-  const navigate = useNavigate(); // Create navigate function
-
-  const handlePlayNow = () => {
-    console.log("helllo")
-    navigate('/game'); // Navigate to the game screen
-  };
-
+const StartScreen = () => {
   return (
     <div
       className="flex justify-center items-center w-full h-screen"
@@ -31,12 +23,11 @@ const BalloonStartScreen = () => {
         </ul>
 
         {/* Play Now Button (using image) */}
-        <div className="relative " onClick={handlePlayNow}>
+        <div className="relative">
           <img 
             src={buttonImage} 
             alt="Play Now" 
-            className="w-[300px] h-[100px] object-contain cursor-pointer" // Add cursor pointer
-             // Add onClick to navigate
+            className="w-[300px] h-[100px] object-contain"
           />
           <span className="absolute inset-0 flex justify-center items-center text-4xl text-white font-bold" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
             Play Now
@@ -47,4 +38,4 @@ const BalloonStartScreen = () => {
   );
 };
 
-export default BalloonStartScreen;
+export default StartScreen;
