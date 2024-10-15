@@ -17,7 +17,7 @@ const BalloonStartScreen = () => {
       style={{ backgroundImage: `url(${background})`, backgroundSize: 'contain' }}
     >
       {/* Inner div styled with Tailwind */}
-      <div className="absolute w-[1200px] h-[680px] bg-[#FFEBDA] rounded-[100px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center shadow-xl p-10">
+      <div className="absolute w-[1200px] h-[650px] bg-[#FFEBDA] rounded-[100px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center shadow-xl p-10">
         
         {/* Header with specified styles */}
         <h1 className=" w-[285px] h-[72px] mb-12  font-poppins font-bold text-[48px] leading-[72px] text-[#264195]">
