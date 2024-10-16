@@ -4,11 +4,11 @@ const ScienceSection = () => {
   return (
     <div className="bg-[rgba(250,237,203,1)] h-screen flex flex-col justify-center items-center px-4 md:px-8">
       {/* Header Section */}
-      <div className="text-center mb-28">
-        <h2 className="text-2xl font-bold font-comic text-black">
+      <div className="text-center mb-28 mt-6">
+        <h2 className="font-comic-neue text-[32px] font-bold font-comic text-black">
           The Science Behind Us
         </h2>
-        <p className="text-lg font-comic text-black mt-2">
+        <p className="font-comic-neue text-[20px] font-comic text-black mt-2">
           Developed with Experts, Backed by Research
         </p>
       </div>

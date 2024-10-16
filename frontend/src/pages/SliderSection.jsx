@@ -37,7 +37,7 @@ const SliderSection = () => {
   return (
     <div className="bg-[#C5DEF2] w-full h-screen flex flex-col items-center justify-center relative px-10">
       {/* Header Section */}
-      <h1 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black mb-4">
+      <h1 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black mb-4 mt-4">
         Why Choose Us
       </h1>
       <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mb-40">
@@ -66,10 +66,10 @@ const SliderSection = () => {
         <div className="flex justify-between items-center w-full max-w-5xl px-10 space-x-10">
           {/* Text Section */}
           <div className="flex flex-col justify-center w-[50%]">
-            <h2 className="font-comic-neue font-bold text-[24px] leading-[28px] text-black mb-4">
+            <h2 className="font-comic-neue text-[rgba(106,127,191,1)] font-bold text-[40px] leading-[45px] text-black mb-4">
               {slides[currentSlide].title}
             </h2>
-            <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black">
+            <p className="font-comic-neue font-normal text-[25px] leading-[25px] text-black">
               {slides[currentSlide].description}
             </p>
           </div>
