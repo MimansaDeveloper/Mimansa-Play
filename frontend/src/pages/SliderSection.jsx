@@ -5,19 +5,19 @@ const slides = [
     title: 'Real-Time Speech Feedback Powered by AI',
     description:
       'Our advanced AI listens to your child’s speech and provides instant feedback, helping improve articulation and language skills on the go.',
-    image: './demo1.jpeg',
+    image: '/aiimage.png',
   },
   {
     title: 'Engage Your Child with Fun Learning',
     description:
       'Our app uses interactive games that help improve your child’s speech and cognitive development while they play and have fun.',
-    image: './demo2.jpeg',
+    image: '/aiimage.png',
   },
   {
     title: 'Track Progress Over Time',
     description:
       'Parents can easily track their child’s progress and get insights into their speech development with detailed reports.',
-    image: './demo3.jpeg',
+    image: '/aiimage.png',
   },
 ];
 
@@ -40,7 +40,7 @@ const SliderSection = () => {
       <h1 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black mb-4">
         Why Choose Us
       </h1>
-      <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mb-44">
+      <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mb-40">
         Empowering Parents. Engaging Children. Proven Results.
       </p>
 
@@ -75,12 +75,12 @@ const SliderSection = () => {
           </div>
 
           {/* Image Placeholder Section */}
-          <div className="flex justify-center items-center w-[50%]">
-            <div className="w-[346px] h-[211px] bg-white border border-black flex justify-center items-center">
+          <div className="flex justify-center items-center w-[50%] mb-3">
+            <div className="w-[346px] h-[211px] bg-white border border-black flex justify-center items-center rounded-xl">
               <img
                 src={slides[currentSlide].image}
                 alt={slides[currentSlide].title}
-                className="w-full h-full object-contain"
+                className="w-full h-full bg-cover"
               />
             </div>
           </div>

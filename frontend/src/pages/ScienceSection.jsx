@@ -16,17 +16,17 @@ const ScienceSection = () => {
       {/* Main Content */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
         {/* Image Placeholder */}
-        <div className="w-96 h-96 bg-white border-2 border-black flex justify-center items-center">
+        <div className="w-[30vw] h-[30vw] flex justify-center items-center">
           <img
-            src="/path-to-image"
+            src="/sciencesectionimage.png"
             alt="Science Image"
-            className="object-contain"
+            className="w-full h-full object-contain"
           />
         </div>
 
         {/* Text and Button */}
         <div className="text-left max-w-lg">
-          <p className="text-lg font-comic text-black leading-8 mb-8">
+          <p className="text-2xl   font-comic text-gray-800 leading-10 mb-8">
             Our games use methods endorsed by leading early childhood development experts and speech therapists to ensure your child gets the best learning experience possible. With AI-driven insights, your child receives personalized support on their journey to better speech.
           </p>
           {/* Button */}

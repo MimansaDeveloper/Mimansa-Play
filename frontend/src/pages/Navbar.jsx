@@ -9,7 +9,8 @@ const Navbar = () => {
   }
   return (
     <div className='bg-white flex items-center justify-between w-full h-[100px] px-10  shadow-md'>
-      <h1 className='text-3xl font-bold text-black'>Logo</h1>
+      {/* <h1 className='text-3xl font-bold text-black'>Logo</h1> */}
+      <img src="/logo.png" alt="Mimansa Kids Logo" className="w-[12vw]" />
       <ul className='flex gap-8 text-lg text-black list-none ml-32'>
         <li className='cursor-pointer hover:text-gray-600 transition duration-300'>Home</li>
         <li className='cursor-pointer hover:text-gray-600 transition duration-300'>About Us</li>
