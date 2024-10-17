@@ -11,7 +11,7 @@ import DontMissSection from './DontMissSection'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='w-full h-full'>
         <Navbar/>
         <HeroSection/>
         <SliderSection/>

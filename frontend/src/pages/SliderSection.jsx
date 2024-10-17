@@ -5,19 +5,25 @@ const slides = [
     title: 'Real-Time Speech Feedback Powered by AI',
     description:
       'Our advanced AI listens to your child’s speech and provides instant feedback, helping improve articulation and language skills on the go.',
-    image: '/aiimage.png',
+    image: '/aiimage2.png',
   },
   {
-    title: 'Engage Your Child with Fun Learning',
+    title: 'Fun, Interactive Learning',
     description:
-      'Our app uses interactive games that help improve your child’s speech and cognitive development while they play and have fun.',
-    image: '/aiimage.png',
+      'No more boring exercises! Our games are designed to capture attention and make speech practice fun and rewarding for kids.',
+    image: '/kidsimage1.png',
   },
   {
-    title: 'Track Progress Over Time',
+    title: 'Healthy Screen Time Design',
     description:
-      'Parents can easily track their child’s progress and get insights into their speech development with detailed reports.',
-    image: '/aiimage.png',
+      'Crafted to reduce passive screen time, our app encourages active engagement and meaningful parent-child interaction.',
+    image: '/kidsimage2.png',
+  },
+  {
+    title: 'Built by Experts, Loved by Parents',
+    description:
+      'Developed by speech therapists and early childhood experts, our methods are proven to help children improve speech at their own pace.',
+    image: '/kidsimage3.png',
   },
 ];
 
@@ -35,12 +41,12 @@ const SliderSection = () => {
   };
 
   return (
-    <div className="bg-[#C5DEF2] w-full h-screen flex flex-col items-center justify-center relative px-10">
+    <div className="bg-[#C5DEF2] w-full h-[120vh] flex flex-col items-center justify-center relative px-10">
       {/* Header Section */}
-      <h1 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black mb-4 mt-4">
+      <h1 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black mb-4 mt-8">
         Why Choose Us
       </h1>
-      <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mb-40">
+      <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mb-36">
         Empowering Parents. Engaging Children. Proven Results.
       </p>
 
@@ -65,8 +71,8 @@ const SliderSection = () => {
         {/* Main Content Section */}
         <div className="flex justify-between items-center w-full max-w-5xl px-10 space-x-10">
           {/* Text Section */}
-          <div className="flex flex-col justify-center w-[50%]">
-            <h2 className="font-comic-neue text-[rgba(106,127,191,1)] font-bold text-[40px] leading-[45px] text-black mb-4">
+          <div className="flex flex-col justify-center w-[60%]">
+            <h2 className="font-comic-neue text-[#6A7FBF] font-bold text-[40px] leading-[45px] mb-4">
               {slides[currentSlide].title}
             </h2>
             <p className="font-comic-neue font-normal text-[25px] leading-[25px] text-black">
@@ -76,11 +82,11 @@ const SliderSection = () => {
 
           {/* Image Placeholder Section */}
           <div className="flex justify-center items-center w-[50%] mb-3">
-            <div className="w-[346px] h-[211px] bg-white border border-black flex justify-center items-center rounded-xl">
+            <div className="w-[30vw] h-[22vw]   flex justify-center items-center rounded-xl">
               <img
                 src={slides[currentSlide].image}
                 alt={slides[currentSlide].title}
-                className="w-full h-full bg-cover"
+                className="w-full h-full bg-fit"
               />
             </div>
           </div>
@@ -104,12 +110,12 @@ const SliderSection = () => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center mt-40 space-x-2">
+      <div className="flex justify-center mt-48 space-x-2">
         {slides.map((_, index) => (
           <span
             key={index}
             className={`w-3 h-3 rounded-full ${
-              index === currentSlide ? 'bg-[#FF9650]' : 'bg-[rgba(255,150,80,0.39)]'
+              index === currentSlide ? 'bg-[#FF9650]' : 'bg-white opacity-60'
             }`}
           ></span>
         ))}

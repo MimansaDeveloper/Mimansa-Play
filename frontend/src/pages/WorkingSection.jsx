@@ -2,9 +2,9 @@ import React from 'react';
 
 const WorkingSection = () => {
   return (
-    <div className="bg-[#FDDEDE] py-16 px-10 flex flex-col items-center">
+    <div className="bg-[#FDDEDE]  py-16 px-10 flex flex-col items-center">
       {/* Section Title */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 mt-4">
         <h2 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black">
           How it works
         </h2>
