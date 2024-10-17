@@ -40,8 +40,6 @@ const LandingPage = () => {
         <ScienceSection />
         <DontMissSection />
         <FooterSection />
-        <FooterSection/>
-        <FooterSection/>
       </div>
     </div>
   );

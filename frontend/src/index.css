@@ -3,3 +3,16 @@
 @tailwind utilities;
 
 
+html, body {
+    height: 100%; /* Ensure full height */
+    overflow: hidden; /* Prevent default scrolling */
+  }
+  
+  [data-scroll-container] {
+    height: 100vh; /* Ensure it fills the viewport */
+  }
+  
+  [data-scroll-section] {
+    min-height: 100vh; /* Each section should have at least the height of the viewport */
+  }
+  
