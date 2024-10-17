@@ -82,7 +82,7 @@ const SliderSection = () => {
 
           {/* Image Placeholder Section */}
           <div className="flex justify-center items-center w-[50%] mb-3">
-            <div className="w-[30vw] h-[22vw]   flex justify-center items-center rounded-xl">
+            <div className="w-[26vw] h-[20vw]   flex justify-center items-center rounded-xl">
               <img
                 src={slides[currentSlide].image}
                 alt={slides[currentSlide].title}
