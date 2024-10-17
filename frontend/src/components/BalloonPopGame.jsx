@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import Balloon from './Balloon'; // Balloon component import
-import './BalloonPopGame.css'; // Import the custom CSS
+import { useNavigate } from 'react-router-dom';
+import Balloon from './Balloon';
+import './BalloonPopGame.css';
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function BalloonPopGame() {
-  const navigate = useNavigate(); // Create navigate function
+  const navigate = useNavigate();
   const [balloons, setBalloons] = useState([]);
   const [recognition, setRecognition] = useState(null);
   const [listening, setListening] = useState(false);
@@ -49,21 +49,30 @@ function BalloonPopGame() {
         }
       };
 
+      recognitionInstance.onerror = (event) => {
+        console.error('SpeechRecognition error:', event.error);
+        stopListening(); // Handle errors by stopping the recognition to prevent crashes
+      };
+
+      recognitionInstance.onend = () => {
+        // Automatically restart listening unless the game is over
+        if (!gameOver) {
+          recognitionInstance.start();
+        }
+      };
+
       setRecognition(recognitionInstance);
     }
 
-    // Initialize balloons and start speech recognition automatically when component mounts
     addInitialBalloons();
     startListening();
 
-    // Cleanup: Stop speech recognition when the component unmounts (i.e., when navigating away from the game)
     return () => {
       stopListening();
     };
-  }, []); // Empty dependency array ensures this runs only once when the component mounts
+  }, []); 
 
   useEffect(() => {
-    // Stop listening when the game is over
     if (gameOver && recognition) {
       recognition.stop();
       setListening(false);
@@ -99,11 +108,15 @@ function BalloonPopGame() {
   };
 
   const popBalloon = () => {
+    if (popSound.readyState > 0 && cheerSound.readyState > 0) {
+      // Play sounds only if they are loaded
+      popSound.play();
+      cheerSound.play();
+    }
+
     setBalloons((prevBalloons) => {
       const firstUnpopped = prevBalloons.find((balloon) => !balloon.popped);
       if (firstUnpopped) {
-        popSound.play();
-        cheerSound.play();
         setScore((prevScore) => prevScore + 1);
 
         const updatedBalloons = prevBalloons.map((balloon) =>
@@ -114,7 +127,7 @@ function BalloonPopGame() {
           setTimeout(() => {
             setGameOver(true);
             stopListening();
-            navigate('/waitlist'); // Navigate to the Waitlist instead of showing GameOverScreen
+            navigate('/waitlist');
           }, 1000);
         }
 
@@ -128,20 +141,20 @@ function BalloonPopGame() {
     setScore(0);
     setGameOver(false);
     addInitialBalloons();
-    startListening(); // Restart listening after resetting the game
+    startListening();
   };
 
   const goToHome = () => {
-    stopListening(); // Stop listening before navigating away
-    navigate('/'); // Navigate to the Website
+    stopListening();
+    navigate('/');
   };
 
   const goToStartScreen = () => {
-    stopListening(); // Stop listening before navigating away
+    stopListening();
     if (gameOver) {
       setGameOver(false);
     } else {
-      navigate('/start'); // Navigate to the BalloonStartScreen
+      navigate('/start');
     }
   };
 
@@ -165,7 +178,6 @@ function BalloonPopGame() {
 
         {!gameOver && (
           <div className="flex flex-col items-center justify-center ml-28 ">
-            {/* <h1 className="font-bold text-xl">Score</h1> */}
             <div className="score-box-container">
               {formattedScore.map((digit, index) => (
                 <div key={index} className="score-box">
@@ -204,10 +216,11 @@ function BalloonPopGame() {
       </div>
 
       {listening && (
-        <p className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-2xl text-[#101010]">
-          Say Pop ... 🎤
-        </p>
-      )}
+  <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
+    <p className="text-2xl text-[#101010]">Say Pop ... 🎤</p>
+    <p className="text-lg text-[#101010] mt-2">Heard: "{transcript}"</p> {/* Display what was heard */}
+  </div>
+)}
     </div>
   );
 }
