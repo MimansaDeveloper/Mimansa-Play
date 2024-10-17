@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const slides = [
   {
@@ -29,15 +29,24 @@ const slides = [
 
 const SliderSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isFading, setIsFading] = useState(false); // State to trigger fade animation
 
   // Function to go to the next slide
   const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    setIsFading(true); // Start fading out
+    setTimeout(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+      setIsFading(false); // Fade in the next slide
+    }, 500); // Adjust timing for fade effect
   };
 
   // Function to go to the previous slide
   const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+      setIsFading(false);
+    }, 500);
   };
 
   return (
@@ -71,7 +80,11 @@ const SliderSection = () => {
         {/* Main Content Section */}
         <div className="flex justify-between items-center w-full max-w-5xl  space-x-10">
           {/* Text Section */}
-          <div className="flex flex-col justify-center w-[60%]">
+          <div
+            className={`flex flex-col justify-center w-[60%] transition-opacity duration-500 ${
+              isFading ? 'opacity-0' : 'opacity-100'
+            }`}
+          >
             <h2 className="font-comic-neue text-[#6A7FBF] font-bold text-[40px] leading-[45px] mb-4">
               {slides[currentSlide].title}
             </h2>
@@ -80,9 +93,13 @@ const SliderSection = () => {
             </p>
           </div>
 
-          {/* Image Placeholder Section */}
-          <div className="flex justify-center items-center w-[50%] ">
-            <div className="w-[26vw] h-[20vw]   flex justify-center items-center rounded-xl">
+          {/* Image Section */}
+          <div
+            className={`flex justify-center items-center w-[50%] transition-opacity duration-500 ${
+              isFading ? 'opacity-0' : 'opacity-100'
+            }`}
+          >
+            <div className="w-[26vw] h-[20vw] flex justify-center items-center rounded-xl">
               <img
                 src={slides[currentSlide].image}
                 alt={slides[currentSlide].title}

@@ -11,6 +11,10 @@ const Waitlist = () => {
     navigate('/signup'); // Navigate to the game screen
   };
 
+  const goToHome = () => {
+    navigate('/');
+  };
+
   return (
     <div
       className="flex justify-center items-center w-full h-screen"
@@ -23,6 +27,9 @@ const Waitlist = () => {
         <h1 className="w-[285px] h-[72px] mb-12 font-poppins font-bold text-[44px] leading-[72px] text-[#264195]">
           That was fun!
         </h1>
+        <button className="w-16 absolute right-16 top-10 active:scale-75" onClick={goToHome}>
+            <img src="/home.png" alt="Home" />
+          </button>
         
         {/* Updated instructions */}
         <ul className="w-[800px] text-black list-disc list-inside mb-12 font-bold text-3xl" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
@@ -30,16 +37,22 @@ const Waitlist = () => {
           <li className='mb-4'>We are building the best games based on the science of speech to help our children speak on time. Join our waitlist now for early access to many more such fun games!</li>
         </ul>
 
-        {/* Play Now Button (using image) */}
-        <div className="relative" onClick={handleSignUp}>
-          <img 
-            src={buttonImage} 
-            alt="Play Now" 
-            className="w-[300px] h-[100px] object-contain cursor-pointer" // Add cursor pointer
-          />
-          <span className="absolute inset-0 flex justify-center items-center text-4xl text-white font-bold" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
-            Sign Up
-          </span>
+        {/* Buttons for "Play Again" and "Sign Up" */}
+        <div className="flex mt-8 gap-4 w-full px-48">
+          <button 
+            onClick={() => navigate('/game')} 
+            className=" w-full border-2 border-pink-300 text-pink-300 hover:text-white hover:bg-pink-300 text-2xl font-bold py-4 px-8 rounded-xl shadow-md"
+            style={{ fontFamily: "'Comic Neue', sans-serif" }}
+          >
+            Play Again
+          </button>
+          <button 
+            onClick={handleSignUp} 
+            className="w-full bg-pink-400 hover:bg-pink-500 text-2xl text-white font-bold py-4 px-8 rounded-xl shadow-md"
+            style={{ fontFamily: "'Comic Neue', sans-serif" }}
+          >
+            Signup for early access
+          </button>
         </div>
       </div>
     </div>

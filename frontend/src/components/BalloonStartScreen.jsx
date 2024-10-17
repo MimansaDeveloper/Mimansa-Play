@@ -31,7 +31,7 @@ const BalloonStartScreen = () => {
         </ul>
 
         {/* Play Now Button (using image) */}
-        <div className="relative " onClick={handlePlayNow}>
+        <div className="relative cursor-pointer active:scale-75 " onClick={handlePlayNow}>
           <img 
             src={buttonImage} 
             alt="Play Now" 

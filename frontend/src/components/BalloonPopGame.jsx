@@ -14,6 +14,7 @@ function BalloonPopGame() {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [isRising, setIsRising] = useState(false);
+  const [showPlayButton, setShowPlayButton] = useState(true); // State for play button
 
   const popSound = new Audio('/burst.wav');
   const cheerSound = new Audio('/kids_cheering_short.mp3');
@@ -31,7 +32,7 @@ function BalloonPopGame() {
       const recognitionInstance = new SpeechRecognition();
       recognitionInstance.continuous = true;
       recognitionInstance.lang = 'en-IND';
-      recognitionInstance.interimResults = true;
+      recognitionInstance.interimResults = false;
 
       recognitionInstance.onresult = (event) => {
         let finalTranscript = "";
@@ -44,33 +45,21 @@ function BalloonPopGame() {
 
         setTranscript(finalTranscript);
 
-        if (finalTranscript.toLowerCase().includes('pop') || finalTranscript.toLowerCase().includes('bob')) {
+        if (finalTranscript.toLowerCase().includes('pop') || 
+            finalTranscript.toLowerCase().includes('bob') || 
+            finalTranscript.toLowerCase().includes('papa') ||
+            finalTranscript.toLowerCase().includes('stop')) {
           popBalloon();
-        }
-      };
-
-      recognitionInstance.onerror = (event) => {
-        console.error('SpeechRecognition error:', event.error);
-        stopListening(); // Handle errors by stopping the recognition to prevent crashes
-      };
-
-      recognitionInstance.onend = () => {
-        // Automatically restart listening unless the game is over
-        if (!gameOver) {
-          recognitionInstance.start();
         }
       };
 
       setRecognition(recognitionInstance);
     }
 
-    addInitialBalloons();
-    startListening();
-
     return () => {
       stopListening();
     };
-  }, []); 
+  }, []);
 
   useEffect(() => {
     if (gameOver && recognition) {
@@ -108,15 +97,11 @@ function BalloonPopGame() {
   };
 
   const popBalloon = () => {
-    if (popSound.readyState > 0 && cheerSound.readyState > 0) {
-      // Play sounds only if they are loaded
-      popSound.play();
-      cheerSound.play();
-    }
-
     setBalloons((prevBalloons) => {
       const firstUnpopped = prevBalloons.find((balloon) => !balloon.popped);
       if (firstUnpopped) {
+        popSound.play();
+        cheerSound.play();
         setScore((prevScore) => prevScore + 1);
 
         const updatedBalloons = prevBalloons.map((balloon) =>
@@ -126,7 +111,6 @@ function BalloonPopGame() {
         if (updatedBalloons.every((balloon) => balloon.popped)) {
           setTimeout(() => {
             setGameOver(true);
-            stopListening();
             navigate('/waitlist');
           }, 1000);
         }
@@ -144,9 +128,15 @@ function BalloonPopGame() {
     startListening();
   };
 
-  const goToHome = () => {
+  const startGame = () => {
+    setShowPlayButton(false); // Hide the play button after starting the game
+    addInitialBalloons();
+    startListening();
+  };
+
+  const goToWaitlist = () => {
     stopListening();
-    navigate('/');
+    navigate('/waitlist');
   };
 
   const goToStartScreen = () => {
@@ -171,13 +161,27 @@ function BalloonPopGame() {
 
   return (
     <div className="flex flex-col h-screen bg-gradient-to-b from-[#FFEBDA] to-[#FBD5B5] relative">
+      {/* Show Play Button when user hasn't started the game */}
+      {showPlayButton && (
+        <div className="absolute inset-0  flex justify-center items-center  bg-opacity-50 z-50">
+          <button
+            onClick={startGame}
+            className="cursor-pointer hover:scale-110 active:scale-75"
+          >
+            <img src="/play.png" alt="Play" />
+            {/* <p className="text-xl text-white ">Click to Play!</p>  */}
+          </button>
+
+        </div>
+      )}
+
       <div className="flex w-full justify-between items-center px-5 py-2 mt-2">
-        <button className="icon-button" onClick={goToStartScreen}>
+        <button className="icon-button cursor-pointer active:scale-75" onClick={goToStartScreen}>
           <img src="/back.png" alt="Back" />
         </button>
 
         {!gameOver && (
-          <div className="flex flex-col items-center justify-center ml-28 ">
+          <div className="flex flex-col items-center justify-center ml-28">
             <div className="score-box-container">
               {formattedScore.map((digit, index) => (
                 <div key={index} className="score-box">
@@ -191,16 +195,16 @@ function BalloonPopGame() {
         <div className="flex gap-4">
           {!gameOver && (
             <>
-              <button className="icon-button" onClick={resetGame}>
+              <button className="icon-button cursor-pointer active:scale-75" onClick={resetGame}>
                 <img src="/reset.png" alt="Reset" />
               </button>
-              <button className="icon-button" onClick={listening ? stopListening : startListening}>
+              <button className="icon-button cursor-pointer active:scale-75" onClick={listening ? stopListening : startListening}>
                 <img src={!listening ? '/play.png' : '/pause.png'} alt="Play/Pause" />
               </button>
             </>
           )}
-          <button className="icon-button" onClick={goToHome}>
-            <img src="/home.png" alt="Home" />
+          <button className="icon-button cursor-pointer active:scale-75" onClick={goToWaitlist}>
+            <img src="/exitbuttonround.png" alt="Home" />
           </button>
         </div>
       </div>
@@ -216,11 +220,11 @@ function BalloonPopGame() {
       </div>
 
       {listening && (
-  <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
-    <p className="text-2xl text-[#101010]">Say Pop ... 🎤</p>
-    <p className="text-lg text-[#101010] mt-2">Heard: "{transcript}"</p> {/* Display what was heard */}
-  </div>
-)}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
+          <p className="text-2xl text-[#101010]">Say Pop ... 🎤</p>
+          <p className="text-lg text-[#101010] mt-2">Heard: "{transcript}"</p>
+        </div>
+      )}
     </div>
   );
 }
