@@ -5,10 +5,10 @@ const WorkingSection = () => {
     <div className="bg-[#FDDEDE]  py-16 px-10 flex flex-col items-center">
       {/* Section Title */}
       <div className="text-center mb-16 mt-4">
-        <h2 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black">
+        <h2 className="font-comic-neue font-bold text-[2.5vw] leading-[2vw] text-black mb-3 mt-8">
           How it works
         </h2>
-        <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mt-2">
+        <p className="font-comic-neue font-normal text-[1.3vw] leading-[3vw] text-black ">
           How Mimansa Kids Makes Speech Learning Easy
         </p>
       </div>
