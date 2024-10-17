@@ -2,21 +2,21 @@ import React from 'react';
 
 const ScienceSection = () => {
   return (
-    <div className="bg-[rgba(250,237,203,1)] h-screen flex flex-col justify-center items-center px-4 md:px-8">
+    <div className="bg-[rgba(250,237,203,1)]  flex flex-col justify-center items-center px-4 md:px-8">
       {/* Header Section */}
-      <div className="text-center mb-28 mt-6">
-        <h2 className="font-comic-neue text-[32px] font-bold font-comic text-black">
+      <div className="text-center mb-12 mt-6">
+        <h2 className="font-comic-neue text-[2.5vw] leading-[2vw] font-bold font-comic text-black mb-3 mt-16">
           The Science Behind Us
         </h2>
-        <p className="font-comic-neue text-[20px] font-comic text-black mt-2">
+        <p className="font-comic-neue text-[1.3vw] leading-[3vw] font-comic text-black ">
           Developed with Experts, Backed by Research
         </p>
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
+      <div className="mt-[-4vw] flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
         {/* Image Placeholder */}
-        <div className="w-[30vw] h-[30vw] flex justify-center items-center">
+        <div className="w-[35vw] h-[35vw] flex justify-center items-center">
           <img
             src="/sciencesectionimage.png"
             alt="Science Image"
