@@ -69,7 +69,7 @@ const SliderSection = () => {
         </button>
 
         {/* Main Content Section */}
-        <div className="flex justify-between items-center w-full max-w-5xl px-10 space-x-10">
+        <div className="flex justify-between items-center w-full max-w-5xl  space-x-10">
           {/* Text Section */}
           <div className="flex flex-col justify-center w-[60%]">
             <h2 className="font-comic-neue text-[#6A7FBF] font-bold text-[40px] leading-[45px] mb-4">
@@ -81,7 +81,7 @@ const SliderSection = () => {
           </div>
 
           {/* Image Placeholder Section */}
-          <div className="flex justify-center items-center w-[50%] mb-3">
+          <div className="flex justify-center items-center w-[50%] ">
             <div className="w-[26vw] h-[20vw]   flex justify-center items-center rounded-xl">
               <img
                 src={slides[currentSlide].image}
@@ -110,7 +110,7 @@ const SliderSection = () => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center mt-48 space-x-2">
+      <div className="flex justify-center mt-32 space-x-2">
         {slides.map((_, index) => (
           <span
             key={index}
