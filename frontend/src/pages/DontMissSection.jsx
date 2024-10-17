@@ -6,16 +6,16 @@ const DontMissSection = () => {
       <div className='flex flex-col justify-center items-center w-[50%] mt-[-0.5vw]'>
         {/* Text Section */}
         <div className="px-12 ml-16 mb-10">
-          <h2 className="font-comic-neue font-bold text-[2.2vw] leading-[3.2vw] text-black mb-4">
+          <h2 className="font-comic-neue font-bold text-[2.2vw] leading-[2.8vw] text-black mb-3">
             Don’t Miss Out on Giving Your Child the Best
           </h2>
-          <p className="font-comic-neue text-[1.2vw] text-black mb-6"> {/* Changed from text-[18px] to text-[2vw] */}
+          <p className="font-comic-neue text-[1.3vw] text-black mb-6"> {/* Changed from text-[18px] to text-[2vw] */}
             Be among the first to experience our AI-powered speech-learning  app for children.
           </p>
         </div>
 
         {/* Input & Button */}
-        <div className="flex w-full px-12 ml-[7.5rem] mt-[-1vw] items-center ">
+        <div className="flex w-full px-12 ml-[7.5rem] mt-[-1.5vw] items-center ">
           <input
             type="email"
             placeholder="Enter your email to unlock the early access"
