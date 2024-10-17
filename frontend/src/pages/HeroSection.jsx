@@ -4,11 +4,11 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between bg-[#FAEDCB] w-full h-screen px-5 lg:px-10">
       {/* Left Section */}
-      <div className="flex flex-col w-[50%] h-full ml-20 mt-16">
+      <div className="flex flex-col w-[50%] h-full ml-20 mt-4">
         <h1 className="font-comic-neue ml-1 font-bold text-[1.94vw] lg:text-[2.50vw] leading-[2.22vw] lg:leading-[3.00vw] text-black mt-[1.85vh] lg:mt-44">
           Unlock Your Child’s Speech with <br/> Fun, AI-Powered Games
         </h1>
-        <p className="font-comic-neue font-normal ml-1 text-[24px] leading-[28px]  text-black mt-5 ">
+        <p className="font-comic-neue font-normal ml-1 text-2xl leading-[2vw]  text-black mt-5 ">
           Designed by experts from <span className='text-[rgba(38,65,149,1)] font-bold '>IIT & Havard University</span>, loved by kids, <br/>and trusted by parents. Give your child the speech tools they need <br/> with interactive, engaging activities.
         </p>
         {/* <button className="bg-[#DBCDF0] w-fit p-4 lg:p-6 mt-6 lg:mt-10 text-black font-semibold rounded-md hover:bg-[#f4c300] transition duration-300">
