@@ -43,10 +43,10 @@ const SliderSection = () => {
   return (
     <div className="bg-[#C5DEF2] w-full h-[120vh] flex flex-col items-center justify-center relative px-10">
       {/* Header Section */}
-      <h1 className="font-comic-neue font-bold text-[32px] leading-[37px] text-black mb-4 mt-8">
+      <h1 className="font-comic-neue font-bold text-[2.5vw] leading-[2vw] text-black mb-3 mt-8">
         Why Choose Us
       </h1>
-      <p className="font-comic-neue font-normal text-[20px] leading-[23px] text-black mb-36">
+      <p className="font-comic-neue font-normal text-[1.3vw] leading-[3vw] text-black mb-36">
         Empowering Parents. Engaging Children. Proven Results.
       </p>
 
@@ -75,7 +75,7 @@ const SliderSection = () => {
             <h2 className="font-comic-neue text-[#6A7FBF] font-bold text-[40px] leading-[45px] mb-4">
               {slides[currentSlide].title}
             </h2>
-            <p className="font-comic-neue font-normal text-[25px] leading-[25px] text-black">
+            <p className="font-comic-neue font-normal text-[1.5vw] leading-[1.9vw] text-black">
               {slides[currentSlide].description}
             </p>
           </div>
