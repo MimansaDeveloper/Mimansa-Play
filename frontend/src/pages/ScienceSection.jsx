@@ -4,8 +4,8 @@ const ScienceSection = () => {
   return (
     <div className="bg-[rgba(250,237,203,1)] h-[110vh] flex flex-col justify-center items-center px-4 md:px-8">
       {/* Header Section */}
-      <div className="text-center mb-12 mt-6">
-        <h2 className="font-comic-neue text-[2.5vw] leading-[2vw] font-bold font-comic text-black mb-3 mt-16">
+      <div className="text-center mb-12 mt-2">
+        <h2 className="font-comic-neue text-[2.5vw] leading-[2vw] font-bold font-comic text-black mb-3">
           The Science Behind Us
         </h2>
         <p className="font-comic-neue text-[1.3vw] leading-[3vw] font-comic text-black ">
