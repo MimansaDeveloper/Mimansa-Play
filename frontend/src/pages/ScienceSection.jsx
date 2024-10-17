@@ -14,7 +14,7 @@ const ScienceSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="mt-[-4vw] flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
+      <div className="mt-[-2vw] flex flex-col md:flex-row  items-center justify-center gap-12 md:gap-24">
         {/* Image Placeholder */}
         <div className="w-[35vw] h-[35vw] flex justify-center items-center">
           <img
