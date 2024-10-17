@@ -16,14 +16,12 @@ const LandingPage = () => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
-    // Initialize Locomotive Scroll
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      smoothMobile: true, // Optional: Enable smooth scrolling on mobile devices
+      smoothMobile: true,
     });
 
-    // Cleanup on unmount
     return () => {
       if (scroll) scroll.destroy();
     };
@@ -31,16 +29,18 @@ const LandingPage = () => {
 
   return (
     <div data-scroll-container ref={scrollRef} className='w-full h-full'>
-      <Navbar />
-      <HeroSection />
-      <SliderSection />
-      <WorkingSection />
-      <TestimonialSection />
-      <ChallengeSection />
-      <TestimonialSection2 />
-      <ScienceSection />
-      <DontMissSection />
-      <FooterSection />
+      <div data-scroll-section>
+        <Navbar />
+        <HeroSection />
+        <SliderSection />
+        <WorkingSection />
+        <TestimonialSection />
+        <ChallengeSection />
+        <TestimonialSection2 />
+        <ScienceSection />
+        <DontMissSection />
+        <FooterSection />
+      </div>
     </div>
   );
 };
