@@ -1,33 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PopUpScreen from './PopUpScreen'; // Import the PopUpScreen
 
-const Navbar = () => {
+const Navbar = ({ openPopup }) => {
     const navigate = useNavigate();
-  const handleTryGame = () =>{
-    navigate("/start");
-     
-  }
-  return (
-    <div className='bg-white flex items-center justify-between w-full h-[100px] px-10  shadow-md'>
-      {/* <h1 className='text-3xl font-bold text-black'>Logo</h1> */}
-      <img src="/logo.png" alt="Mimansa Kids Logo" className="w-[12vw] ml-24" />
-      <ul className='flex gap-8 text-lg  text-black list-none ml-32'>
-        <li className='cursor-pointer hover:text-gray-600 font-semibold text-[#A964FF] transition duration-300'>Home</li>
-        <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>About Us</li>
-        <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>Testimonial</li>
-        <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>Contact Us</li>
-      </ul>
-      <div className='flex gap-6'>
-        <button onClick={handleTryGame} className='hover:bg-black hover:text-white font-semibold py-2 px-4 rounded-md bg-white text-black border-2 border-black transition duration-300'>
-          Try the game
-        </button>
-        <button className='bg-[#DBCDF0]
- text-black font-semibold w-[190px] h-[54px] text-[16px]   rounded-md hover:bg-[#c09ff3] transition duration-300 mr-24'>
-          Signup for early access
-        </button>
-      </div>
-    </div>
-  );
+
+    const handleTryGame = () => {
+        navigate("/start");
+    }
+
+   
+
+    return (
+        <div className='bg-white flex items-center justify-between w-full h-[6vw] px-[8vw] shadow-md sticky top-0 z-50'>
+            <img src="/logo1.png" alt="Mimansa Kids Logo" className="w-[12vw]" />
+            
+            <ul className='flex gap-[2.5vw] text-[1.1rem] text-black list-none'>
+                <li className='cursor-pointer hover:text-gray-600 font-semibold text-[#A964FF] transition duration-300'>Home</li>
+                <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>Why Us</li>
+                <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>How it works</li>
+                <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>Testimonial</li>
+                <li className='cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300'>Contact Us</li>
+            </ul>
+
+            <div className='flex items-center justify-center gap-[1.5vw] '>
+                <button 
+                    onClick={handleTryGame} 
+                    className='py-[0.80rem] px-4 hover:bg-black hover:text-white font-semibold text-[1rem] rounded-md bg-white text-black border-2 border-black transition duration-300 whitespace-nowrap'
+                >
+                    Try the game
+                </button>
+                <button 
+                    onClick={openPopup} // Update this line to open the pop-up
+                    className='py-[0.85rem] px-3 bg-[#DBCDF0] text-black font-semibold text-[1rem] rounded-md hover:bg-[#c09ff3] hover:text-white transition duration-300 whitespace-nowrap'
+                >
+                    Signup for early access
+                </button>
+            </div>
+        </div>
+    );
 };
 
 export default Navbar;

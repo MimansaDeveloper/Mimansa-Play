@@ -6,25 +6,25 @@ const workingItems = [
     img: '/game.png',
     title: 'Choose a Game',
     text: 'Pick from a variety of fun, speech-boosting games tailored to your child’s age and development level.',
-    bgColor: 'bg-[#B3C7FD]',
+    bgColor: 'bg-[#B3C7FD66]',
   },
   {
     img: '/headphoneimage.png',
     title: 'Practice Sounds & Words',
     text: 'Kids mimic words and sounds, with our engaging videos and fun characters guiding them along the way.',
-    bgColor: 'bg-[#FBC261]',
+    bgColor: 'bg-[#FECB6066]',
   },
   {
     img: '/likeimage.png',
     title: 'Instant Feedback',
     text: 'Our proprietary AI listens and gives instant feedback, improving pronunciation and articulation.',
-    bgColor: 'bg-[#8CD5C0]',
+    bgColor: 'bg-[#8CD5C066]',
   },
   {
     img: '/progressimage.png',
     title: 'Track Progress',
     text: 'Easily monitor your child\'s improvement and celebrate their speech milestones!',
-    bgColor: 'bg-[#FCD9D1]',
+    bgColor: 'bg-[#FCCDD166]',
   },
 ];
 
@@ -50,11 +50,11 @@ const WorkingSection = () => {
               key={index}
               className={`flex flex-col w-[20vw] h-[20vw]  mb-1 p-5 rounded-lg ${item.bgColor}`} // Adjust width and margin
             >
-              <img src={item.img} alt={item.title} className='w-[5rem] self-center mb-4' />
-              <h3 className="font-comic-neue font-bold text-[1.5rem] leading-[1.75rem] text-black text-center mb-3">
+              <img src={item.img} alt={item.title} className='w-[5rem] self-center mb-6' />
+              <h3 className="font-comic-neue font-bold text-[1.5vw] leading-[1.75vw] text-black text-center mb-6">
                 {item.title}
               </h3>
-              <p className="font-comic-neue font-normal text-[1.2rem] leading-[1.5rem] text-[#454545] text-center">
+              <p className="font-comic-neue font-normal text-[1.2vw] leading-[1.5vw] text-[#454545] text-center">
                 {item.text}
               </p>
             </div>
@@ -68,7 +68,7 @@ const WorkingSection = () => {
       </div>
 
       {/* Button Section */}
-      <div className="mt-36">
+      <div className="mt-36 mb-16">
         <button className="bg-[#322F29] text-white font-comic-neue font-bold text-[1.5rem] py-4 px-8 rounded-lg">
           Try the Game
         </button>

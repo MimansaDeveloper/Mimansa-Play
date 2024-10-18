@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const ScienceSection = () => {
+const ScienceSection = ({ openPopup }) => {
   return (
     <div className="bg-[rgba(250,237,203,1)]  flex flex-col justify-center items-center px-4 md:px-8">
       {/* Header Section */}
@@ -27,10 +27,17 @@ const ScienceSection = () => {
         {/* Text and Button */}
         <div className="text-left max-w-lg mt-2">
           <p className="text-2xl   font-comic text-gray-800 leading-10 mb-8">
-            Our games use methods endorsed by leading early childhood development experts and speech therapists to ensure your child gets the best learning experience possible. With AI-driven insights, your child receives personalized support on their journey to better speech.
+            Our games use methods endorsed by leading early childhood
+            development experts and speech therapists to ensure your child gets
+            the best learning experience possible. With AI-driven insights, your
+            child receives personalized support on their journey to better
+            speech.
           </p>
           {/* Button */}
-          <button className="bg-purple-200 text-black px-8 py-4 rounded-lg hover:bg-purple-300 transition duration-300">
+          <button
+            onClick={openPopup}
+            className="bg-purple-200 text-black px-8 py-4 rounded-lg hover:bg-purple-300 transition duration-300"
+          >
             Sign Up for Early Access
           </button>
         </div>

@@ -1,50 +1,57 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const slides = [
   {
-    title: 'Real-Time Speech Feedback Powered by AI',
+    title: "Real-Time Speech Feedback Powered by AI",
     description:
-      'Our advanced AI listens to your child’s speech and provides instant feedback, helping improve articulation and language skills on the go.',
-    image: '/aiimage2.png',
+      "Our advanced AI listens to your child’s speech and provides instant feedback, helping improve articulation and language skills on the go.",
+    image: "/aiimage2.png",
   },
   {
-    title: 'Fun, Interactive Learning',
+    title: "Fun, Interactive Learning",
     description:
-      'No more boring exercises! Our games are designed to capture attention and make speech practice fun and rewarding for kids.',
-    image: '/kidsimage1.png',
+      "No more boring exercises! Our games are designed to capture attention and make speech practice fun and rewarding for kids.",
+    image: "/kidsimage1.png",
   },
   {
-    title: 'Healthy Screen Time Design',
+    title: "Healthy Screen Time Design",
     description:
-      'Crafted to reduce passive screen time, our app encourages active engagement and meaningful parent-child interaction.',
-    image: '/kidsimage2.png',
+      "Crafted to reduce passive screen time, our app encourages active engagement and meaningful parent-child interaction.",
+    image: "/kidsimage2.png",
   },
   {
-    title: 'Built by Experts, Loved by Parents',
+    title: "Built by Experts, Loved by Parents",
     description:
-      'Developed by speech therapists and early childhood experts, our methods are proven to help children improve speech at their own pace.',
-    image: '/kidsimage3.png',
+      "Developed by speech therapists and early childhood experts, our methods are proven to help children improve speech at their own pace.",
+    image: "/kidsimage3.png",
   },
 ];
 
 const SliderSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isFading, setIsFading] = useState(false); // State to trigger fade animation
+  const [direction, setDirection] = useState(null); 
 
   // Function to go to the next slide
   const handleNextSlide = () => {
     setIsFading(true); // Start fading out
+    setDirection('right');
     setTimeout(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
       setIsFading(false); // Fade in the next slide
+      setDirection(null);
     }, 500); // Adjust timing for fade effect
   };
 
   // Function to go to the previous slide
   const handlePrevSlide = () => {
     setIsFading(true);
+    setDirection('left');
     setTimeout(() => {
-      setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+      setCurrentSlide(
+        (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
+      );
+      setDirection(null);
       setIsFading(false);
     }, 500);
   };
@@ -73,16 +80,21 @@ const SliderSection = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
         </button>
 
         {/* Main Content Section */}
-        <div className="flex justify-between items-center w-full max-w-5xl  space-x-10">
+        <div className= {`flex justify-between items-center w-full max-w-5xl  space-x-10 transition-transform duration-500 ${ isFading && direction == 'right' ? 'translate-x-full' : 'translate-x-0'} ${ isFading && direction == 'left' ? '-translate-x-full' : 'translate-x-0'}`}>
           {/* Text Section */}
           <div
             className={`flex flex-col justify-center w-[60%] transition-opacity duration-500 ${
-              isFading ? 'opacity-0' : 'opacity-100'
+              isFading ? "opacity-0" : "opacity-100"
             }`}
           >
             <h2 className="font-comic-neue text-[#6A7FBF] font-bold text-[40px] leading-[45px] mb-4">
@@ -96,7 +108,7 @@ const SliderSection = () => {
           {/* Image Section */}
           <div
             className={`flex justify-center items-center w-[50%] transition-opacity duration-500 ${
-              isFading ? 'opacity-0' : 'opacity-100'
+              isFading ? "opacity-0" : "opacity-100"
             }`}
           >
             <div className="w-[26vw] h-[20vw] flex justify-center items-center rounded-xl">
@@ -121,7 +133,12 @@ const SliderSection = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </button>
       </div>
@@ -131,8 +148,15 @@ const SliderSection = () => {
         {slides.map((_, index) => (
           <span
             key={index}
-            className={`w-3 h-3 rounded-full ${
-              index === currentSlide ? 'bg-[#FF9650]' : 'bg-white opacity-60'
+            onClick={() => {
+              setIsFading(true);
+              setTimeout(() => {
+                setCurrentSlide(index);
+                setIsFading(false);
+              }, 500); // Adjust timing for fade effect
+            }}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              index === currentSlide ? "bg-[#FF9650]" : "bg-white opacity-60"
             }`}
           ></span>
         ))}

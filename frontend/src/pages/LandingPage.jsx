@@ -1,6 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+import React, { useEffect, useRef, useState } from 'react';
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import SliderSection from './SliderSection';
@@ -11,33 +9,33 @@ import TestimonialSection from './TestimonialSection';
 import FooterSection from './FooterSection';
 import DontMissSection from './DontMissSection';
 import TestimonialSection2 from './TestimonialSection2';
+import Slider from '../components/test';
+import PopUpScreen from './PopUpScreen';
 
 const LandingPage = () => {
-  const scrollRef = useRef(null);
+  const [isPopupVisible, setIsPopupVisible] = useState(false); // State for pop-up visibility
 
-  // useEffect(() => {
-  //   const scroll = new LocomotiveScroll({
-  //     el: scrollRef.current,
-  //     smooth: true,
-  //     smoothMobile: true,
-  //   });
+  const openPopup = () => {
+    setIsPopupVisible(true); // Function to open the pop-up
+  };
 
-  //   return () => {
-  //     if (scroll) scroll.destroy();
-  //   };
-  // }, []);
+  const closePopup = () => {
+    setIsPopupVisible(false); // Function to close the pop-up
+  };
 
   return (
-    <div data-scroll-container ref={scrollRef} className='w-full h-full'>
-      <div data-scroll-section>
-        <Navbar />
+    <div className='w-full h-full'>
+      <div>
+      <Navbar openPopup={openPopup} />
+      {isPopupVisible && <PopUpScreen closePopup={closePopup} />} 
         <HeroSection />
         <SliderSection />
         <WorkingSection />
-        <TestimonialSection />
-        <ChallengeSection />
         <TestimonialSection2 />
-        <ScienceSection />
+        {/* <TestimonialSection /> */}
+        <ChallengeSection />
+        {isPopupVisible && <PopUpScreen closePopup={closePopup} />} 
+        <ScienceSection openPopup={openPopup} />
         <DontMissSection />
         <FooterSection />
       </div>
