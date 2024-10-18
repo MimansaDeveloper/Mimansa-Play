@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+/* html, body {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -10,6 +10,6 @@ html, body {
 
   [data-scroll-container] {
     height: 470vw;
-  }
+  } */
 
   

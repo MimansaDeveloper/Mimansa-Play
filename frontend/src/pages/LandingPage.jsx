@@ -13,19 +13,19 @@ import DontMissSection from './DontMissSection';
 import TestimonialSection2 from './TestimonialSection2';
 
 const LandingPage = () => {
-  const scrollRef = useRef(null);
+  // const scrollRef = useRef(null);
 
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      smoothMobile: true,
-    });
+  // useEffect(() => {
+  //   const scroll = new LocomotiveScroll({
+  //     el: scrollRef.current,
+  //     smooth: true,
+  //     smoothMobile: true,
+  //   });
 
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     if (scroll) scroll.destroy();
+  //   };
+  // }, []);
 
   return (
     <div data-scroll-container ref={scrollRef} className='w-full h-full'>
