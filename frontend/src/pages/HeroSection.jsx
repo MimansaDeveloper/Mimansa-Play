@@ -18,7 +18,7 @@ const HeroSection = () => {
         data-aos="fade-up" // Animation for text and input
       >
         <h1 className="font-comic-neue ml-1 font-bold text-[1.94vw] lg:text-[2.50vw] leading-[2.22vw] lg:leading-[3.00vw] text-black mt-[1.85vh] lg:mt-44">
-          Unlock Your Child’s Speech with Fun, AI-Powered Games
+          Unlock Your Child’s Speech with Fun,<br/> AI-Powered Games
         </h1>
         <p className="font-comic-neue font-normal ml-1 text-2xl leading-[2vw] text-black mt-5">
           Designed by experts from{" "}

@@ -33,10 +33,10 @@ const WorkingSection = () => {
     <div className="bg-[rgba(215,255,234,0.54)] py-10 px-10 flex flex-col items-center">
       {/* Section Title */}
       <div className="text-center mb-28 mt-4">
-        <h2 className="font-comic-neue font-bold text-[2rem] leading-[2.2rem] text-black mb-3 mt-8">
+        <h2 className="font-comic-neue font-bold text-[2.5vw] leading-[2vw] text-black mb-3 mt-8">
           How it works
         </h2>
-        <p className="font-comic-neue font-normal text-[1.5rem] leading-[2rem] text-black">
+        <p className="font-comic-neue font-normal text-[1.3vw] leading-[3vw] text-black">
           How Mimansa Kids Makes Speech Learning Easy
         </p>
       </div>
