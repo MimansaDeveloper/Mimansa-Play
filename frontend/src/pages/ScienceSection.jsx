@@ -26,7 +26,7 @@ const ScienceSection = ({ openPopup }) => {
 
         {/* Text and Button */}
         <div className="text-left max-w-lg mt-2">
-          <p className="text-2xl   font-comic text-gray-800 leading-10 mb-8">
+          <p className="text-[1.5vw] leading-[2.5vw]   font-comic text-gray-800  mb-8">
             Our games use methods endorsed by leading early childhood
             development experts and speech therapists to ensure your child gets
             the best learning experience possible. With AI-driven insights, your
