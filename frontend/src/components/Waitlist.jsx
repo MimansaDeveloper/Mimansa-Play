@@ -38,7 +38,7 @@ const Waitlist = () => {
         </ul>
 
         {/* Buttons for "Play Again" and "Sign Up" */}
-        <div className="flex mt-8 gap-4 w-full px-48">
+        <div className="flex mt-1 gap-4 w-full px-48">
           <button 
             onClick={() => navigate('/game')} 
             className=" w-full border-2 border-pink-300 text-pink-300 hover:text-white hover:bg-pink-300 text-2xl font-bold py-4 px-8 rounded-xl shadow-md"
