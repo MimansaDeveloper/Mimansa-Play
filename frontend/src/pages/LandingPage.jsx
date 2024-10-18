@@ -13,7 +13,7 @@ import DontMissSection from './DontMissSection';
 import TestimonialSection2 from './TestimonialSection2';
 
 const LandingPage = () => {
-  // const scrollRef = useRef(null);
+  const scrollRef = useRef(null);
 
   // useEffect(() => {
   //   const scroll = new LocomotiveScroll({
