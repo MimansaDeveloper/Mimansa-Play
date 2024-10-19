@@ -30,46 +30,59 @@ const workingItems = [
 
 const WorkingSection = () => {
   return (
-    <div className="bg-[rgba(215,255,234,0.54)] py-10 px-10 flex flex-col items-center">
+    <div className="bg-[rgba(215,255,234,0.54)] py-10 px-6 lg:px-10 flex flex-col items-center">
       {/* Section Title */}
-      <div className="text-center mb-28 mt-4">
-        <h2 className="font-comic-neue font-bold text-[2.5vw] leading-[2vw] text-black mb-3 mt-8">
+      <div className="text-center mb-12 lg:mb-28 mt-4">
+        <h2 className="font-comic-neue font-bold text-[8vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
           How it works
         </h2>
-        <p className="font-comic-neue font-normal text-[1.3vw] leading-[3vw] text-black">
+        <p className="font-comic-neue font-normal text-[5vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
           How Mimansa Kids Makes Speech Learning Easy
         </p>
       </div>
 
       {/* Main Content */}
-      <div className="flex justify-center  items-center w-full">
-        {/* Left Content (4 Columns) */}
-        <div className="flex flex-wrap justify-center gap-8 w-[50%]">
+      <div className="flex flex-col lg:flex-row justify-center items-center w-full">
+        {/* Right Content (Image Placeholder on top for mobile) */}
+        <div className="flex justify-center lg:hidden items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12">
+          <img
+            src="/worksectionimage.png"
+            alt="Work Section"
+            className="w-[80vw] lg:w-full rounded-lg shadow-lg"
+          />
+        </div>
+
+        {/* Left Content (Boxes in single column for mobile) */}
+        <div className="flex flex-wrap justify-center gap-8 w-full lg:w-[50%]">
           {workingItems.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col w-[20vw] h-[20vw]  mb-1 p-5 rounded-lg ${item.bgColor}`} // Adjust width and margin
+              className={`flex flex-col w-[80vw] h-auto lg:w-[20vw] lg:h-[20vw] mb-1 p-5 rounded-lg ${item.bgColor}`}
             >
-              <img src={item.img} alt={item.title} className='w-[5rem] self-center mb-6' />
-              <h3 className="font-comic-neue font-bold text-[1.5vw] leading-[1.75vw] text-black text-center mb-6">
+              <img src={item.img} alt={item.title} className="w-[5vw] self-center mb-6" />
+              <h3 className="font-comic-neue font-bold text-[6vw] lg:text-[1.5vw] leading-[7vw] lg:leading-[1.75vw] text-black text-center mb-6">
                 {item.title}
               </h3>
-              <p className="font-comic-neue font-normal text-[1.2vw] leading-[1.5vw] text-[#454545] text-center">
+              <p className="font-comic-neue font-normal text-[4.5vw] lg:text-[1.2vw] leading-[6vw] lg:leading-[1.5vw] text-[#454545] text-center">
                 {item.text}
               </p>
             </div>
           ))}
         </div>
 
-        {/* Right Content (Image Placeholder) */}
-        <div className="flex justify-center items-center  max-w-[28.5vw] ml-12">
-          <img src="/worksectionimage.png" alt="Work Section" className="max-w-full rounded-lg shadow-lg" />
+        {/* Right Content (Image Placeholder on right for laptop, hidden on mobile) */}
+        <div className="hidden lg:flex justify-center items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12">
+          <img
+            src="/worksectionimage.png"
+            alt="Work Section"
+            className="w-[80vw] lg:w-full rounded-lg shadow-lg"
+          />
         </div>
       </div>
 
       {/* Button Section */}
-      <div className="mt-36 mb-16">
-        <button className="bg-[#322F29] text-white font-comic-neue font-bold text-[1.5rem] py-4 px-8 rounded-lg">
+      <div className="mt-16 lg:mt-36 mb-8 lg:mb-16">
+        <button className="bg-[#322F29] text-white font-comic-neue font-bold text-[5vw] lg:text-[1.5rem] py-4 px-8 rounded-lg">
           Try the Game
         </button>
       </div>

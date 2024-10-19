@@ -6,6 +6,7 @@ import Waitlist from "./components/Waitlist";
 import LandingPage from "./pages/LandingPage";
 import LocomotiveScroll from "locomotive-scroll";
 import 'locomotive-scroll/dist/locomotive-scroll.css';
+import BalloonTest from "./components/BalloonTest";
 
 function App() {
   const scrollRef = useRef(null); // Create a ref for the scroll container
@@ -28,9 +29,8 @@ function App() {
       <div data-scroll-container ref={scrollRef}> 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/start" element={<BalloonStartScreen />} />
           <Route path="/game" element={<BalloonPopGame />} />
-          <Route path="/waitlist" element={<Waitlist />} />
+          {/* <Route path="/game" element={<BalloonTest />} /> */}
         </Routes>
       </div>
     </Router>

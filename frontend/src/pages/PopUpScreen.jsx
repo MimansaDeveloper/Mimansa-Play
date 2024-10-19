@@ -35,8 +35,8 @@ const PopUpScreen = ({ closePopup }) => {
   };
 
   return (
-    <div className="absolute z-20 w-full h-screen flex flex-col items-center justify-center p-[3vw] rounded-lg shadow-lg">
-      <div className='relative w-[60vw] h-[70%] bg-white border-2 border-gray-300 shadow-2xl flex flex-col rounded-3xl justify-center items-center'>
+    <div className="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
+      <div className='relative w-[90vw] max-w-[60vw] h-[70%] bg-white border-2 border-gray-300 shadow-2xl flex flex-col rounded-3xl justify-center items-center p-4'>
         {/* Giraffe image */}
         <img 
           src="/ziraffe.png" 
@@ -45,12 +45,13 @@ const PopUpScreen = ({ closePopup }) => {
         />
 
         {/* Title */}
-        <h1 className="text-[3vw] font-bold text-center text-[#707ACF]">
+        <h1 className="text-[4vw] md:text-[3vw] font-bold text-center text-[#707ACF]">
           Sign up for early access
         </h1>
-        <div className='absolute active:scale-75 flex justify-center items-center top-0 right-0 bg-red-500 w-[6vw] h-[6vw] rounded-tr-xl rounded-bl-xl' onClick={closePopup}>
-          <img src="/cross.png" alt="cross" className='w-[2vw]' />
+        <div className='absolute active:scale-75 flex justify-center items-center top-0 right-0 bg-red-500 w-[8vw] h-[8vw] rounded-tr-xl rounded-bl-xl' onClick={closePopup}>
+          <img src="/cross.png" alt="close" className='w-[3vw]' />
         </div>
+
         {/* Input & Button */}
         <div className="flex w-full justify-center items-center mt-[2vw]">
           <input
@@ -58,11 +59,11 @@ const PopUpScreen = ({ closePopup }) => {
             value={email} // Set email input value
             onChange={(e) => setEmail(e.target.value)} // Update email state
             placeholder="Enter your email to unlock the early access"
-            className="w-full max-w-[28vw] p-[1vw] rounded-s-xl border-2 border-[#DBCDF0] focus:outline-none focus:border-purple-500"
+            className="w-full h-[5vw] max-w-[28vw] p-[1vw] rounded-s-xl border-2 border-[#DBCDF0] focus:outline-none focus:border-purple-500"
           />
           <button
             onClick={handleSignUp} // Handle signup click
-            className={`w-[10vw] active:scale-95 bg-[#DBCDF0] px-[1.5vw] py-[1vw] rounded-e-xl text-black font-semibold ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // Disable button while loading
+            className={`w-[10vw] h-[5vw] text-[1vw] active:scale-95 bg-[#DBCDF0] px-[1.5vw] py-[1vw] rounded-e-xl text-black font-semibold ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} // Disable button while loading
             disabled={loading} // Disable button while loading
           >
             {loading ? "Loading..." : "Sign me up!"} {/* Change button text based on loading */}
@@ -70,16 +71,16 @@ const PopUpScreen = ({ closePopup }) => {
         </div>
 
         {/* Disclaimer */}
-        <h3 className="w-fit flex justify-start mx-16 items-start mt-[1vw] font-light text-[0.9vw] ">
+        <h3 className="w-fit flex justify-start mx-8 items-start mt-[1vw] font-light text-[0.9vw] text-center">
           <span className="text-red-700">*</span> Thanks for signing up! Exciting things are coming your way soon.
         </h3>
 
         {/* Decorative balloons */}
-        <div className="absolute bottom-[2vw] right-[1vw]">
-          <img src="/balloon1.png" alt="Balloons" className="w-[4vw]" />
+        <div className="absolute bottom-[5vw] right-[2vw]">
+          <img src="/balloon1.png" alt="Balloons" className="w-[6vw] md:w-[4vw]" />
         </div>
-        <div className="absolute bottom-[1vw] right-[4vw] ">
-          <img src="/balloon4.png" alt="Balloons" className="w-[3.5vw]" />
+        <div className="absolute bottom-[4vw] right-[6vw]">
+          <img src="/balloon4.png" alt="Balloons" className="w-[5vw] md:w-[3.5vw]" />
         </div>
       </div>
     </div>

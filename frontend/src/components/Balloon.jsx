@@ -2,6 +2,7 @@ import React from 'react';
 import './Balloon.css';
 
 const Balloon = ({ isPopped , imageSrc, isRising }) => {
+  console.log("Balloon props - isPopped:", isPopped, "imageSrc:", imageSrc);
   const generateConfettiStyles = () => {
     const randomRotation = Math.floor(Math.random() * 360);
     const randomScale = Math.random() * 1 + 0.5;

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Balloon from './Balloon';
-import './BalloonPopGame.css';
-import BalloonStartScreen from './BalloonStartScreen';
-import Waitlist from './Waitlist';
+
+
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-function BalloonPopGame() {
+const BalloonTest = () => {
+
   const navigate = useNavigate();
   const [balloons, setBalloons] = useState([]);
   const [recognition, setRecognition] = useState(null);
@@ -17,7 +17,6 @@ function BalloonPopGame() {
   const [gameOver, setGameOver] = useState(false);
   const [isRising, setIsRising] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true); // State for play button
-  const [showWaitlist, setShowWaitlist] = useState(false);
 
   const popSound = new Audio('/burst.wav');
   const cheerSound = new Audio('/kids_cheering_short.mp3');
@@ -114,7 +113,7 @@ function BalloonPopGame() {
         if (updatedBalloons.every((balloon) => balloon.popped)) {
           setTimeout(() => {
             setGameOver(true);
-            setShowWaitlist(true);
+            navigate('/waitlist');
           }, 1000);
         }
 
@@ -139,7 +138,7 @@ function BalloonPopGame() {
 
   const goToWaitlist = () => {
     stopListening();
-    setShowWaitlist(true);
+    navigate('/waitlist');
   };
 
   const goToStartScreen = () => {
@@ -147,7 +146,7 @@ function BalloonPopGame() {
     if (gameOver) {
       setGameOver(false);
     } else {
-      navigate('/');
+      navigate('/start');
     }
   };
 
@@ -163,29 +162,23 @@ function BalloonPopGame() {
   };
 
   return (
+   <>
     <div className="flex flex-col h-screen bg-gradient-to-b from-[#FFEBDA] to-[#FBD5B5] relative">
       {/* Show Play Button when user hasn't started the game */}
       {showPlayButton && (
-        // <div className="absolute inset-0  flex justify-center items-center  bg-opacity-50 z-50">
-        //   <button
-        //     onClick={startGame}
-        //     className="cursor-pointer hover:scale-110 active:scale-75"
-        //   >
-        //     <img src="/play.png" alt="Play" />
-        //     {/* <p className="text-xl text-white ">Click to Play!</p>  */}
-        //   </button>
+        <div className="absolute inset-0  flex justify-center items-center  bg-opacity-50 z-50">
+          <button
+            onClick={startGame}
+            className="cursor-pointer hover:scale-110 active:scale-75"
+          >
+            <img src="/play.png" alt="Play" />
+            {/* <p className="text-xl text-white ">Click to Play!</p>  */}
+          </button>
 
-        // </div>
-        <BalloonStartScreen startGame = {startGame}/>
+        </div>
       )}
 
-      {showWaitlist && (
-        <Waitlist />
-      )}
-
-      {!showWaitlist && (
-        <>
-        <div className="flex w-full justify-between items-center px-5 py-2 mt-2">
+      <div className="flex w-full justify-between items-center px-5 py-2 mt-2">
         <button className="icon-button cursor-pointer active:scale-75" onClick={goToStartScreen}>
           <img src="/back.png" alt="Back" />
         </button>
@@ -235,10 +228,9 @@ function BalloonPopGame() {
           <p className="text-lg text-[#101010] mt-2">Heard: "{transcript}"</p>
         </div>
       )}
-        </>
-      )}
     </div>
-  );
+   </>
+  )
 }
 
-export default BalloonPopGame;
+export default BalloonTest
