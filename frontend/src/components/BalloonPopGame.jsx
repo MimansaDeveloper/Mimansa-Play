@@ -18,6 +18,8 @@ function BalloonPopGame() {
   const [isRising, setIsRising] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(true); // State for play button
   const [showWaitlist, setShowWaitlist] = useState(false);
+  const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight);
+
 
   const popSound = new Audio('/burst.wav');
   const cheerSound = new Audio('/kids_cheering_short.mp3');
@@ -62,6 +64,15 @@ function BalloonPopGame() {
     return () => {
       stopListening();
     };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLandscape(window.innerWidth > window.innerHeight);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
@@ -128,8 +139,16 @@ function BalloonPopGame() {
     setScore(0);
     setGameOver(false);
     addInitialBalloons();
-    startListening();
+    startListening();  
   };
+
+  const playAgain = () =>{
+    setScore(0);
+    setGameOver(false);
+    setShowWaitlist(false);
+    setShowPlayButton(true);
+    setBalloons([]);
+  }
 
   const startGame = () => {
     setShowPlayButton(false); // Hide the play button after starting the game
@@ -154,11 +173,11 @@ function BalloonPopGame() {
   const formattedScore = score.toString().padStart(3, '0').split('');
 
   const getBalloonStyle = (index) => {
-    const zigzagOffset = 90;
+    const zigzagOffset = 5;
     const verticalOffset = index % 2 === 0 ? zigzagOffset : -zigzagOffset;
     return {
-      transform: `translateY(${verticalOffset}px)`,
-      margin: '60px',
+      transform: `translateY(${verticalOffset}vw)`,
+      margin: '4vw',
     };
   };
 
@@ -180,7 +199,7 @@ function BalloonPopGame() {
       )}
 
       {showWaitlist && (
-        <Waitlist />
+        <Waitlist  playAgain={playAgain}/>
       )}
 
       {!showWaitlist && (

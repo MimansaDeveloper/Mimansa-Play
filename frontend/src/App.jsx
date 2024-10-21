@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import LocomotiveScroll from "locomotive-scroll";
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import BalloonTest from "./components/BalloonTest";
+import MobileBalloonPopGame from "./components/MobileBalloonPopGame";
 
 function App() {
   const scrollRef = useRef(null); // Create a ref for the scroll container
@@ -30,7 +31,8 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/game" element={<BalloonPopGame />} />
-          {/* <Route path="/game" element={<BalloonTest />} /> */}
+          <Route path="/mobile" element={<MobileBalloonPopGame />} />
+          <Route path="/vosk" element={<BalloonTest />} />
         </Routes>
       </div>
     </Router>
