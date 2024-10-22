@@ -7,7 +7,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 import BalloonTest from "./components/BalloonTest";
 import MobileBalloonPopGame from "./components/MobileBalloonPopGame";
 import BalloonSpace from "./components/BalloonSpace";
-import Test from "./components/Test";
+import Test from "./components/Test.jsx";
 import StartScreen from "./components/StartScreen";
 
 function App() {
