@@ -56,14 +56,14 @@ const SliderSection = () => {
   };
 
   return (
-    <div className="bg-[#C8F0FFBF] w-full h-auto lg:h-[120vh] flex flex-col items-center justify-center relative px-6 py-10 lg:px-10 lg:py-[2.5vw]">
-      {/* Section Title */}
-      <div className="text-center mb-12 lg:mb-28 mt-4" data-aos="fade-up">
+    <div className="bg-[#C8F0FFBF] w-full h-auto lg:h-[120vh] flex flex-col items-center justify-center relative px-6 py-10 lg:px-10 lg:py-[2.5vw] ">
+       {/* Section Title */}
+       <div className="text-center mb-12 lg:mb-28 mt-4">
         <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
-          Why Choose Us
+        Why Choose Us
         </h2>
         <p className="font-comic-neue font-normal text-[3vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
-          Empowering Parents. Engaging Children. Proven Results.
+        Empowering Parents. Engaging Children. Proven Results.
         </p>
       </div>
 
@@ -113,6 +113,8 @@ const SliderSection = () => {
       </div>
 
       <div className="flex justify-center mb-[4vw] items-center mt-[12vw] lg:mt-32 space-x-2 gap-[15vw]">
+       
+
         <div className="flex justify-center items-center space-x-2">
           {slides.map((_, index) => (
             <span
@@ -130,6 +132,8 @@ const SliderSection = () => {
             ></span>
           ))}
         </div>
+
+        
       </div>
     </div>
   );
