@@ -327,7 +327,7 @@ const FooterSection = () => {
             </ul>
           </div>
 
-          <div className="w-full rounded-3xl h-[1vw] bg-white mx-[2vw]"></div>
+          <div className="w-[95%] rounded-3xl h-[1vw] bg-white mx-[2vw]"></div>
 
           <div className="flex flex-col items-center justify-center w-full mt-[6vw] mb-[6vw]">
             <p className="text-[4vw] text-center w text-[#A1A1A1]">
