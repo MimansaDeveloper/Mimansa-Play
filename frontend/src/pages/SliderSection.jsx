@@ -59,10 +59,10 @@ const SliderSection = () => {
     <div className="bg-[#C8F0FFBF] w-full h-auto lg:h-[120vh] flex flex-col items-center justify-center relative px-6 py-10 lg:px-10 lg:py-[2.5vw] ">
        {/* Section Title */}
        <div className="text-center mb-12 lg:mb-28 mt-4">
-        <h2 className="font-comic-neue font-bold text-[8vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
+        <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
         Why Choose Us
         </h2>
-        <p className="font-comic-neue font-normal text-[5vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
+        <p className="font-comic-neue font-normal text-[3vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
         Empowering Parents. Engaging Children. Proven Results.
         </p>
       </div>
@@ -112,26 +112,8 @@ const SliderSection = () => {
         </button>
       </div>
 
-      <div className="flex justify-center mb-[4vw] items-center mt-10 lg:mt-32 space-x-2 gap-[15vw]">
-        <button
-          onClick={handlePrevSlide}
-          className="flex lg:hidden justify-center items-center w-6 h-6 bg-[#FF9650] rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
+      <div className="flex justify-center mb-[4vw] items-center mt-[12vw] lg:mt-32 space-x-2 gap-[15vw]">
+       
 
         <div className="flex justify-center items-center space-x-2">
           {slides.map((_, index) => (
@@ -151,25 +133,7 @@ const SliderSection = () => {
           ))}
         </div>
 
-        <button
-          onClick={handleNextSlide}
-          className="flex lg:hidden justify-center items-center w-6 h-6 bg-[#FF9650] rounded-full"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
+        
       </div>
     </div>
   );

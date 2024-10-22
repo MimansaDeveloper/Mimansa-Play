@@ -33,10 +33,10 @@ const WorkingSection = () => {
     <div className="bg-[rgba(215,255,234,0.54)] py-10 px-6 lg:px-10 flex flex-col items-center">
       {/* Section Title */}
       <div className="text-center mb-12 lg:mb-28 mt-4">
-        <h2 className="font-comic-neue font-bold text-[8vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
+        <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
           How it works
         </h2>
-        <p className="font-comic-neue font-normal text-[5vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
+        <p className="font-comic-neue font-normal text-[3vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
           How Mimansa Kids Makes Speech Learning Easy
         </p>
       </div>
@@ -59,7 +59,7 @@ const WorkingSection = () => {
               key={index}
               className={`flex flex-col w-[80vw] h-auto lg:w-[20vw] lg:h-[19.5vw] mb-1 p-5 rounded-3xl ${item.bgColor}`}
             >
-              <img src={item.img} alt={item.title} className="w-[5vw] self-center mb-6" />
+              <img src={item.img} alt={item.title} className="lg:w-[5vw] w-[13vw] self-center mb-6" />
               <h3 className="font-comic-neue font-bold text-[6vw] lg:text-[1.5vw] leading-[7vw] lg:leading-[1.75vw] text-black text-center mb-6">
                 {item.title}
               </h3>

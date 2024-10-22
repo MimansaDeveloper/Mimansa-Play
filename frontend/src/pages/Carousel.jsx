@@ -45,10 +45,10 @@ const Carousel = ({ currentSlide, setCurrentSlide }) => {
         {slides.map((slide, index) => (
           <div className="min-w-full flex flex-col-reverse lg:flex-row justify-between items-center w-full max-w-5xl lg:space-x-10" key={index}>
             <div className={`flex flex-col justify-center w-full lg:w-[60%] text-center lg:text-left transition-opacity duration-500`}>
-              <h2 className="font-comic-neue text-[#6A7FBF] font-bold text-[6vw] lg:text-[40px] leading-[7vw] lg:leading-[45px] mb-4">
+              <h2 className="font-comic-neue text-[#6A7FBF] px-[6vw] lg:px-0 font-bold text-[6vw] mt-[2vw] lg:mt-0 lg:text-[40px] leading-[7vw] lg:leading-[45px] mb-4">
                 {slide.title}
               </h2>
-              <p className="font-comic-neue font-normal text-[4vw] lg:text-[1.5vw] leading-[5vw] lg:leading-[1.9vw] text-black">
+              <p className="font-comic-neue text-center lg:text-start px-[6vw] lg:px-0 font-normal text-[4vw] lg:text-[1.5vw] leading-[5vw] lg:leading-[1.9vw] text-black">
                 {slide.description}
               </p>
             </div>

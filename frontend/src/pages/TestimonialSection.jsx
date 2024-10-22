@@ -2,12 +2,22 @@ import React from 'react';
 
 const TestimonialSection = () => {
   return (
-    <div className="bg-[#F8D9C4] flex flex-col items-center py-20">
+    <div className="bg-[#F8D9C4] flex flex-col items-center  py-20">
       {/* Title Section */}
-      <div className="text-center mb-12">
+      {/* <div className="text-center mb-12">
         <h2 className="font-comic-neue text-[32px] font-bold text-black">Testimonials</h2>
         <p className="font-comic-neue text-[20px] text-black mb-28">What Parents Are Saying</p>
+      </div> */}
+        {/* Section Title */}
+        <div className="text-center mb-12 lg:mb-28 mt-4">
+        <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
+        Testimonials
+        </h2>
+        <p className="font-comic-neue font-normal text-[3vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
+        What Parents Are Saying
+        </p>
       </div>
+      
 
       {/* Testimonial Cards */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-10">

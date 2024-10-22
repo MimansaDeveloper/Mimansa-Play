@@ -49,7 +49,7 @@ const PopUpScreen = ({ closePopup }) => {
         <h1 className="text-[4vw] md:text-[3vw] font-bold text-center text-[#707ACF]">
           Sign up for early access
         </h1>
-        <div className='absolute active:scale-75 flex justify-center items-center top-0 right-0 bg-red-500 w-[8vw] h-[8vw] rounded-tr-xl rounded-bl-xl' onClick={closePopup}>
+        <div className='absolute active:scale-75 flex justify-center items-center top-0 right-0 bg-red-500   w-[6vw] h-[6vw] rounded-tr-[1vw] rounded-bl-[1vw]' onClick={closePopup}>
           <img src="/cross.png" alt="close" className='w-[3vw]' />
         </div>
 

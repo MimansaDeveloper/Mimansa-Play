@@ -4,12 +4,21 @@ const ChallengeSection = () => {
   return (
     <div className="bg-[#E9FFF3] py-10 px-8 text-center w-full flex flex-col">
       {/* Main heading */}
-      <h2 className="font-comic-neue font-bold mt-12 text-[8vw] md:text-[2.5vw] leading-[9vw] md:leading-[2vw] text-black mb-4">
+      {/* <h2 className="font-comic-neue font-bold mt-12 mb-[1vw] text-[6vw] md:text-[2.5vw] leading-[9vw] md:leading-[2vw] text-black lg:mb-4">
         The Challenge
       </h2>
-      <p className="font-comic-neue text-[5vw] md:text-[1.3vw] leading-[6vw] md:leading-[3vw] text-black mb-16">
+      <p className="font-comic-neue text-[3vw] px-[10vw] lg:px-0 md:text-[1.3vw] leading-[6vw] md:leading-[3vw] text-black mb-16">
         Speech and Language Delays are on the Rise, and Parents are Seeking Help
-      </p>
+      </p> */}
+       {/* Section Title */}
+       <div className="text-center mb-12 lg:mb-28 mt-4">
+        <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
+        The Challenge
+        </h2>
+        <p className="font-comic-neue font-normal lg:px-0 px-[8vw] text-[3vw] lg:text-[1.3vw] leading-[6vw] lg:leading-[3vw] text-black">
+        Speech and Language Delays are on the Rise, and Parents are Seeking Help
+        </p>
+      </div>
 
       {/* Content section with three columns */}
       <div className="flex flex-col mb-20 md:flex-row justify-center items-start gap-8 mx-auto">
@@ -20,9 +29,9 @@ const ChallengeSection = () => {
           </h3>
           <div className="flex justify-center items-center">
             {/* Vertical dashed line divider */}
-            <div className="border-t-[3px] border-dashed opacity-80 border-white w-[60vw] md:w-[20vw] h-[2vw] mx-[2vw]"></div>
+            <div className="border-t-[3px] border-dashed opacity-80 border-white w-full lg:w-[60vw] md:w-[30vw] h-[2vw] mx-0 lg:mx-[2vw]"></div>
           </div>
-          <p className="font-comic-neue mt-5 font-light text-[4vw] md:text-[1.9vw] text-[#454545] text-center">
+          <p className="font-comic-neue mt-5 font-light text-[5.5vw] md:text-[1.9vw] text-[#454545] text-center px-[2vw] lg:px-0">
             Increase in passive unhealthy screen time leading to speech delay in children.
           </p>
         </div>
@@ -34,9 +43,9 @@ const ChallengeSection = () => {
           </h3>
           <div className="flex justify-center items-center">
             {/* Vertical dashed line divider */}
-            <div className="border-t-[3px] border-dashed opacity-80 border-white w-[60vw] md:w-[20vw] h-[2vw] mx-[2vw]"></div>
+            <div className="border-t-[3px] border-dashed opacity-80 border-white w-full lg:w-[60vw] md:w-[30vw] h-[2vw] mx-0 lg:mx-[2vw]"></div>
           </div>
-          <p className="font-comic-neue mt-5 font-light text-[4vw] md:text-[1.9vw] text-[#454545] text-center">
+          <p className="font-comic-neue mt-5 font-light text-[5.5vw] md:text-[1.9vw] text-[#454545] text-center px-[2vw] lg:px-0">
             1 in 5 children is at risk of having speech and language delay before age 5.
           </p>
         </div>
@@ -48,9 +57,9 @@ const ChallengeSection = () => {
           </h3>
           <div className="flex justify-center items-center">
             {/* Vertical dashed line divider */}
-            <div className="border-t-[3px] border-dashed opacity-80 border-white w-[60vw] md:w-[20vw] h-[2vw] mx-[2vw]"></div>
+            <div className="border-t-[3px] border-dashed opacity-80 border-white w-full lg:w-[60vw] md:w-[30vw] h-[2vw] mx-0 lg:mx-[2vw]"></div>
           </div>
-          <p className="font-comic-neue mt-5 font-light text-[4vw] md:text-[1.9vw] text-[#454545] text-center">
+          <p className="font-comic-neue mt-5 font-light text-[5vw] md:text-[1.9vw] text-[#454545] text-center px-[2vw] lg:px-0">
             Good center-based speech therapy is inaccessible and expensive.
           </p>
         </div>
