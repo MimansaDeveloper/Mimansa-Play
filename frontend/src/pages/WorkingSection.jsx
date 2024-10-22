@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Array holding the content for the working section
 const workingItems = [
@@ -29,10 +31,16 @@ const workingItems = [
 ];
 
 const WorkingSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+    });
+  },[]);
+
   return (
     <div className="bg-[rgba(215,255,234,0.54)] py-10 px-6 lg:px-10 flex flex-col items-center">
       {/* Section Title */}
-      <div className="text-center mb-12 lg:mb-28 mt-4">
+      <div className="text-center mb-12 lg:mb-28 mt-4" data-aos="fade-up">
         <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
           How it works
         </h2>
@@ -44,7 +52,7 @@ const WorkingSection = () => {
       {/* Main Content */}
       <div className="flex h-full flex-col lg:flex-row justify-center items-center w-full">
         {/* Right Content (Image Placeholder on top for mobile) */}
-        <div className="flex justify-center lg:hidden items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12">
+        <div className="flex justify-center lg:hidden items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12" data-aos="fade-up" data-aos-delay="100">
           <img
             src="/worksectionimage2.png"
             alt="Work Section"
@@ -57,7 +65,9 @@ const WorkingSection = () => {
           {workingItems.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col w-[80vw] h-auto lg:w-[20vw] lg:h-[19.5vw] mb-1 p-5 rounded-3xl ${item.bgColor}`}
+              className={`flex flex-col w-[80vw] h-auto lg:w-[20vw] lg:h-[19.5vw] mb-1 p-5 rounded-3xl ${item.bgColor}`} 
+              data-aos="fade-up" 
+              data-aos-delay={`${index * 100}`} // Increment delay for each item
             >
               <img src={item.img} alt={item.title} className="lg:w-[5vw] w-[13vw] self-center mb-6" />
               <h3 className="font-comic-neue font-bold text-[6vw] lg:text-[1.5vw] leading-[7vw] lg:leading-[1.75vw] text-black text-center mb-6">
@@ -71,7 +81,7 @@ const WorkingSection = () => {
         </div>
 
         {/* Right Content (Image Placeholder on right for laptop, hidden on mobile) */}
-        <div className="hidden lg:flex justify-center items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12">
+        <div className="hidden lg:flex justify-center items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12" data-aos="fade-up" data-aos-delay="300">
           <img
             src="/worksectionimage2.png"
             alt="Work Section"
