@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import emailjs from "@emailjs/browser"; // Import EmailJS
 import { ToastContainer, toast } from "react-toastify"; // Import Toastify
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
+import { sendEmail, storeEmail } from "../utils/emailUtils"; // Import the utility functions
 
 const HeroSection = () => {
   const [signupMessage, setSignupMessage] = useState(""); // State for the signup message
@@ -14,41 +14,33 @@ const HeroSection = () => {
     AOS.init({ duration: 1000, once: true }); // Initialize AOS
   }, []);
 
-  const handleSignUp = () => {
-    // Check if email is valid
-    if (!email) {
+  const isValidEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+};
+
+  const handleSignUp = async () => {
+     // Check if email is valid
+     if (!isValidEmail(email)) {
       toast.error("Please enter a valid email."); // Show error toast
       return;
-    }
+  }
 
-    setLoading(true); // Set loading to true
-    // Sending email using EmailJS
-    emailjs
-      .send(
-        "service_ibnkfbb",
-        "signup_template",
-        {
-          email,
-          message: "New signup for early access!",
-        },
-        "8cu9YH3f38WXRhH9-"
-      )
-      .then(() => {
-        // Set the signup message and clear the email input
-        setSignupMessage(
-          "Thanks for signing up! Exciting things are coming your way soon."
-        );
+  setLoading(true); // Set loading to true
+
+    try {
+        // await sendEmail(email); // Send email
+        await storeEmail(email); // Store email in Firestore
+        setSignupMessage("Thanks for signing up! Exciting things are coming your way soon.");
         setEmail("");
-        toast.success("Thank you for signing up!"); // Show success toast
-      })
-      .catch((error) => {
-        console.error("Email sending failed:", error);
-        toast.error("Failed to send the email. Please try again later."); // Show error toast
-      })
-      .finally(() => {
-        setLoading(false); // Set loading to false after operation
-      });
-  };
+        toast.success("Thank you for signing up!");
+    } catch (error) {
+        toast.error(error.message); // Show the error message
+    } finally {
+        setLoading(false);
+    }
+};
+  
 
   return (
     <div

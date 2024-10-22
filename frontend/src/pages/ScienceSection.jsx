@@ -4,7 +4,7 @@ const ScienceSection = ({ openPopup }) => {
   return (
     <div className="bg-[rgba(250,237,203,1)] flex flex-col justify-center items-center px-4 md:px-8">
       {/* Header Section */}
-      <div className="text-center mb-12 mt-[6.5rem]">
+      <div className="text-center mb-12 mt-[5.5vw]">
         <h2 className="font-comic-neue text-[8vw] md:text-[2.5vw] leading-[9vw] md:leading-[2vw] font-bold text-black mb-3">
           The Science Behind Us
         </h2>
@@ -25,7 +25,7 @@ const ScienceSection = ({ openPopup }) => {
         </div>
 
         {/* Text and Button */}
-        <div className="text-center max-w-lg mt-2 flex flex-col items-center">
+        <div className="text-center max-w-lg mt-2 flex flex-col justify-center lg:items-start md:items-start items-center">
           {/* Box for mobile screens */}
           <div className="bg-[#f5ebd2] p-4 rounded-lg shadow-md w-full md:hidden">
             <p className="text-[4vw] leading-[5vw] font-comic text-gray-800 mb-8">
@@ -38,7 +38,7 @@ const ScienceSection = ({ openPopup }) => {
           </div>
 
           {/* Text without box for larger screens */}
-          <p className="hidden text-left md:block text-[1.5vw] leading-[2.5vw] font-comic text-gray-800 mb-8">
+          <p className="hidden text-left md:block text-[1.5vw] leading-[2.5vw] font-comic text-gray-800 mb-[2vw]">
             Our games use methods endorsed by leading early childhood
             development experts and speech therapists to ensure your child
             gets the best learning experience possible. With AI-driven
@@ -49,7 +49,7 @@ const ScienceSection = ({ openPopup }) => {
           {/* Button */}
           <button
             onClick={openPopup}
-            className="bg-purple-200 text-black px-8 py-4 lg:mr-20 rounded-lg hover:bg-purple-300  hover:text-white transition duration-300 text-[4vw] md:text-[1rem] mt-4"
+            className="bg-purple-200 text-black px-[2vw] py-[1vw]  rounded-lg hover:bg-purple-300  hover:text-white transition duration-300 text-[4vw] md:text-[1rem] mt-[1vw]"
           >
             Sign Up for Early Access
           </button>

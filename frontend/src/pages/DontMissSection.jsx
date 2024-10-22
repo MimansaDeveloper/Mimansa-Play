@@ -1,43 +1,40 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser"; // Import EmailJS
 import { ToastContainer, toast } from "react-toastify"; // Import Toastify
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
+import { sendEmail, storeEmail } from "../utils/emailUtils"; // Import the utility functions
+
 
 const DontMissSection = () => {
   const [email, setEmail] = useState(""); // State for the email input
   const [loading, setLoading] = useState(false); // State for loading
   const [signupMessage, setSignupMessage] = useState(""); // State for signup message
 
-  const handleSignUp = () => {
-    // Check if email is valid
-    if (!email) {
+  const isValidEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+};
+
+  const handleSignUp = async () => {
+     // Check if email is valid
+     if (!isValidEmail(email)) {
       toast.error("Please enter a valid email."); // Show error toast
       return;
-    }
+  }
 
-    setLoading(true); // Set loading to true
-    // Sending email using EmailJS
-    emailjs.send(
-      "service_ibnkfbb",
-      "signup_template",
-      { email, message: "New signup for early access!" },
-      "8cu9YH3f38WXRhH9-"
-    )
-      .then(() => {
-        setEmail(""); // Clear email input
-        setSignupMessage(
-          "Thanks for signing up! Exciting things are coming your way soon."
-        ); // Update signup message
-        toast.success("Thank you for signing up!"); // Show success toast
-      })
-      .catch((error) => {
-        console.error("Email sending failed:", error);
-        toast.error("Failed to send the email. Please try again later."); // Show error toast
-      })
-      .finally(() => {
-        setLoading(false); // Set loading to false after operation
-      });
-  };
+  setLoading(true); // Set loading to true
+
+    try {
+        // await sendEmail(email); // Send email
+        await storeEmail(email); // Store email in Firestore
+        setSignupMessage("Thanks for signing up! Exciting things are coming your way soon.");
+        setEmail("");
+        toast.success("Thank you for signing up!");
+    } catch (error) {
+        toast.error(error.message); // Show the error message
+    } finally {
+        setLoading(false);
+    }
+};
 
   return (
     <div className="bg-[#F9E4E4] min-h-[576px] flex flex-col lg:flex-row items-center py-10 px-4">

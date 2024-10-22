@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChallengeSection = () => {
   return (
-    <div className="bg-[#E9FFF3] py-16 px-8 text-center w-full flex flex-col">
+    <div className="bg-[#E9FFF3] py-10 px-8 text-center w-full flex flex-col">
       {/* Main heading */}
       <h2 className="font-comic-neue font-bold mt-12 text-[8vw] md:text-[2.5vw] leading-[9vw] md:leading-[2vw] text-black mb-4">
         The Challenge

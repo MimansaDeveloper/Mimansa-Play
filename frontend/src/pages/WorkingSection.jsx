@@ -42,13 +42,13 @@ const WorkingSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row justify-center items-center w-full">
+      <div className="flex h-full flex-col lg:flex-row justify-center items-center w-full">
         {/* Right Content (Image Placeholder on top for mobile) */}
         <div className="flex justify-center lg:hidden items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12">
           <img
-            src="/worksectionimage.png"
+            src="/worksectionimage2.png"
             alt="Work Section"
-            className="w-[80vw] lg:w-full rounded-lg shadow-lg"
+            className="w-[80vw] lg:w-full rounded-3xl shadow-lg"
           />
         </div>
 
@@ -57,7 +57,7 @@ const WorkingSection = () => {
           {workingItems.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col w-[80vw] h-auto lg:w-[20vw] lg:h-[20vw] mb-1 p-5 rounded-lg ${item.bgColor}`}
+              className={`flex flex-col w-[80vw] h-auto lg:w-[20vw] lg:h-[19.5vw] mb-1 p-5 rounded-3xl ${item.bgColor}`}
             >
               <img src={item.img} alt={item.title} className="w-[5vw] self-center mb-6" />
               <h3 className="font-comic-neue font-bold text-[6vw] lg:text-[1.5vw] leading-[7vw] lg:leading-[1.75vw] text-black text-center mb-6">
@@ -73,9 +73,9 @@ const WorkingSection = () => {
         {/* Right Content (Image Placeholder on right for laptop, hidden on mobile) */}
         <div className="hidden lg:flex justify-center items-center max-w-full lg:max-w-[28.5vw] mb-10 lg:mb-0 lg:ml-12">
           <img
-            src="/worksectionimage.png"
+            src="/worksectionimage2.png"
             alt="Work Section"
-            className="w-[80vw] lg:w-full rounded-lg shadow-lg"
+            className="w-[80vw] lg:w-full rounded-3xl shadow-lg"
           />
         </div>
       </div>

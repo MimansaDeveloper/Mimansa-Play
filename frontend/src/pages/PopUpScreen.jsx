@@ -1,38 +1,39 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser'; // Import EmailJS
 import { toast } from 'react-toastify'; // Import Toastify
+import { sendEmail, storeEmail } from "../utils/emailUtils"; // Import the utility functions
 
 const PopUpScreen = ({ closePopup }) => {
   const [email, setEmail] = useState(''); // State for the email input
   const [loading, setLoading] = useState(false); // State for loading
+  const [signupMessage, setSignupMessage] = useState(""); // State for signup message
 
-  const handleSignUp = () => {
-    // Check if email is valid
-    if (!email) {
+  const isValidEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+};
+
+  const handleSignUp = async () => {
+     // Check if email is valid
+     if (!isValidEmail(email)) {
       toast.error("Please enter a valid email."); // Show error toast
       return;
+  }
+
+  setLoading(true); // Set loading to true
+
+    try {
+        // await sendEmail(email); // Send email
+        await storeEmail(email); // Store email in Firestore
+        setSignupMessage("Thanks for signing up! Exciting things are coming your way soon.");
+        setEmail("");
+        toast.success("Thank you for signing up!");
+    } catch (error) {
+        toast.error(error.message); // Show the error message
+    } finally {
+        setLoading(false);
     }
-
-    setLoading(true); // Set loading to true
-
-    // Sending email using EmailJS
-    emailjs.send("service_ibnkfbb", "signup_template", { 
-      email, 
-      message: "New signup for early access!" 
-    }, "8cu9YH3f38WXRhH9-")
-    .then(() => {
-      setEmail(""); // Clear email input
-      toast.success("Thank you for signing up!"); // Show success toast
-    })
-    .catch((error) => {
-      console.error("Email sending failed:", error);
-      toast.error("Failed to send the email. Please try again later."); // Show error toast
-    })
-    .finally(() => {
-      closePopup();
-      setLoading(false); // Set loading to false after operation
-    });
-  };
+};
 
   return (
     <div className="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
@@ -41,7 +42,7 @@ const PopUpScreen = ({ closePopup }) => {
         <img 
           src="/ziraffe.png" 
           alt="Giraffe" 
-          className="absolute bottom-0 left-[-5vw] w-[12vw] h-auto" 
+          className="absolute bottom-[-1.5vw] left-[-5vw] w-[12vw] h-auto" 
         />
 
         {/* Title */}
@@ -71,15 +72,18 @@ const PopUpScreen = ({ closePopup }) => {
         </div>
 
         {/* Disclaimer */}
-        <h3 className="w-fit flex justify-start mx-8 items-start mt-[1vw] font-light text-[0.9vw] text-center">
-          <span className="text-red-700">*</span> Thanks for signing up! Exciting things are coming your way soon.
-        </h3>
+        {signupMessage && (<h3 className="w-fit flex justify-start mx-8 items-start mt-[1vw] font-light text-[0.9vw] text-center">
+          <span className="text-red-700">*</span> {signupMessage}
+        </h3>)}
+        {!signupMessage && (<h3 className="w-fit flex justify-start mx-8 items-start mt-[1vw] font-light text-[0.9vw] text-center">
+          <span className="text-red-700">*</span> We’ll only send what’s worth opening – no spam, guaranteed!
+        </h3>)}
 
         {/* Decorative balloons */}
-        <div className="absolute bottom-[5vw] right-[2vw]">
+        <div className="absolute bottom-0 right-[2vw]">
           <img src="/balloon1.png" alt="Balloons" className="w-[6vw] md:w-[4vw]" />
         </div>
-        <div className="absolute bottom-[4vw] right-[6vw]">
+        <div className="absolute bottom-0 right-[6vw]">
           <img src="/balloon4.png" alt="Balloons" className="w-[5vw] md:w-[3.5vw]" />
         </div>
       </div>

@@ -9,6 +9,7 @@ import FooterSection from './FooterSection';
 import DontMissSection from './DontMissSection';
 import TestimonialSection2 from './TestimonialSection2';
 import PopUpScreen from './PopUpScreen';
+import Carousel from './Carousel';
 
 const LandingPage = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false); // State for pop-up visibility
@@ -29,6 +30,7 @@ const LandingPage = () => {
         <HeroSection />
         <SliderSection />
         <WorkingSection />
+        {/* <Carousel/> */}
         <TestimonialSection2 />
         {/* <TestimonialSection /> */}
         <ChallengeSection />
