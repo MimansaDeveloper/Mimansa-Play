@@ -7,7 +7,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 import BalloonTest from "./components/BalloonTest";
 import MobileBalloonPopGame from "./components/MobileBalloonPopGame";
 import BalloonSpace from "./components/BalloonSpace";
-import Test from "./components/Test.jsx";
+// import Test from "./components/Test.jsx";
 import StartScreen from "./components/StartScreen";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <Route path="/space" element={<BalloonSpace />} />
           <Route path="/mobile" element={<MobileBalloonPopGame />} />
           <Route path="/vosk" element={<BalloonTest />} />
-          <Route path="/test" element={<Test />} />
+          {/* <Route path="/test" element={<Test />} /> */}
         </Routes>
       </div>
     </Router>
