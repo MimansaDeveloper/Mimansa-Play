@@ -5,11 +5,9 @@ import SliderSection from './SliderSection';
 import WorkingSection from './WorkingSection';
 import ChallengeSection from './ChallengeSection';
 import ScienceSection from './ScienceSection';
-import TestimonialSection from './TestimonialSection';
 import FooterSection from './FooterSection';
 import DontMissSection from './DontMissSection';
 import TestimonialSection2 from './TestimonialSection2';
-import Slider from '../components/Test';
 import PopUpScreen from './PopUpScreen';
 
 const LandingPage = () => {
