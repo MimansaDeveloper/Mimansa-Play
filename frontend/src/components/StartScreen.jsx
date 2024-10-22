@@ -1,38 +1,41 @@
 import React from 'react';
-import background from '/backgroun.png';  // Background image for the whole screen
-import buttonImage from '/imagebg.png';   // Image to be used as Play Now button
+import { Link } from 'react-router-dom';
 
 const StartScreen = () => {
   return (
-    <div
-      className="flex justify-center items-center w-full h-screen"
-      style={{ backgroundImage: `url(${background})`, backgroundSize: 'contain' }}
-    >
-      {/* Inner div styled with Tailwind */}
-      <div className="absolute w-[1200px] h-[680px] bg-[#FFEBDA] rounded-[100px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center shadow-xl p-10">
-        
-        {/* Header with specified styles */}
-        <h1 className=" w-[285px] h-[72px] mb-12  font-poppins font-bold text-[48px] leading-[72px] text-[#264195]">
-          How to Play
-        </h1>
-        
-        {/* Instructions */}
-        <ul className="w-[600px] text-black list-disc list-inside mb-12 font-bold text-3xl" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
-          <li className='mb-4'>Every time you say <span className="font-bold text-pink-600">POP</span>, one balloon on the screen will burst.</li>
-          <li className='mb-4'>Get your kid to say <span className="font-bold text-pink-600">POP</span> with you and try to burst as many balloons as possible.</li>
-        </ul>
-
-        {/* Play Now Button (using image) */}
-        <div className="relative">
-          <img 
-            src={buttonImage} 
-            alt="Play Now" 
-            className="w-[300px] h-[100px] object-contain"
-          />
-          <span className="absolute inset-0 flex justify-center items-center text-4xl text-white font-bold" style={{ fontFamily: "'Comic Neue', sans-serif" }}>
-            Play Now
-          </span>
-        </div>
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-purple-500 text-white">
+      <h1 className="text-4xl font-bold mb-8">Welcome to the Mimansa Play!</h1>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <Link to="/game">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:bg-blue-500 hover:text-white transition duration-300">
+            <h2 className="text-xl font-semibold text-black">Play Balloon Pop</h2>
+            <p className="text-black">Join the fun and pop as many balloons as you can!</p>
+          </div>
+        </Link>
+        <Link to="/mobile">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:bg-blue-500 hover:text-white transition duration-300">
+            <h2 className="text-xl font-semibold text-black">Balloon Pop Mobile Game</h2>
+            <p className="text-black">Experience the game on your mobile device!</p>
+          </div>
+        </Link>
+        <Link to="/space">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:bg-blue-500 hover:text-white transition duration-300">
+            <h2 className="text-xl font-semibold text-black">Balloon Pop Space</h2>
+            <p className="text-black">Test your skills in our space-themed balloon pop!</p>
+          </div>
+        </Link>
+        <Link to="/vosk">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:bg-blue-500 hover:text-white transition duration-300">
+            <h2 className="text-xl font-semibold text-black">Balloon Pop Vosk Demo</h2>
+            <p className="text-black">Check out our vosk speech recognition demo!</p>
+          </div>
+        </Link>
+        <Link to="/test">
+          <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:bg-blue-500 hover:text-white transition duration-300">
+            <h2 className="text-xl font-semibold text-black">Test Spacebar</h2>
+            <p className="text-black">Explore the testing features of the app!</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

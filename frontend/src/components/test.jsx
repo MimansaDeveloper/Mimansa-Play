@@ -1,75 +1,110 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-// Sample slides data
-const slides = [
-  {
-    title: 'Slide 1',
-    description: 'Description for Slide 1',
-    image: '/path/to/image1.jpg',
-  },
-  {
-    title: 'Slide 2',
-    description: 'Description for Slide 2',
-    image: '/path/to/image2.jpg',
-  },
-  {
-    title: 'Slide 3',
-    description: 'Description for Slide 3',
-    image: '/path/to/image3.jpg',
-  },
-];
+const Test = () => {
+  const [transcript, setTranscript] = useState('');
+  const [isListening, setIsListening] = useState(false);
+  const [recognition, setRecognition] = useState(null);
+  const [startTime, setStartTime] = useState(0); // State to track the start time
+  let debounceTimeout;
 
-const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState(null); // null, 'left', or 'right'
+  useEffect(() => {
+    // Initialize speech recognition
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      const newRecognition = new SpeechRecognition();
+      newRecognition.continuous = true; // Continuous listening
+      newRecognition.interimResults = true; // Get interim results
 
-  const nextSlide = () => {
-    setDirection('left'); // Set direction to left
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+      newRecognition.onstart = () => {
+        console.log('Speech recognition started');
+        setIsListening(true);
+        setStartTime(Date.now()); // Set the start time when recognition starts
+      };
+
+      newRecognition.onresult = (event) => {
+        const currentTranscript = Array.from(event.results)
+          .map(result => result[0].transcript)
+          .join(' ');
+        console.log('Speech recognition result received:', currentTranscript);
+
+        // Calculate elapsed time in seconds
+        const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
+        console.log(`Elapsed time: ${elapsedTime} seconds`);
+
+        // Clear the previous debounce timeout
+        clearTimeout(debounceTimeout);
+
+        // Set a new debounce timeout
+        debounceTimeout = setTimeout(() => {
+          setTranscript(currentTranscript);
+          console.log('Updated transcript:', currentTranscript);
+        }, 500); // Increased debounce timing
+      };
+
+      newRecognition.onend = () => {
+        console.log('Speech recognition ended');
+        setIsListening(false);
+      };
+
+      newRecognition.onerror = (event) => {
+        console.error('Error occurred in recognition:', event.error);
+      };
+
+      setRecognition(newRecognition);
+    } else {
+      console.error('Speech recognition not supported');
+    }
+
+    return () => {
+      // Cleanup on component unmount
+      if (recognition) {
+        recognition.stop();
+        recognition.onend = null;
+        recognition.onerror = null;
+        clearTimeout(debounceTimeout);
+      }
+    };
+  }, []);
+
+  const handleKeyDown = (event) => {
+    if (event.key === ' ') {
+      event.preventDefault(); // Prevent scrolling when spacebar is pressed
+      if (!isListening) {
+        console.log('Starting speech recognition...');
+        recognition.start();
+      } else {
+        console.log('Stopping speech recognition...');
+        recognition.stop();
+      }
+    }
   };
 
-  const prevSlide = () => {
-    setDirection('right'); // Set direction to right
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  const handleKeyUp = (event) => {
+    if (event.key === ' ') {
+      console.log('Spacebar released.');
+      if (isListening) {
+        recognition.stop(); // Stop on spacebar release
+      }
+    }
   };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp); // Added keyup listener
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keyup', handleKeyUp); // Cleanup keyup listener
+    };
+  }, [isListening, recognition]);
 
   return (
-    <div className="relative w-full h-64 overflow-hidden">
-      {/* Slide Content */}
-      <div
-        className={`absolute inset-0 transition-transform duration-500 ${
-          direction === 'left' ? '-translate-x-full' : direction === 'right' ? 'translate-x-full' : 'translate-x-0'
-        }`}
-      >
-        <img src={slides[currentSlide].image} alt={slides[currentSlide].title} className="w-full h-full object-cover" />
-        <h2 className="absolute bottom-16 left-4 text-white text-2xl">{slides[currentSlide].title}</h2>
-        <p className="absolute bottom-4 left-4 text-white">{slides[currentSlide].description}</p>
-      </div>
-
-      {/* Navigation Buttons */}
-      <button onClick={prevSlide} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded">
-        Prev
-      </button>
-      <button onClick={nextSlide} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded">
-        Next
-      </button>
-
-      {/* New Slide Content */}
-      <div
-        className={`absolute inset-0 transition-transform duration-500 ${
-          direction === 'left' ? 'translate-x-full' : direction === 'right' ? '-translate-x-full' : 'translate-x-0'
-        }`}
-      >
-        <img
-          src={slides[(currentSlide + 1) % slides.length].image}
-          alt={slides[(currentSlide + 1) % slides.length].title}
-          className="w-full h-full object-cover"
-        />
-        <h2 className="absolute bottom-16 left-4 text-white text-2xl">{slides[(currentSlide + 1) % slides.length].title}</h2>
-        <p className="absolute bottom-4 left-4 text-white">{slides[(currentSlide + 1) % slides.length].description}</p>
-      </div>
+    <div>
+      <h1>Speech Recognition Test</h1>
+      <p>Press and hold the spacebar to speak.</p>
+      <p>Transcript: {transcript}</p>
     </div>
   );
 };
 
-export default Slider;
+export default Test;

@@ -7,7 +7,7 @@ const Navbar = ({ openPopup }) => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu
 
     const handleTryGame = () => {
-        navigate("/game");
+        navigate("/start");
     }
 
     const toggleMobileMenu = () => {

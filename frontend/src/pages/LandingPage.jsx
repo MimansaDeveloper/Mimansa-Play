@@ -9,7 +9,7 @@ import TestimonialSection from './TestimonialSection';
 import FooterSection from './FooterSection';
 import DontMissSection from './DontMissSection';
 import TestimonialSection2 from './TestimonialSection2';
-import Slider from '../components/test';
+import Slider from '../components/Test';
 import PopUpScreen from './PopUpScreen';
 
 const LandingPage = () => {
