@@ -78,7 +78,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
       <div className="md:hidden">
         <button onClick={toggleMobileMenu} className="focus:outline-none">
           {/* Hamburger icon */}
-          <svg
+         {!isMobileMenuOpen ? <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -89,13 +89,19 @@ const Navbar = ({ openPopup, scrollToSection }) => {
               d="M3 7V5H21V7H3ZM3 19V17H21V19H3ZM3 13V11H21V13H3Z"
               fill="#1C1B1F"
             />
-          </svg>
+          </svg> : <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.6362 15.636L28.3642 28.3639" stroke="#1C1B1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.6362 28.364L28.3642 15.6361" stroke="#1C1B1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+}
         </button>
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40">
+      {/* {isMobileMenuOpen && (
+        <div className={`md:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40 transition-all duration-1000 ease-in-out transform origin-top ${
+    isMobileMenuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
+        }`}>
           <ul className="flex mt-[3vw] flex-col space-x-[4vw] gap-[1.5vw] text-[1rem] text-black py-4">
             
             <li
@@ -146,7 +152,62 @@ const Navbar = ({ openPopup, scrollToSection }) => {
           </ul>
           
         </div>
-      )}
+      )} */}
+      {/* Mobile Dropdown Menu */}
+<div
+  className={`md:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40 transform origin-top transition-all duration-500 ease-in-out ${
+    isMobileMenuOpen ? "scale-y-100 opacity-100 visible" : "scale-y-0 opacity-0 invisible"
+  }`}
+>
+  <ul className="flex mt-[3vw] flex-col space-x-[4vw] gap-[1.5vw] text-[1rem] text-black py-4">
+    <li
+      onClick={() => {
+        scrollToSection("home-section");
+        handleMenuItemClick();
+      }}
+      className="cursor-pointer ml-[4vw] hover:text-[#A964FF] font-semibold  transition duration-300"
+    >
+      Home
+    </li>
+    <li
+      onClick={() => {
+        scrollToSection("slider-section");
+        handleMenuItemClick();
+      }}
+      className="cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300"
+    >
+      Why Us
+    </li>
+    <li
+      onClick={() => {
+        scrollToSection("working-section");
+        handleMenuItemClick();
+      }}
+      className="cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300"
+    >
+      How it works
+    </li>
+    <li
+      onClick={() => {
+        scrollToSection("testimonial-section");
+        handleMenuItemClick();
+      }}
+      className="cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300"
+    >
+      Testimonial
+    </li>
+    <li
+      onClick={() => {
+        scrollToSection("contact-section");
+        handleMenuItemClick();
+      }}
+      className="cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300"
+    >
+      Contact Us
+    </li>
+  </ul>
+</div>
+
 
       {/* Buttons on Desktop */}
       <div className="hidden md:flex items-center justify-center gap-[1.5vw]">
