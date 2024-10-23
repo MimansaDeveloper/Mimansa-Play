@@ -51,7 +51,7 @@ const HeroSection = () => {
 
       {/* Left Section (Text and Input below image on mobile) */}
       <div
-        className="flex flex-col w-full lg:w-[50%] h-full lg:ml-[3vw] px-[3vw] mt-[10vw] lg:mt-[18vw]"
+        className="flex flex-col w-full lg:w-[50%] h-full lg:ml-[3vw] px-[3vw] mt-[10vw] lg:mt-[10vw]"
         data-aos="fade-up" // Animation for text and input
       >
         <h1 className="font-comic-neue mb-[2vw] text-start font-bold text-[5vw] lg:text-[2.5vw] leading-[6vw] lg:leading-[3vw] text-black mt-[1vw] lg:mt-10  lg:text-left">

@@ -4,9 +4,8 @@ import Balloon from "./Balloon";
 import "./BalloonPopGame.css";
 import BalloonStartScreen from "./BalloonStartScreen";
 import Waitlist from "./Waitlist";
-import Confetti from 'react-confetti';
+import Confetti from "react-confetti";
 import Mascot from "./Mascot";
-
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -22,8 +21,9 @@ function BalloonSpace() {
   const [showPlayButton, setShowPlayButton] = useState(true);
   const [showWaitlist, setShowWaitlist] = useState(false);
   const [cooldown, setCooldown] = useState(false);
-  const [mascotMessage, setMascotMessage] = useState("Welcome! Pop the balloons!");
-
+  const [mascotMessage, setMascotMessage] = useState(
+    "Welcome! Pop the balloons!"
+  );
 
   const popSound = new Audio("/burst.wav");
   const cheerSound = new Audio("/kids_cheering_short.mp3");
@@ -68,7 +68,7 @@ function BalloonSpace() {
         if (isProcessingResult) return; // Ignore if already processing a result
 
         isProcessingResult = true; // Set flag to indicate we're processing a result
-      
+
         const currentTranscript = Array.from(event.results)
           .map((result) => result[0].transcript)
           .join(" ");
@@ -92,8 +92,8 @@ function BalloonSpace() {
           popBalloon();
         }
         setTimeout(() => {
-            isProcessingResult = false; // Reset the processing flag after a short delay
-          }, 100); // Adjust this timeout if needed
+          isProcessingResult = false; // Reset the processing flag after a short delay
+        }, 100); // Adjust this timeout if needed
       };
 
       recognitionInstance.onend = () => {
@@ -117,6 +117,18 @@ function BalloonSpace() {
       stopListening();
     };
   }, []);
+
+  // Mic button logic
+const handleMicButtonDown = () => {
+  startListening();
+  console.log("Mic button pressed: Starting speech recognition");
+};
+
+const handleMicButtonUp = () => {
+  stopListening();
+  console.log("Mic button released: Stopping speech recognition");
+};
+
 
   // Handle spacebar press/release for controlling speech recognition
   useEffect(() => {
@@ -161,8 +173,7 @@ function BalloonSpace() {
 
   const updateMascotMessage = (message) => {
     setMascotMessage(message);
-};
-
+  };
 
   // Stop speech recognition
   const stopListening = () => {
@@ -176,7 +187,7 @@ function BalloonSpace() {
   const popBalloon = () => {
     if (cooldown) return; // Prevent popping if cooldown is active
     setCooldown(true); // Set cooldown
-  
+
     // Delay the cooldown reset to the next frame to ensure it doesn't happen immediately
     setTimeout(() => {
       setCooldown(false); // Reset cooldown after 1 second
@@ -263,7 +274,7 @@ function BalloonSpace() {
     const verticalOffset = index % 2 === 0 ? zigzagOffset : -zigzagOffset;
     return {
       transform: `translateY(${verticalOffset}vw)`,
-      margin: '4vw',
+      margin: "4vw",
     };
   };
 
@@ -282,7 +293,6 @@ function BalloonSpace() {
             >
               <img src="/back.png" alt="Back" />
             </button>
-
 
             {!gameOver && (
               <div className="flex flex-col items-center justify-center ml-28">
@@ -315,12 +325,11 @@ function BalloonSpace() {
               </button>
             </div>
           </div>
-          <Mascot message={mascotMessage}/>
-     
+          {/* <Mascot message={mascotMessage} /> */}
 
           <div className="flex justify-center items-center mt-40">
             <div className="flex justify-center items-center">
-              {balloons.map((balloon,index) => (
+              {balloons.map((balloon, index) => (
                 <div key={balloon.id} style={getBalloonStyle(index)}>
                   <Balloon isPopped={balloon.popped} imageSrc={balloon.image} />
                 </div>
@@ -328,13 +337,32 @@ function BalloonSpace() {
             </div>
           </div>
 
+          {/* Mic Button for Mobile */}
+          <div className="fixed lg:hidden bottom-[30vw] left-1/2 transform -translate-x-1/2">
+            <button
+              className="mic-button bg-red-500 text-white p-4 rounded-full"
+              onMouseDown={handleMicButtonDown}
+              onMouseUp={handleMicButtonUp}
+              onTouchStart={handleMicButtonDown} // For mobile touch event
+              onTouchEnd={handleMicButtonUp} // For mobile touch event
+            >
+              🎤
+            </button>
+          </div>
+          {listening && (
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
+          <p className="text-2xl text-[#101010]">Say Pop ... 🎤</p>
+          <p className="text-lg text-[#101010] mt-2">Heard: "{transcript}"</p>
+        </div>
+      )}
+      
+
           {listening && (
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center">
               <p className="text-lg font-bold text-red-500">Listening...</p>
             </div>
           )}
           {gameOver && <Confetti />}
-
         </>
       )}
     </div>
