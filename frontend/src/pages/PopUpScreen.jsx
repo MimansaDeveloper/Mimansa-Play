@@ -37,7 +37,7 @@ const PopUpScreen = ({ closePopup }) => {
 
   return (
     <div className="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
-      <div className='relative w-[90vw] max-w-[60vw] h-[70%] bg-white border-2 border-gray-300 shadow-2xl flex flex-col rounded-3xl justify-center items-center p-4'>
+      <div className='relative w-[70%] max-w-[60%] h-[40%] lg:h-[70%] bg-white border-2 border-gray-300 shadow-2xl flex flex-col rounded-3xl justify-center items-center p-4'>
         {/* Giraffe image */}
         <img 
           src="/ziraffe.png" 
@@ -60,7 +60,7 @@ const PopUpScreen = ({ closePopup }) => {
             value={email} // Set email input value
             onChange={(e) => setEmail(e.target.value)} // Update email state
             placeholder="Enter your email to unlock the early access"
-            className="w-full h-[5vw] max-w-[28vw] p-[1vw] rounded-s-xl border-2 border-[#DBCDF0] focus:outline-none focus:border-purple-500"
+            className="w-full lg:h-[5vw] lg:max-w-[28vw] p-[1vw] text-[2vw] rounded-s-xl border-2 border-[#DBCDF0] focus:outline-none focus:border-purple-500"
           />
           <button
             onClick={handleSignUp} // Handle signup click

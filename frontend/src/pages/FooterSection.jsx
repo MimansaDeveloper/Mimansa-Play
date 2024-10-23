@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterSection = () => {
+const FooterSection = ({ scrollToSection }) => {
   return (
     <>
       <footer className="bg-[#C5DEF2] hidden lg:block py-[8vw] lg:py-10">
@@ -22,7 +22,7 @@ const FooterSection = () => {
                 SOCIAL
               </h3>
               <ul className="space-y-[2vw] lg:space-y-2 text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
-                <li className="flex items-center">
+                <li className="flex items-center hover:text-[#C8A6FB]">
                   <a
                     href="https://www.facebook.com/people/Mimansa-Kids/61557931594123/"
                     target="_blank"
@@ -47,7 +47,7 @@ const FooterSection = () => {
                     Facebook
                   </a>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center hover:text-[#C8A6FB]">
                   <a
                     href="https://www.instagram.com/mimansakids/"
                     target="_blank"
@@ -78,7 +78,7 @@ const FooterSection = () => {
                     Instagram
                   </a>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center hover:text-[#C8A6FB]">
                   <a
                     href="https://www.linkedin.com/company/mimansakids/"
                     target="_blank"
@@ -117,12 +117,47 @@ const FooterSection = () => {
               <h3 className="font-semibold text-[2.5vw] lg:text-[1vw] text-[#A1A1A1] mb-[3vw] lg:mb-4">
                 COMPANY
               </h3>
-              <ul className="space-y-[2vw] lg:space-y-2 text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
-                <li>Home</li>
-                <li>Why Us</li>
-                <li>How It Works</li>
-                <li>Testimonial</li>
-                <li>Contact Us</li>
+              <ul className="space-y-[2vw] cursor-pointer lg:space-y-2 text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
+                <li
+                  onClick={() => {
+                    scrollToSection("home-section");
+                  }}
+                  className="hover:text-[#C8A6FB]"
+                >
+                  Home
+                </li>
+                <li
+                  onClick={() => {
+                    scrollToSection("slider-section");
+                  }}
+                  className="hover:text-[#C8A6FB]"
+                >
+                  Why Us
+                </li>
+                <li
+                  onClick={() => {
+                    scrollToSection("working-section");
+                  }}
+                  className="hover:text-[#C8A6FB]"
+                >
+                  How It Works
+                </li>
+                <li
+                  onClick={() => {
+                    scrollToSection("testimonial-section");
+                  }}
+                  className="hover:text-[#C8A6FB]"
+                >
+                  Testimonial
+                </li>
+                <li
+                  onClick={() => {
+                    scrollToSection("contact-section");
+                  }}
+                  className="hover:text-[#C8A6FB]"
+                >
+                  Contact Us
+                </li>
               </ul>
             </div>
 
@@ -188,12 +223,42 @@ const FooterSection = () => {
           </div>
 
           <div>
-            <ul className="space-y-[2vw] p-[4.5vw] text-[#454545]  text-[4vw] sm:text-[2vw]">
-              <li>Home</li>
-              <li>Why Us</li>
-              <li>How It Works</li>
-              <li>Testimonial</li>
-              <li>Contact Us</li>
+            <ul className="space-y-[2vw] cursor-pointer p-[4.5vw] text-[#454545]  text-[4vw] sm:text-[2vw]">
+              <li
+                onClick={() => {
+                  scrollToSection("home-section");
+                }}
+              >
+                Home
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection("slider-section");
+                }}
+              >
+                Why Us
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection("working-section");
+                }}
+              >
+                How It Works
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection("testimonial-section");
+                }}
+              >
+                Testimonial
+              </li>
+              <li
+                onClick={() => {
+                  scrollToSection("contact-section");
+                }}
+              >
+                Contact Us
+              </li>
             </ul>
           </div>
 

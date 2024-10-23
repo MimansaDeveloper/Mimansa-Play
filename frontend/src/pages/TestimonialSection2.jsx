@@ -19,8 +19,8 @@ const TestimonialSection2 = () => {
       </div>
       
       {/* Image Section for Mobile Screens */}
-      <div className="flex lg:hidden mt-[12vw] justify-center w-full items-center mb-[12vw]" data-aos="fade-up" data-aos-delay="200">
-        <img src="/testimonialmobile.png" className="w-[90%] md:w-[70%]" alt="Testimonial image" />
+      <div className="flex lg:hidden mt-[8vw] justify-center w-full items-center mb-[14vw]" data-aos="fade-up" data-aos-delay="200">
+        <img src="/testimonialmobile2.png" className="w-[95%] md:w-[70%]" alt="Testimonial image" />
       </div>
     </div>
   );

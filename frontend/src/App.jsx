@@ -27,7 +27,7 @@ function App() {
 
   return (
     <Router>
-      <div data-scroll-container ref={scrollRef} className="overflow-hidden"> 
+      <div data-scroll-container ref={scrollRef}> 
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/start" element={<StartScreen />} />
