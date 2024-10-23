@@ -60,7 +60,7 @@ const PopUpScreen = ({ closePopup }) => {
             value={email} // Set email input value
             onChange={(e) => setEmail(e.target.value)} // Update email state
             placeholder="Enter your email to unlock the early access"
-            className="w-full lg:h-[5vw] lg:max-w-[28vw] p-[1vw] text-[2vw] rounded-s-xl border-2 border-[#DBCDF0] focus:outline-none focus:border-purple-500"
+            className="w-full lg:h-[5vw] lg:max-w-[28vw] p-[1vw] text-[1.2vw] rounded-s-xl border-2 border-[#DBCDF0] focus:outline-none focus:border-purple-500"
           />
           <button
             onClick={handleSignUp} // Handle signup click

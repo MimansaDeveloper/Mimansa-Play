@@ -26,7 +26,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
       />
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-[2.5vw] text-[1.1vw] text-black list-none">
+      <ul className="hidden lg:flex gap-[2.5vw] text-[1.1vw] text-black list-none">
         <li
           onClick={() => {
             scrollToSection("home-section");
@@ -75,7 +75,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
       </ul>
 
       {/* Mobile Menu Button */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button onClick={toggleMobileMenu} className="focus:outline-none">
           {/* Hamburger icon */}
          {!isMobileMenuOpen ? <svg
@@ -154,8 +154,8 @@ const Navbar = ({ openPopup, scrollToSection }) => {
         </div>
       )} */}
       {/* Mobile Dropdown Menu */}
-<div
-  className={`md:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40 transform origin-top transition-all duration-500 ease-in-out ${
+      <div
+  className={`lg:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40 transform origin-top transition-all duration-500 ease-in-out ${
     isMobileMenuOpen ? "scale-y-100 opacity-100 visible" : "scale-y-0 opacity-0 invisible"
   }`}
 >
@@ -210,7 +210,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
 
 
       {/* Buttons on Desktop */}
-      <div className="hidden md:flex items-center justify-center gap-[1.5vw]">
+      <div className="hidden lg:flex items-center justify-center gap-[1.5vw]">
         <button
           onClick={handleTryGame}
           className="py-[0.80vw] px-4 hover:bg-black hover:text-white font-semibold text-[1rem] rounded-md bg-white text-black border-2 border-black transition duration-300 whitespace-nowrap"
