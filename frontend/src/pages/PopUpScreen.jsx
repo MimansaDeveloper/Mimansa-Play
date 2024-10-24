@@ -37,7 +37,7 @@ const PopUpScreen = ({ closePopup }) => {
 
   return (
     <div className="fixed inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
-      <div className='relative w-[70%] max-w-[60%] h-[40%] lg:h-[70%] bg-white border-2 border-gray-300 shadow-2xl flex flex-col rounded-3xl justify-center items-center p-4'>
+      <div className='relative w-[90%] max-w-[80%] h-[40%] lg:h-[70%] bg-white border-2 border-gray-300 shadow-2xl flex flex-col rounded-3xl justify-center items-center p-4'>
         {/* Giraffe image */}
         <img 
           src="/ziraffe.png" 

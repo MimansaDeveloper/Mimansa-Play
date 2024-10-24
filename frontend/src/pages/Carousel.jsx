@@ -6,25 +6,25 @@ const Carousel = ({ currentSlide, setCurrentSlide,isHolding  }) => {
       title: "Real-Time Speech Feedback Powered by AI",
       description:
         "Our advanced AI listens to your child’s speech and provides instant feedback, helping improve articulation and language skills on the go.",
-      image: "/aiimage2.png",
+      image: "/aiimagenew.png",
     },
     {
       title: "Fun, Interactive Learning",
       description:
         "No more boring exercises! Our games are designed to capture attention and make speech practice fun and rewarding for kids.",
-      image: "/kidsimage111.png",
+      image: "/kidsimage1111.png",
     },
     {
       title: "Healthy Screen Time Design",
       description:
         "Crafted to reduce passive screen time, our app encourages active engagement and meaningful parent-child interaction.",
-      image: "/kidsimage222.png",
+      image: "/kidsimage2222.png",
     },
     {
       title: "Built by Experts, Loved by Parents",
       description:
         "Developed by speech therapists and early childhood experts, our methods are proven to help children improve speech at their own pace.",
-      image: "/kidsimage333.png",
+      image: "/kidsimage3333.png",
     },
   ];
 
@@ -55,11 +55,11 @@ const Carousel = ({ currentSlide, setCurrentSlide,isHolding  }) => {
               </p>
             </div>
             <div className={`flex justify-center items-center w-full lg:w-[50%]`}>
-              <div className="w-[80vw] h-[60vw] lg:w-[26vw] lg:h-[20vw]  flex justify-center items-center rounded-xl">
+              <div className="w-[80vw] h-[60vw] lg:w-[26vw] lg:h-[20vw]  flex justify-center items-center rounded-3xl">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-full object-contain "
+                  className="w-full h-full object-fit rounded-3xl"
                 />
               </div>
             </div>

@@ -97,7 +97,7 @@ const WorkingSection = () => {
       </div>
 
       {/* Button Section */}
-      <div className="mt-16 lg:mt-36 mb-8 lg:mb-16">
+      <div className="mt-16 lg:mt-[5vw] mb-8 lg:mb-0">
         {/* <button onClick={handleTryGame}  className="bg-[#322F29] text-white font-comic-neue font-bold text-[5vw] lg:text-[1.5rem] py-4 px-8 rounded-lg">
           Try the Game
         </button> */}
