@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Carousel = ({ currentSlide, setCurrentSlide }) => {
+const Carousel = ({ currentSlide, setCurrentSlide,isHolding  }) => {
   const slides = [
     {
       title: "Real-Time Speech Feedback Powered by AI",
@@ -29,12 +29,14 @@ const Carousel = ({ currentSlide, setCurrentSlide }) => {
   ];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 10000); // Change slide every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [setCurrentSlide, slides.length]);
+    if (!isHolding) { // Only set interval if not holding
+      const interval = setInterval(() => {
+        setCurrentSlide((prevIndex) => (prevIndex + 1) % slides.length);
+      }, 5000); // Change slide every 10 seconds
+  
+      return () => clearInterval(interval); // Cleanup the interval
+    }
+  }, [setCurrentSlide, slides.length, isHolding]); // Add isHolding as a dependency
 
   return (
     <div className="relative overflow-hidden w-full lg:max-w-[64vw] mx-auto">
