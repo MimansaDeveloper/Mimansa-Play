@@ -35,8 +35,8 @@ const SliderSection = () => {
   const [direction, setDirection] = useState(null);
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => {handleNextSlide},
-    onSwipedRight: () => {handlePrevSlide},
+    onSwipedLeft: () => handleNextSlide(),
+    onSwipedRight: () => handlePrevSlide(),
   });
 
   // Function to go to the next slide
@@ -62,7 +62,7 @@ const SliderSection = () => {
   };
 
   return (
-    <div className="bg-[#C8F0FFBF] w-full h-auto lg:h-[120vh] flex flex-col items-center justify-center relative px-6 py-10 lg:px-10 lg:py-[2.5vw] ">
+    <div {...handlers} className="bg-[#C8F0FFBF] w-full h-auto lg:h-[120vh] flex flex-col items-center justify-center relative px-6 py-10 lg:px-10 lg:py-[2.5vw] ">
        {/* Section Title */}
        <div className="text-center mb-12 lg:mb-28 mt-4">
         <h2 className="font-comic-neue font-bold text-[6vw] lg:text-[2.5vw] leading-[9vw] lg:leading-[2vw] text-black mb-3 mt-8">
