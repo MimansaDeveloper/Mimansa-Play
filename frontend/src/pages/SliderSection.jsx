@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel";
+import { useSwipeable } from 'react-swipeable';
 
 const slides = [
   {
@@ -32,6 +33,11 @@ const SliderSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isFading, setIsFading] = useState(false);
   const [direction, setDirection] = useState(null);
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {handleNextSlide},
+    onSwipedRight: () => {handlePrevSlide},
+  });
 
   // Function to go to the next slide
   const handleNextSlide = () => {
@@ -89,7 +95,7 @@ const SliderSection = () => {
         </button>
 
         {/* Pass the currentSlide state and function to Carousel */}
-        <Carousel currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
+        <Carousel  {...handlers} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
 
         <button
           onClick={handleNextSlide}
