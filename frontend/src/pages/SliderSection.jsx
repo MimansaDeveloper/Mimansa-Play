@@ -94,11 +94,11 @@ const SliderSection = () => {
           </svg>
         </button>
 
-       <div {...handlers}>
+       
          {/* Pass the currentSlide state and function to Carousel */}
          <Carousel  currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
 
-       </div>
+    
         <button
           onClick={handleNextSlide}
           className="absolute right-0 lg:flex hidden justify-center items-center w-10 h-10 bg-[#FF9650] rounded-full"
