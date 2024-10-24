@@ -110,7 +110,7 @@ const DontMissSection = () => {
       </div>
 
       {/* Toast Container */}
-      <ToastContainer />
+      <ToastContainer containerId={1} />
     </div>
   );
 };

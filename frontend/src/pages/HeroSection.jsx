@@ -44,14 +44,14 @@ const HeroSection = () => {
 
   return (
     <div
-      className="flex flex-col lg:flex-row items-center justify-between bg-[#FAEDCB] w-full h-auto lg:h-[100vh] px-[2vw] lg:px-[4vw] py-[2vw]"
+      className="flex flex-col lg:flex-row items-center justify-between bg-[#FAEDCB] w-full h-auto lg:h-[100vh]  px-[2vw] lg:px-[4vw] py-[2vw]"
       data-aos="fade-in" // Adding AOS animation for the entire section
     >
      
 
       {/* Left Section (Text and Input below image on mobile) */}
       <div
-        className="flex flex-col w-full lg:w-[50%] h-full lg:ml-[3vw] px-[3vw] mt-[10vw] lg:mt-[10vw]"
+        className="flex flex-col w-full justify-center items-center lg:w-[50%] h-full lg:ml-[3vw] px-[3vw] mt-[10vw] lg:mt-[-3vw]"
         data-aos="fade-up" // Animation for text and input
       >
         <h1 className="font-comic-neue mb-[2vw] text-start font-bold text-[5vw] lg:text-[2.5vw] leading-[6vw] lg:leading-[3vw] text-black mt-[1vw] lg:mt-10  lg:text-left">
@@ -78,11 +78,11 @@ const HeroSection = () => {
             data-aos="fade-right"
           />
           {signupMessage ? (
-          <h3 className="mt-0 lg:mt-[0.5vw] mr-[35vw]   text-start lg:hidden block font-light text-[1vw] lg:text-[0.9vw] lg:text-left">
+          <h3 className="mt-[0.5vw] mr-[-3vw] w-full lg:hidden block text-start font-light text-[2vw] lg:text-[0.9vw]  lg:text-left">
             {signupMessage}
           </h3>
         ) : (
-          <h3 className="mt-[0.5vw] mr-[35vw]  lg:hidden block text-start font-light text-[2vw] lg:text-[0.9vw]  lg:text-left">
+          <h3 className="mt-[0.5vw] mr-[-3vw] w-full  lg:hidden block text-start font-light text-[2vw] lg:text-[0.9vw]  lg:text-left">
             <span className="text-red-700">*</span>We’ll only send what’s worth
             opening – no spam, guaranteed!
           </h3>
@@ -99,16 +99,16 @@ const HeroSection = () => {
           </button>
         </div>
         {signupMessage ? (
-          <h3 className="mt-[0.5vw] font-light text-[3vw] lg:text-[0.9vw] text-center lg:text-left">
+          <h3 className="mt-[0.5vw] font-light lg:block hidden text-[3vw] lg:text-[0.9vw] text-center lg:mr-[12vw] lg:text-left">
             {signupMessage}
           </h3>
         ) : (
-          <h3 className="mt-[0.5vw] lg:block hidden font-light text-[3vw] lg:text-[0.9vw] text-center lg:text-left">
+          <h3 className="mt-[0.5vw] lg:block hidden  font-light text-[3vw] lg:text-[0.9vw] text-start lg:mr-[12vw] lg:text-left">
             <span className="text-red-700">*</span>We’ll only send what’s worth
             opening – no spam, guaranteed!
           </h3>
         )}
-      </div>
+      </div> 
 
        {/* Right Section (Image at the top for mobile) */}
        <div
@@ -123,7 +123,7 @@ const HeroSection = () => {
       </div>
 
       {/* Toast Container */}
-      <ToastContainer />
+      <ToastContainer containerId={2} />
     </div>
   );
 };
