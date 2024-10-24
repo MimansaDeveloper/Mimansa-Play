@@ -32,7 +32,7 @@ const Carousel = ({ currentSlide, setCurrentSlide,isHolding  }) => {
     if (!isHolding) { // Only set interval if not holding
       const interval = setInterval(() => {
         setCurrentSlide((prevIndex) => (prevIndex + 1) % slides.length);
-      }, 5000); // Change slide every 10 seconds
+      }, 10000); // Change slide every 10 seconds
   
       return () => clearInterval(interval); // Cleanup the interval
     }
