@@ -13,19 +13,19 @@ const slides = [
     title: "Fun, Interactive Learning",
     description:
       "No more boring exercises! Our games are designed to capture attention and make speech practice fun and rewarding for kids.",
-    image: "/kidsimage1111.png",
+    image: "/kidsimage11111.png",
   },
   {
     title: "Healthy Screen Time Design",
     description:
       "Crafted to reduce passive screen time, our app encourages active engagement and meaningful parent-child interaction.",
-    image: "/kidsimage2222.png",
+    image: "/kidsimage22222.png",
   },
   {
     title: "Built by Experts, Loved by Parents",
     description:
       "Developed by speech therapists and early childhood experts, our methods are proven to help children improve speech at their own pace.",
-    image: "/kidsimage3333.png",
+    image: "/kidsimage33333.png",
   },
 ];
 
