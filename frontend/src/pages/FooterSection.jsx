@@ -18,10 +18,10 @@ const FooterSection = ({ scrollToSection }) => {
           <div className="flex flex-col lg:flex-row lg:space-x-20 space-y-[6vw] lg:space-y-0">
             {/* Social Links */}
             <div>
-              <h3 className="font-semibold text-[2.5vw] lg:text-[1vw] text-[#A1A1A1] mb-[3vw] lg:mb-4">
+              <h3 className="font-semibold  text-[2.5vw] lg:text-[1vw] text-[#A1A1A1] mb-[3vw] lg:mb-4">
                 SOCIAL
               </h3>
-              <ul className="space-y-[2vw] lg:space-y-2 text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
+              <ul className="space-y-[2vw] lg:space-y-2  flex flex-col justify-center text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
                 <li className="flex items-center hover:text-[#C8A6FB]">
                   <a
                     href="https://www.facebook.com/people/Mimansa-Kids/61557931594123/"
@@ -30,8 +30,8 @@ const FooterSection = ({ scrollToSection }) => {
                     className="flex items-center"
                   >
                     <svg
-                      width="14"
-                      height="23"
+                      width="22"
+                      height="22"
                       viewBox="0 0 14 23"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -86,8 +86,8 @@ const FooterSection = ({ scrollToSection }) => {
                     className="flex items-center"
                   >
                     <svg
-                      width="21"
-                      height="20"
+                      width="22"
+                      height="22"
                       viewBox="0 0 21 20"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ const FooterSection = ({ scrollToSection }) => {
           </div>
         </div>
 
-        <div className="max-w-full mx-[8vw] my-[4vw] lg:mx-36 lg:my-2 h-[0.5vw] lg:h-[0.125vw] opacity-[60%] bg-[#A1A1A199]"></div>
+        <div className="max-w-full flex justify-center items-center  mx-[8vw] my-[4vw] lg:mx-36 lg:my-2 h-[0.5vw] lg:h-[0.125vw] opacity-[60%] bg-[#A1A1A199]"></div>
 
         {/* Footer Bottom Section */}
         <div className="mt-[6vw] lg:mt-6 text-center flex flex-col items-center lg:items-start px-[8vw] lg:px-36">
