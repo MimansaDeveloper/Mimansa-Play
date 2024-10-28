@@ -30,11 +30,11 @@ function App() {
       <div data-scroll-container ref={scrollRef}> 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/start" element={<StartScreen />} />
+          {/* <Route path="/start" element={<StartScreen />} />
           <Route path="/game" element={<BalloonPopGame />} />
           <Route path="/space" element={<BalloonSpace />} />
           <Route path="/mobile" element={<MobileBalloonPopGame />} />
-          <Route path="/vosk" element={<BalloonTest />} />
+          <Route path="/vosk" element={<BalloonTest />} /> */}
           {/* <Route path="/test" element={<Test />} /> */}
         </Routes>
       </div>
