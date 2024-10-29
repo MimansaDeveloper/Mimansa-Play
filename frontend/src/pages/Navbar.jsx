@@ -18,11 +18,11 @@ const Navbar = ({ openPopup, scrollToSection }) => {
   };
 
   return (
-    <div className="bg-white flex items-center justify-between w-full h-[14vw] lg:h-[6vw] px-[8vw] shadow-md sticky top-0 z-50">
+    <div className="bg-white flex items-center justify-between w-full h-[14vw] lg:h-[6vw] px-[3.5vw]  lg:px-[8vw] shadow-md sticky top-0 z-50">
       <img
         src="/logo1.png"
         alt="Mimansa Kids Logo"
-        className="w-[30vw] lg:w-[12vw]"
+        className="w-[40vw] lg:w-[12vw]"
       />
 
       {/* Desktop Menu */}
@@ -75,7 +75,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
       </ul>
 
       {/* Mobile Menu Button */}
-      <div className="lg:hidden flex items-center justify-center gap-4">
+      <div className="lg:hidden flex items-center justify-center gap-4 mr-[4vw]">
       <button
           onClick={openPopup}
           className="py-[2.5vw] text-[2.5vw] px-[6vw] bg-[#DBCDF0] text-black font-semibold rounded-md hover:bg-[#c09ff3] hover:text-white transition duration-300 whitespace-nowrap"

@@ -21,7 +21,7 @@ const FooterSection = ({ scrollToSection }) => {
               <h3 className="font-semibold  text-[2.5vw] lg:text-[1vw] text-[#A1A1A1] mb-[3vw] lg:mb-4">
                 SOCIAL
               </h3>
-              <ul className="space-y-[2vw] lg:space-y-2  flex flex-col justify-center text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
+              <ul className="space-y-[2vw] lg:space-y-[1vw]  flex flex-col justify-center text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
                 <li className="flex items-center hover:text-[#C8A6FB]">
                   <a
                     href="https://www.facebook.com/people/Mimansa-Kids/61557931594123/"
@@ -117,7 +117,7 @@ const FooterSection = ({ scrollToSection }) => {
               <h3 className="font-semibold text-[2.5vw] lg:text-[1vw] text-[#A1A1A1] mb-[3vw] lg:mb-4">
                 COMPANY
               </h3>
-              <ul className="space-y-[2vw] cursor-pointer lg:space-y-2 text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
+              <ul className="space-y-[2vw] cursor-pointer lg:space-y-[1vw] text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
                 <li
                   onClick={() => {
                     scrollToSection("home-section");
@@ -150,14 +150,14 @@ const FooterSection = ({ scrollToSection }) => {
                 >
                   Testimonial
                 </li>
-                <li
+                {/* <li
                   onClick={() => {
                     scrollToSection("contact-section");
                   }}
                   className="hover:text-[#C8A6FB]"
                 >
                   Contact Us
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -166,40 +166,43 @@ const FooterSection = ({ scrollToSection }) => {
               <h3 className="font-semibold text-[2.5vw] lg:text-[1vw] text-[#A1A1A1] mb-[3vw] lg:mb-4">
                 SUPPORT
               </h3>
-              <ul className="space-y-[2vw] lg:space-y-2 text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
+              <ul className="space-y-[2vw] lg:space-y-[1vw] text-[#454545] text-[4vw] sm:text-[2vw] lg:text-[1.02vw]">
                 <li>Privacy Policy</li>
                 <li>FAQ</li>
               </ul>
             </div>
           </div>
 
-          <div className="w-[0.5vw] hidden lg:block lg:w-[0.125vw] h-[20vw] lg:h-[13vw] py-[1vw] opacity-[60%] bg-[#A1A1A199]"></div>
           <div className="max-w-full block lg:hidden w-[50vw] mx-[8vw] my-[4vw]  h-[0.5vw]  opacity-[60%] bg-[#A1A1A199]"></div>
 
-          {/* Right Section - App Store Links */}
+          <div className="flex justify-center items-center gap-10">
+          <div className="w-[0.5vw] hidden lg:block lg:w-[0.125vw] h-[22vw] lg:h-[12vw] py-[1vw] opacity-[60%] bg-[#A1A1A199]"></div>
+
+            {/* Right Section - App Store Links */}
           <div className="flex flex-col items-center">
-            <h3 className="font-semibold text-[2.5vw] lg:text-[1vw] text-center mb-[3vw] lg:mb-4">
+            <h3 className="font-semibold text-[2.5vw] text-[#A1A1A1] lg:text-[1vw] text-center mb-[3vw] lg:mb-[1vw]">
               COMING SOON ON
             </h3>
-            <div className="flex flex-col space-y-[4vw] lg:space-y-4">
+            <div className="flex flex-col space-y-[4vw] lg:space-y-[1vw]">
               <img
                 src="/appstore.png"
                 alt="App Store"
-                className="w-[50vw] sm:w-[30vw] lg:w-[15.5vw]"
+                className="w-[50vw] sm:w-[30vw] lg:w-[13vw]"
               />
               <img
                 src="/googleplay.png"
                 alt="Google Play"
-                className="w-[50vw] sm:w-[30vw] lg:w-[15.5vw]"
+                className="w-[50vw] sm:w-[30vw] lg:w-[13vw]"
               />
             </div>
           </div>
+          </div>
         </div>
 
-        <div className="max-w-full flex justify-center items-center  mx-[8vw] my-[4vw] lg:mx-36 lg:my-2 h-[0.5vw] lg:h-[0.125vw] opacity-[60%] bg-[#A1A1A199]"></div>
+        <div className="max-w-full flex justify-center items-center  mx-[8vw] my-[4vw] lg:mx-36 lg:my-[1vw] h-[0.5vw] lg:h-[0.125vw] opacity-[60%] bg-[#A1A1A199]"></div>
 
         {/* Footer Bottom Section */}
-        <div className="mt-[6vw] lg:mt-6 text-center flex flex-col items-center lg:items-start px-[8vw] lg:px-36">
+        <div className="mt-[6vw] lg:mt-[1vw] text-center flex flex-col items-center lg:items-center px-[8vw] lg:px-36">
           <p className="text-[3.5vw] lg:text-[0.9vw] text-[#A1A1A1]">
             hello@mimansaplay.com
           </p>
@@ -211,7 +214,7 @@ const FooterSection = ({ scrollToSection }) => {
 
       {/* Footer Mobile */}
       <footer className="bg-[#C5DEF2] lg:hidden text-white p-[2vw]">
-        <div className="container mx-auto">
+        <div className="container mx-auto my-[5vw]">
           {/* Add your mobile footer content here based on the image */}
           {/* Left Section - Logo */}
           <div className="mb-0">
@@ -252,13 +255,13 @@ const FooterSection = ({ scrollToSection }) => {
               >
                 Testimonial
               </li>
-              <li
+              {/* <li
                 onClick={() => {
                   scrollToSection("contact-section");
                 }}
               >
                 Contact Us
-              </li>
+              </li> */}
             </ul>
           </div>
 

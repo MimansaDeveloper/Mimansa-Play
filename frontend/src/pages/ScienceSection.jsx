@@ -14,7 +14,7 @@ const ScienceSection = ({ openPopup }) => {
     <div className="bg-[rgba(250,237,203,1)] flex flex-col justify-center items-center px-4 md:px-8">
       {/* Header Section */}
       <div className="text-center mb-[3vw] mt-[22vw] lg:mb-12 lg:mt-[5.5vw]">
-        <h2 className="font-comic-neue text-[6vw] md:text-[2.5vw] leading-[9vw] md:leading-[2vw] font-bold text-black mb-3" data-aos="fade-up">
+        <h2 className="font-comic-neue text-[6vw] md:text-[2.5vw] leading-[9vw] md:leading-[2vw] font-bold text-black mb-[1vw]" data-aos="fade-up">
           The Science Behind Us
         </h2>
         <p className="font-comic-neue text-[3vw] md:text-[1.3vw] leading-[6vw] md:leading-[3vw] text-black" data-aos="fade-up">
