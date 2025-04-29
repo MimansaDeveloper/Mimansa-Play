@@ -86,7 +86,7 @@ const TeamSection = () => {
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
-            
+
             <h3 className="text-xl font-bold mt-4">Ashish</h3>
             <p className="text-gray-600">Co-Founder</p>
             <img
@@ -109,10 +109,11 @@ const TeamSection = () => {
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
-            
+
             <h3 className="text-xl font-bold mt-4">Akshay</h3>
             <p className="text-gray-600 text-center">
-            Director, Applied Research - <br />Speech Recognition
+              Director, Applied Research - <br />
+              Speech Recognition
             </p>
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
@@ -134,10 +135,10 @@ const TeamSection = () => {
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
-            
+
             <h3 className="text-xl font-bold mt-4">Dashmi</h3>
             <p className="text-gray-600 text-center">
-            Speech-Language Pathologist & <br /> Learning Designer
+              Speech-Language Pathologist & <br /> Learning Designer
             </p>
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
@@ -159,7 +160,7 @@ const TeamSection = () => {
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
-            
+
             <h3 className="text-xl font-bold mt-4">Poornima</h3>
             <p className="text-gray-600 text-center">
               Creative Consultant – Animation & Story
@@ -170,7 +171,6 @@ const TeamSection = () => {
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
-          
 
           {/* Team Member 4 */}
           <div
@@ -185,7 +185,7 @@ const TeamSection = () => {
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
-            
+
             <h3 className="text-xl font-bold mt-4">Deepak</h3>
             <p className="text-gray-600 text-center">Full-Stack Engineer</p>
             <img
@@ -258,14 +258,15 @@ const TeamSection = () => {
             </div>
 
             <h3 className="text-xl font-bold mt-4">Hema</h3>
-            <p className="text-gray-600 text-center">Learning Presenter & Playschool <br /> Teacher</p>
+            <p className="text-gray-600 text-center">
+              Learning Presenter & Playschool <br /> Teacher
+            </p>
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7f94062d8da2a527c47e07cb12302b7cb40084d?placeholderIfAbsent=true"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
-
 
           {/* Team Member 7 */}
           <div
@@ -344,7 +345,7 @@ const TeamSection = () => {
 
           {/* Team Member 9 */}
           <div
-            className="flex flex-col items-center"
+            className="flex flex-col items-center lg:col-start-2 lg:col-end-3"
             data-aos="fade-up"
             data-aos-delay="900"
           >
