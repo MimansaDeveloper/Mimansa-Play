@@ -9,7 +9,7 @@ const TeamSection = () => {
   useEffect(() => {
     // Initialize AOS animations
     AOS.init({
-      duration: 1000,
+      duration: 300,
       once: true,
       easing: "ease-in-out",
     });
@@ -56,7 +56,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="100"
+            data-aos-delay="50"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -83,7 +83,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -108,7 +108,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="150"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -137,7 +137,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -164,7 +164,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="250"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -191,7 +191,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="400"
+            data-aos-delay="300"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -218,7 +218,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos-delay="350"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -245,7 +245,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="600"
+            data-aos-delay="400"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -272,7 +272,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="600"
+            data-aos-delay="450"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -299,7 +299,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="700"
+            data-aos-delay="500"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -326,7 +326,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="700"
+            data-aos-delay="550"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -353,7 +353,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="800"
+            data-aos-delay="600"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -380,7 +380,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center lg:col-start-2 lg:col-end-3"
             data-aos="fade-up"
-            data-aos-delay="900"
+            data-aos-delay="650"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
@@ -408,7 +408,7 @@ const TeamSection = () => {
         <div
           className="w-full flex justify-center mt-20"
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="700"
         >
           <div className="w-[280px] h-1 border-b-2 border-zinc-300"></div>
         </div>
@@ -430,7 +430,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="1200"
+            data-aos-delay="750"
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
@@ -456,7 +456,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="1300"
+            data-aos-delay="800"
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
@@ -482,7 +482,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="1400"
+            data-aos-delay="900"
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
@@ -508,7 +508,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="1500"
+            data-aos-delay="950"
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
@@ -534,7 +534,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="1600"
+            data-aos-delay="1000"
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
@@ -560,7 +560,7 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
-            data-aos-delay="1700"
+            data-aos-delay="1050"
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
