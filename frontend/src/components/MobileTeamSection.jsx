@@ -58,7 +58,7 @@ function MobileTeamSection() {
           />
         </div>
       </div>
-      <div className="flex gap-5 justify-between self-stretch mt-80">
+      <div className="flex gap-5 justify-between self-stretch mt-10">
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"

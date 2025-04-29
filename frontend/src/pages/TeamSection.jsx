@@ -104,6 +104,56 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
+                src="./Akshay.png"
+                alt="Akshay"
+                className="w-[200px] max-h-[200px] object-contain rounded-md"
+              />
+            </div>
+            
+            <h3 className="text-xl font-bold mt-4">Akshay</h3>
+            <p className="text-gray-600 text-center">
+            Director, Applied Research - <br />Speech Recognition
+            </p>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
+              alt="Social Media"
+              className="w-6 h-6 mt-2 shadow-md"
+            />
+          </div>
+
+          {/* Team Member 3 */}
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div className="w-[200px] h-[220px] flex items-center justify-center">
+              <img
+                src="./Dashmi.png"
+                alt="Dashmi"
+                className="w-[200px] max-h-[200px] object-contain rounded-md"
+              />
+            </div>
+            
+            <h3 className="text-xl font-bold mt-4">Dashmi</h3>
+            <p className="text-gray-600 text-center">
+            Speech-Language Pathologist & <br /> Learning Designer
+            </p>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
+              alt="Social Media"
+              className="w-6 h-6 mt-2 shadow-md"
+            />
+          </div>
+
+          {/* Team Member 3 */}
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div className="w-[200px] h-[220px] flex items-center justify-center">
+              <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/77fc17269f61c6cdce3cd362ddb20d09d092f2db?placeholderIfAbsent=true"
                 alt="Poornima"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
@@ -120,6 +170,7 @@ const TeamSection = () => {
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
+          
 
           {/* Team Member 4 */}
           <div
@@ -192,6 +243,30 @@ const TeamSection = () => {
             />
           </div>
 
+          {/* Team Member 6 */}
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div className="w-[200px] h-[220px] flex items-center justify-center">
+              <img
+                src="./Hema.png"
+                alt="Hema"
+                className="w-[200px] max-h-[200px] object-contain rounded-md"
+              />
+            </div>
+
+            <h3 className="text-xl font-bold mt-4">Hema</h3>
+            <p className="text-gray-600 text-center">Learning Presenter & Playschool <br /> Teacher</p>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7f94062d8da2a527c47e07cb12302b7cb40084d?placeholderIfAbsent=true"
+              alt="Social Media"
+              className="w-6 h-6 mt-2 shadow-md"
+            />
+          </div>
+
+
           {/* Team Member 7 */}
           <div
             className="flex flex-col items-center"
@@ -207,6 +282,31 @@ const TeamSection = () => {
             </div>
 
             <h3 className="text-xl font-bold mt-4">Pranav</h3>
+            <p className="text-gray-600 text-center">
+              Applied Research Engineer - Speech Recognition
+            </p>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b16125b45b6aeae76fb70f73f249a1dc0ef6460?placeholderIfAbsent=true"
+              alt="Social Media"
+              className="w-6 h-6 mt-2 shadow-md"
+            />
+          </div>
+
+          {/* Team Member 7 */}
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div className="w-[200px] h-[220px] flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9cb06b7fd04b7e9d2a217c22ebceb0fb46b30fd?placeholderIfAbsent=true"
+                alt="Jack"
+                className="w-[200px] max-h-[200px] object-contain rounded-md"
+              />
+            </div>
+
+            <h3 className="text-xl font-bold mt-4">Jack</h3>
             <p className="text-gray-600 text-center">
               Applied Research Engineer - Speech Recognition
             </p>
