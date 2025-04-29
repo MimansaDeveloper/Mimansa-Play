@@ -123,12 +123,15 @@ const TeamSection = () => {
               Director, Applied Research - <br />
               Speech Recognition
             </p>
+            <a href="https://www.linkedin.com/in/akshaynagarajan/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
+          
 
           {/* Team Member 4 */}
           <div
@@ -148,11 +151,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Speech-Language Pathologist & <br /> Learning Designer
             </p>
+            <a href="https://www.linkedin.com/in/dashami-poonacha-4590b2152/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 5 */}
@@ -173,11 +178,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Creative Consultant – Animation <br /> & Story
             </p>
+            <a href="https://www.linkedin.com/in/poornima-subramaniam/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 6 */}
@@ -198,11 +205,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Platform Engineer & <br /> Guitarist
             </p>
+            <a href="https://www.linkedin.com/in/deepak-kumar-learner/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 7 */}
@@ -223,11 +232,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Applied Research Engineer - <br />Speech Recognition
             </p>
+            <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/ritesh-dwivedi-077a1522a/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 8 */}
@@ -248,11 +259,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               UI/UX Designer
             </p>
+            <a href="https://www.linkedin.com/in/ramani-krishnan-7473b1184/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 9 */}
@@ -273,11 +286,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Learning Presenter & Playschool <br /> Teacher
             </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 10 */}
@@ -298,11 +313,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Applied Research Engineer - <br />Speech Recognition
             </p>
+            <a href="https://www.linkedin.com/in/pranav-singh-usa/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 7 */}
@@ -323,11 +340,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Applied Research Engineer - <br />Speech Recognition
             </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 8 */}
@@ -348,11 +367,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Games & Applications <br />Developer
             </p>
+            <a href="https://www.linkedin.com/in/hriday-bobbili-508194291/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 9 */}
@@ -373,11 +394,13 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Illustrator and 2D Animator
             </p>
+            <a href="https://www.linkedin.com/in/atharvasoni-koyo/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
         </div>
 
@@ -420,11 +443,13 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Shouvik Das
             </h3>
+            <a href="https://www.linkedin.com/in/das-shouvik/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
+            </a>
           </div>
 
           {/* Support Member 2 */}
@@ -444,11 +469,13 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Chanakya Hridaya
             </h3>
+            <a href="https://www.linkedin.com/in/chanakya-hridaya-44743425/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
+            </a>
           </div>
 
           {/* Support Member 3 */}
@@ -468,11 +495,13 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Mrityunjay Kumar
             </h3>
+            <a href="https://www.linkedin.com/in/mrityunjaykumar/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
+            </a>
           </div>
 
           {/* Support Member 4 */}
@@ -492,11 +521,13 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Harshit Madan
             </h3>
+            <a href="https://www.linkedin.com/in/harshit-madan-7ba7a615/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
+            </a>
           </div>
 
           {/* Support Member 5 */}
@@ -516,11 +547,13 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Juhi Mishra
             </h3>
+            <a href="https://www.linkedin.com/in/juhiamishra/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
+            </a>
           </div>
 
           {/* Support Member 6 */}
@@ -540,11 +573,13 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Jitendra Kumar
             </h3>
+            <a href="https://www.linkedin.com/in/jitendra-kumar-1b926014/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
+            </a>
           </div>
         </div>
       </div>
