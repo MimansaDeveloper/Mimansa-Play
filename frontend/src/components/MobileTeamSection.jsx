@@ -40,11 +40,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-stone-600 font-comic-neue">
             Co-Founder
           </div>
+          <a href="https://www.linkedin.com/in/deepanshu-pathak-ed/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
@@ -62,11 +64,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-stone-600 font-comic-neue">
             Co-Founder
           </div>
+          <a href="https://www.linkedin.com/in/ashishnavalakha/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
       <div className="flex gap-5 justify-between self-stretch mt-10">
@@ -86,11 +90,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
           Director, Applied Research - Speech Recognition
           </div>
+          <a href="https://www.linkedin.com/in/akshaynagarajan/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2 aspect-[0.96] shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
 
 
@@ -110,11 +116,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
           Speech-Language Pathologist & Learning Designer
           </div>
+          <a href="https://www.linkedin.com/in/dashami-poonacha-4590b2152/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
 
@@ -122,7 +130,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="400"
+          data-aos-delay="600"
         >
           <img
             src="./team/Poornima.png"
@@ -135,18 +143,20 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Creative Consultant – Animation & Story
           </div>
+          <a href="https://www.linkedin.com/in/poornima-subramaniam/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2 aspect-[0.96] shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
 
         
         <div
           className="flex flex-col items-center my-auto max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="500"
+          data-aos-delay="700"
         >
           <img
             src="./team/Deepak.png"
@@ -159,18 +169,20 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Platform Engineer & Guitarist
           </div>
+          <a href="https://www.linkedin.com/in/deepak-kumar-learner/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
       <div className="flex gap-5 justify-between self-stretch mt-10">
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="600"
+          data-aos-delay="800"
         >
           <img
             src="./team/Ritesh.png"
@@ -183,16 +195,18 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
             Applied Research Engineer - Speech Recognition
           </div>
+          <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/ritesh-dwivedi-077a1522a/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="700"
+          data-aos-delay="500"
         >
           <img
             src="./team/Ramani.png"
@@ -205,11 +219,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             UI/UX Designer
           </div>
+          <a href="https://www.linkedin.com/in/ramani-krishnan-7473b1184/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
 
@@ -230,11 +246,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
             Applied Research Engineer - Speech Recognition
           </div>
+          <a href="https://www.linkedin.com/in/pranav-singh-usa/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
@@ -244,7 +262,7 @@ function MobileTeamSection() {
           <img
             src="./team/Pranav.png"
             className="object-contain self-stretch w-full rounded-none aspect-[0.92]"
-            alt="Ramani"
+            alt="Jack"
           />
           <div className="mt-4 text-base font-bold text-black font-comic-neue">
             Jack
@@ -252,11 +270,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
           Applied Research Engineer - Speech Recognition
           </div>
+          <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
 
@@ -277,11 +297,13 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Games & Applications Developer
           </div>
+          <a href="https://www.linkedin.com/in/hriday-bobbili-508194291/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
           className="flex flex-col items-center self-start max-w-full w-[131px]"
@@ -299,13 +321,44 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Illustrator and 2D Animator
           </div>
+          <a href="https://www.linkedin.com/in/atharvasoni-koyo/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-[0.96] shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
+
+      <div className="flex gap-5 justify-center self-stretch mt-10">
+        <div
+          className="flex flex-col items-center max-w-full w-[131px]"
+          data-aos="fade-right"
+          data-aos-delay="1000"
+        >
+          <img
+            src="./team/Hema.png"
+            className="object-contain self-stretch w-full aspect-[0.92]"
+            alt="Hema"
+          />
+          <div className="mt-2 text-base font-bold text-black font-comic-neue">
+            Hema
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
+          Learning Presenter & Playschool Teacher
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./linked.png"
+            className="object-contain mt-2 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
+            alt="Social icon"
+          />
+          </a>
+        </div>
+      </div>
+
+
       <div
         className="shrink-0 mt-16 max-w-full h-0.5 border-2 border-solid border-zinc-300 w-[280px]"
         data-aos="fade-up"
@@ -335,14 +388,16 @@ function MobileTeamSection() {
             alt="Shouvik Das"
           />
           <div className="mt-6 font-comic-neue">Shouvik Das</div>
+          <a href="https://www.linkedin.com/in/das-shouvik/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
-          className="flex flex-col"
+          className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-left"
           data-aos-delay="1600"
         >
@@ -352,16 +407,18 @@ function MobileTeamSection() {
             alt="Chanakya Hridaya"
           />
           <div className="mt-6 font-comic-neue">Chanakya Hridaya</div>
+          <a href="https://www.linkedin.com/in/chanakya-hridaya-44743425/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
-            className="object-contain self-center mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
+            className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
       <div className="flex gap-10 mt-16 text-base font-bold text-black">
         <div
-          className="flex flex-col"
+          className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-right"
           data-aos-delay="1700"
         >
@@ -371,14 +428,16 @@ function MobileTeamSection() {
             alt="Mrityunjay Kumar"
           />
           <div className="mt-6 font-comic-neue">Mrityunjay Kumar</div>
+          <a href="https://www.linkedin.com/in/mrityunjaykumar/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain self-center mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
-          className="flex flex-col"
+          className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-left"
           data-aos-delay="1800"
         >
@@ -388,11 +447,13 @@ function MobileTeamSection() {
             alt="Harshit Madan"
           />
           <div className="mx-2.5 mt-6 font-comic-neue">Harshit Madan</div>
+          <a href="https://www.linkedin.com/in/harshit-madan-7ba7a615/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain self-center mt-3 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
       <div className="flex gap-10 mt-16 text-base font-bold text-black">
@@ -407,14 +468,16 @@ function MobileTeamSection() {
             alt="Juhi Mishra"
           />
           <div className="mt-6 font-comic-neue">Juhi Mishra</div>
+          <a href="https://www.linkedin.com/in/juhiamishra/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
         <div
-          className="flex flex-col"
+          className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-left"
           data-aos-delay="2000"
         >
@@ -424,11 +487,13 @@ function MobileTeamSection() {
             alt="Jitendra Kumar"
           />
           <div className="mt-6 font-comic-neue">Jitendra Kumar</div>
+          <a href="https://www.linkedin.com/in/jitendra-kumar-1b926014/" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
-            className="object-contain self-center mt-3 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
+            className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
             alt="Social icon"
           />
+          </a>
         </div>
       </div>
     </div>
