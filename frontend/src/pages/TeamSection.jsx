@@ -70,11 +70,13 @@ const TeamSection = () => {
               Deepanshu
             </h3>
             <p className="text-gray-600 font-comic-neue">Co-Founder</p>
+            <a href="https://www.linkedin.com/in/deepanshu-pathak-ed/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 2 */}
@@ -93,11 +95,13 @@ const TeamSection = () => {
 
             <h3 className="text-xl font-bold mt-4 font-comic-neue">Ashish</h3>
             <p className="text-gray-600 font-comic-neue">Co-Founder</p>
+            <a href="https://www.linkedin.com/in/ashishnavalakha/" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
+            </a>
           </div>
 
           {/* Team Member 3 */}
