@@ -12,7 +12,10 @@ function MobileTeamSection() {
   }, []);
   return (
     <div className="flex overflow-hidden flex-col items-center px-9 pt-11 pb-24 mx-auto w-full bg-white max-w-[480px]">
-      <div className="text-2xl font-bold text-blue-400" data-aos="fade-up">
+      <div
+        className="text-2xl font-bold text-blue-400 font-comic-neue"
+        data-aos="fade-up"
+      >
         Our Team
       </div>
       <div
@@ -31,8 +34,12 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-none aspect-[0.89]"
             alt="Deepanshu"
           />
-          <div className="mt-4 text-base font-bold text-black">Deepanshu</div>
-          <div className="text-xs font-medium text-stone-600">Co-Founder</div>
+          <div className="mt-4 text-base font-bold text-black font-comic-neue">
+            Deepanshu
+          </div>
+          <div className="text-xs font-medium text-stone-600 font-comic-neue">
+            Co-Founder
+          </div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/c5d1d68935136ae50d7ce4adff7e2ca8a531ff6d?placeholderIfAbsent=true"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -49,8 +56,12 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-md aspect-[0.89]"
             alt="Ashish"
           />
-          <div className="mt-4 text-base font-bold text-black">Ashish</div>
-          <div className="text-xs font-medium text-stone-600">Co-Founder</div>
+          <div className="mt-4 text-base font-bold text-black font-comic-neue">
+            Ashish
+          </div>
+          <div className="text-xs font-medium text-stone-600 font-comic-neue">
+            Co-Founder
+          </div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/228f8e77cdf7a3eedd015c7cb07b1612b2b04c6d?placeholderIfAbsent=true"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -69,8 +80,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-none aspect-[0.88]"
             alt="Poornima"
           />
-          <div className="mt-3 text-base font-bold text-black">Poornima</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-3 text-base font-bold text-black font-comic-neue">
+            Poornima
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Creative Consultant – Animation & Story
           </div>
           <img
@@ -89,8 +102,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-none aspect-[0.91]"
             alt="Deepak"
           />
-          <div className="mt-4 text-base font-bold text-black">Deepak</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-4 text-base font-bold text-black font-comic-neue">
+            Deepak
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Full-Stack Engineer
           </div>
           <img
@@ -111,8 +126,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-md aspect-[0.92]"
             alt="Rithesh"
           />
-          <div className="mt-3 text-base font-bold text-black">Rithesh</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-3 text-base font-bold text-black font-comic-neue">
+            Rithesh
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Applied Research Engineer - Speech Recognition
           </div>
           <img
@@ -131,8 +148,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-none aspect-[0.92]"
             alt="Ramani"
           />
-          <div className="mt-4 text-base font-bold text-black">Ramani</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-4 text-base font-bold text-black font-comic-neue">
+            Ramani
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             UI/UX Designer
           </div>
           <img
@@ -148,8 +167,10 @@ function MobileTeamSection() {
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          <div className="text-base font-bold text-black">Zack</div>
-          <div className="self-stretch text-xs font-medium text-center text-stone-600">
+          <div className="text-base font-bold text-black font-comic-neue">
+            Zack
+          </div>
+          <div className="self-stretch text-xs font-medium text-center text-stone-600 font-comic-neue">
             Applied Research Engineer - Speech Recognition
           </div>
           <img
@@ -168,8 +189,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-md aspect-[0.92]"
             alt="Pranav"
           />
-          <div className="mt-3 text-base font-bold text-black">Pranav</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-3 text-base font-bold text-black font-comic-neue">
+            Pranav
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Applied Research Engineer - Speech Recognition
           </div>
           <img
@@ -190,8 +213,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full aspect-[0.92]"
             alt="Hriday"
           />
-          <div className="mt-2 text-base font-bold text-black">Hriday</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-2 text-base font-bold text-black font-comic-neue">
+            Hriday
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Games & Applications Developer
           </div>
           <img
@@ -210,8 +235,10 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full rounded-md aspect-[0.95]"
             alt="Atharva"
           />
-          <div className="mt-4 text-base font-bold text-black">Atharva</div>
-          <div className="text-xs font-medium text-center text-stone-600">
+          <div className="mt-4 text-base font-bold text-black font-comic-neue">
+            Atharva
+          </div>
+          <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
             Illustrator and 2D Animator
           </div>
           <img
@@ -227,7 +254,7 @@ function MobileTeamSection() {
         data-aos-delay="1200"
       />
       <div
-        className="mt-20 text-2xl font-bold text-blue-400"
+        className="mt-20 text-2xl font-bold text-blue-400 font-comic-neue"
         data-aos="fade-up"
         data-aos-delay="1300"
       >
@@ -249,7 +276,7 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full aspect-square rounded-[68px_101px_101px_68px]"
             alt="Shouvik Das"
           />
-          <div className="mt-6">Shouvik Das</div>
+          <div className="mt-6 font-comic-neue">Shouvik Das</div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1ca35ccd9d617d10b1cfcc49bca2dece0ab87988?placeholderIfAbsent=true"
             className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -266,7 +293,7 @@ function MobileTeamSection() {
             className="object-contain aspect-square rounded-[41px] w-[114px]"
             alt="Chanakya Hridaya"
           />
-          <div className="mt-6">Chanakya Hridaya</div>
+          <div className="mt-6 font-comic-neue">Chanakya Hridaya</div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad380d228f6350cbaaf8d7d7850a861a74e2fde1?placeholderIfAbsent=true"
             className="object-contain self-center mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -285,7 +312,7 @@ function MobileTeamSection() {
             className="object-contain aspect-square rounded-[41px_55px_27px_41px] w-[114px]"
             alt="Mrityunjay Kumar"
           />
-          <div className="mt-6">Mrityunjay Kumar</div>
+          <div className="mt-6 font-comic-neue">Mrityunjay Kumar</div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/628e6dc6d5213a4a5f4a0536dad37a0bd6e65cd8?placeholderIfAbsent=true"
             className="object-contain self-center mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -302,7 +329,7 @@ function MobileTeamSection() {
             className="object-contain aspect-square rounded-[101px_101px_55px_55px] w-[114px]"
             alt="Harshit Madan"
           />
-          <div className="mx-2.5 mt-6">Harshit Madan</div>
+          <div className="mx-2.5 mt-6 font-comic-neue">Harshit Madan</div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e31de86622288d574dc9eceb66ee101ebcd7bfe9?placeholderIfAbsent=true"
             className="object-contain self-center mt-3 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -321,7 +348,7 @@ function MobileTeamSection() {
             className="object-contain self-stretch w-full aspect-square rounded-[55px_5px_23px_27px]"
             alt="Juhi Mishra"
           />
-          <div className="mt-6">Juhi Mishra</div>
+          <div className="mt-6 font-comic-neue">Juhi Mishra</div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/77676c75ee3031bc7757690ab81d04969636b730?placeholderIfAbsent=true"
             className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
@@ -338,7 +365,7 @@ function MobileTeamSection() {
             className="object-contain aspect-square rounded-[55px_27px_9px_41px] w-[114px]"
             alt="Jitendra Kumar"
           />
-          <div className="mt-6">Jitendra Kumar</div>
+          <div className="mt-6 font-comic-neue">Jitendra Kumar</div>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/483f0eb37c56281dee0f915eebaad1e890379fd4?placeholderIfAbsent=true"
             className="object-contain self-center mt-3 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
