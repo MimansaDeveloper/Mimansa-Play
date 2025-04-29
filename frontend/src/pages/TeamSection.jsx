@@ -426,7 +426,7 @@ const TeamSection = () => {
                 <div className="w-full flex justify-center">
                   <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-pink-200 rounded-[221px_221px_120px_120px] w-[80%]">
                     <img
-                      src="URL_202"
+                      src="/Juhi.png"
                       className="object-contain w-full aspect-square"
                     />
                   </div>
@@ -435,7 +435,7 @@ const TeamSection = () => {
                   Juhi Mishra
                 </div>
                 <img
-                  src="URL_203"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8bbdf42525cad50850e8f0e77f18cefd419a52b9?placeholderIfAbsent=true"
                   className="object-contain mt-7 aspect-square shadow-[2px_3px_7px_rgba(23,27,33,0.5)] w-[50px]"
                 />
               </div>
@@ -454,7 +454,7 @@ const TeamSection = () => {
                   Jitendar Kumar
                 </div>
                 <img
-                  src="URL_205"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8bbdf42525cad50850e8f0e77f18cefd419a52b9?placeholderIfAbsent=true"
                   className="object-contain mt-7 aspect-square shadow-[2px_3px_7px_rgba(23,27,33,0.5)] w-[50px]"
                 />
               </div>
