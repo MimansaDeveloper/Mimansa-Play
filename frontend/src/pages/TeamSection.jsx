@@ -33,14 +33,16 @@ const TeamSection = () => {
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center whitespace-nowrap max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bb224fdec2ffede346e23d840daab11c5bece8b?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] aspect-[0.89]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bb224fdec2ffede346e23d840daab11c5bece8b?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] aspect-[0.89]"
+                  />
+                </div>
+                <div className="mt-9 text-3xl font-bold text-black text-center">
                   Deepanshu
                 </div>
-                <div className="mt-1 text-base font-medium text-stone-600">
+                <div className="mt-1 text-base font-medium text-stone-600 text-center">
                   Co-Founder
                 </div>
                 <img
@@ -51,12 +53,16 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center whitespace-nowrap max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/6272a7547eaf5264da65ed29bd4129d5e84837ad?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] rounded-xl aspect-[0.89]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">Ashish</div>
-                <div className="mt-1 text-base font-medium text-stone-600">
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/6272a7547eaf5264da65ed29bd4129d5e84837ad?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] rounded-xl aspect-[0.89]"
+                  />
+                </div>
+                <div className="mt-9 text-3xl font-bold text-black text-center">
+                  Ashish
+                </div>
+                <div className="mt-1 text-base font-medium text-stone-600 text-center">
                   Co-Founder
                 </div>
                 <img
@@ -67,11 +73,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/74199cbd19273afdaa235a030507202f9b4fb56a?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] rounded-xl aspect-[0.9]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">Akshay</div>
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/74199cbd19273afdaa235a030507202f9b4fb56a?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] rounded-xl aspect-[0.9]"
+                  />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
+                  Akshay
+                </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600">
                   Director, Applied Research - Speech Recognition
                 </div>
@@ -92,11 +102,13 @@ const TeamSection = () => {
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/71fbd5d762098809bf74870e4bc75bae26f432c9?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] rounded-xl aspect-[0.89]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/71fbd5d762098809bf74870e4bc75bae26f432c9?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] rounded-xl aspect-[0.89]"
+                  />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
                   Dashami
                 </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600">
@@ -110,11 +122,13 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ebdb582eee57d9cf679a6a047b1add83a112a3a4?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] aspect-[0.89]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ebdb582eee57d9cf679a6a047b1add83a112a3a4?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] aspect-[0.89]"
+                  />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
                   Poornima
                 </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600">
@@ -128,11 +142,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center self-stretch my-auto max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d3b97e881404efa3d177dc25edc8d6ff99b2da0?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] aspect-[0.91]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">Deepak</div>
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d3b97e881404efa3d177dc25edc8d6ff99b2da0?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] aspect-[0.91]"
+                  />
+                </div>
+                <div className="mt-9 text-3xl font-bold text-black text-center">
+                  Deepak
+                </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600">
                   Full-Stack Engineer
                 </div>
@@ -153,11 +171,13 @@ const TeamSection = () => {
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d3eb4696e87f63f72093cc4b2b0f90c62640e65?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] rounded-xl aspect-[0.92]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d3eb4696e87f63f72093cc4b2b0f90c62640e65?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] rounded-xl aspect-[0.92]"
+                  />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
                   Rithesh
                 </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600 w-[278px]">
@@ -171,11 +191,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1e4329e56d9a02a21a19eb7f66eb1a03eabd96d?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] aspect-[0.92]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">Ramani</div>
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1e4329e56d9a02a21a19eb7f66eb1a03eabd96d?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] aspect-[0.92]"
+                  />
+                </div>
+                <div className="mt-9 text-3xl font-bold text-black text-center">
+                  Ramani
+                </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600">
                   UI/UX Designer
                 </div>
@@ -187,11 +211,13 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a862b950567e612a817f4a727c401c8b9ecbe38?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] aspect-[0.92]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a862b950567e612a817f4a727c401c8b9ecbe38?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] aspect-[0.92]"
+                  />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
                   Sai Hema
                 </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600">
@@ -214,8 +240,12 @@ const TeamSection = () => {
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center mt-14 max-md:mt-10">
-                <div className="flex shrink-0 self-stretch rounded-xl bg-zinc-300 h-[252px] w-[80%]" />
-                <div className="mt-9 text-3xl font-bold text-black">Zack</div>
+                <div className="w-full flex justify-center">
+                  <div className="flex shrink-0 rounded-xl bg-zinc-300 h-[252px] w-[80%]" />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
+                  Zack
+                </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600 w-[278px]">
                   Applied Research Engineer - Speech Recognition
                 </div>
@@ -227,11 +257,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/d20da95f4964bb7142bb4c11309ae2f1a8dbb478?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] rounded-xl aspect-[0.92]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">Pranav</div>
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d20da95f4964bb7142bb4c11309ae2f1a8dbb478?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] rounded-xl aspect-[0.92]"
+                  />
+                </div>
+                <div className="mt-7 text-3xl font-bold text-black text-center">
+                  Pranav
+                </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600 w-[278px]">
                   Applied Research Engineer - Speech Recognition
                 </div>
@@ -243,11 +277,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center mt-1.5 max-md:mt-10">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3d5c9f9-0919-4c8c-9a7d-844bb963ed1b?placeholderIfAbsent=true"
-                  className="object-contain self-stretch w-[80%] aspect-[0.93]"
-                />
-                <div className="mt-9 text-3xl font-bold text-black">Hriday</div>
+                <div className="w-full flex justify-center">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3d5c9f9-0919-4c8c-9a7d-844bb963ed1b?placeholderIfAbsent=true"
+                    className="object-contain w-[80%] aspect-[0.93]"
+                  />
+                </div>
+                <div className="mt-5 text-3xl font-bold text-black text-center">
+                  Hriday
+                </div>
                 <div className="mt-1 text-base font-medium text-center text-stone-600 w-[253px]">
                   Games & Applications Developer
                 </div>
@@ -262,11 +300,15 @@ const TeamSection = () => {
 
         {/* Atharva - Single */}
         <div className="flex flex-col items-center" data-aos="fade-up">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/109c5a8e0f28d090e4bc4ea1fd7cbe0badca2b58?placeholderIfAbsent=true"
-            className="object-contain mt-32 max-w-full rounded-xl aspect-[0.95] w-[220px] max-md:mt-10"
-          />
-          <div className="mt-9 text-3xl font-bold text-black">Atharva</div>
+          <div className="flex justify-center w-full">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/109c5a8e0f28d090e4bc4ea1fd7cbe0badca2b58?placeholderIfAbsent=true"
+              className="object-contain mt-32 rounded-xl aspect-[0.95] w-[220px] max-md:mt-10"
+            />
+          </div>
+          <div className="mt-9 text-3xl font-bold text-black text-center">
+            Atharva
+          </div>
           <div className="mt-1 text-base font-medium text-center text-stone-600">
             Illustrator and 2D Animator
           </div>
@@ -301,13 +343,15 @@ const TeamSection = () => {
           <div className="flex gap-5 max-md:flex-col">
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <div className="flex overflow-hidden flex-col items-center self-stretch px-4 pt-8 bg-orange-200 aspect-square rounded-[150px_221px_221px_150px] w-[80%]">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/aab42e5adf31bd160697cd4c6967d7120125ee9d?placeholderIfAbsent=true"
-                    className="object-contain w-full aspect-[1.02]"
-                  />
+                <div className="w-full flex justify-center">
+                  <div className="flex overflow-hidden flex-col items-center px-4 pt-8 bg-orange-200 aspect-square rounded-[150px_221px_221px_150px] w-[80%]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/aab42e5adf31bd160697cd4c6967d7120125ee9d?placeholderIfAbsent=true"
+                      className="object-contain w-full aspect-[1.02]"
+                    />
+                  </div>
                 </div>
-                <div className="mt-9 text-3xl font-bold text-black max-md:mt-10 text-center">
+                <div className="mt-12 text-3xl font-bold text-black max-md:mt-10 text-center">
                   Shouvik Das
                 </div>
                 <img
@@ -318,13 +362,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <div className="flex overflow-hidden flex-col items-center bg-teal-200 aspect-square rounded-[90px] w-[80%] mx-auto">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc6c46b1c87e69b7554b68d580bc0569c0d2114c?placeholderIfAbsent=true"
-                    className="object-contain w-full aspect-square"
-                  />
+                <div className="w-full flex justify-center">
+                  <div className="flex overflow-hidden flex-col items-center bg-teal-200 aspect-square rounded-[90px] w-[80%]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc6c46b1c87e69b7554b68d580bc0569c0d2114c?placeholderIfAbsent=true"
+                      className="object-contain w-full aspect-square"
+                    />
+                  </div>
                 </div>
-                <div className="mt-9 text-3xl font-bold text-black max-md:mt-10 text-center">
+                <div className="mt-12 text-3xl font-bold text-black max-md:mt-10 text-center">
                   Chanakya Hridaya
                 </div>
                 <img
@@ -335,13 +381,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow items-center max-md:mt-10">
-                <div className="flex overflow-hidden flex-col items-center bg-sky-300 aspect-square rounded-[90px_120px_60px_90px] w-[80%] mx-auto">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1611e51e7bbf7adb19ce5b9e2d84457f6d7b50fe?placeholderIfAbsent=true"
-                    className="object-contain w-full aspect-square"
-                  />
+                <div className="w-full flex justify-center">
+                  <div className="flex overflow-hidden flex-col items-center bg-sky-300 aspect-square rounded-[90px_120px_60px_90px] w-[80%]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1611e51e7bbf7adb19ce5b9e2d84457f6d7b50fe?placeholderIfAbsent=true"
+                      className="object-contain w-full aspect-square"
+                    />
+                  </div>
                 </div>
-                <div className="mt-9 text-3xl font-bold text-black max-md:mt-10 text-center">
+                <div className="mt-14 text-3xl font-bold text-black max-md:mt-10 text-center">
                   Mrityunjay Kumar
                 </div>
                 <img
@@ -356,13 +404,15 @@ const TeamSection = () => {
           <div className="flex gap-5 mt-32 max-md:flex-col max-md:mt-10">
             <div className="w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center max-md:mt-10">
-                <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-slate-400 rounded-[221px_221px_120px_120px] w-[200px]">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9696dc891004ffcec6a4883ca00168e8129bf8d7?placeholderIfAbsent=true"
-                    className="object-contain w-full aspect-square"
-                  />
+                <div className="w-full flex justify-center">
+                  <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-slate-400 rounded-[221px_221px_120px_120px] w-[80%]">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/9696dc891004ffcec6a4883ca00168e8129bf8d7?placeholderIfAbsent=true"
+                      className="object-contain w-full aspect-square"
+                    />
+                  </div>
                 </div>
-                <div className="mt-9 text-3xl font-bold text-black max-md:mt-10 text-center">
+                <div className="mt-12 text-3xl font-bold text-black max-md:mt-10 text-center">
                   Harshit Madan
                 </div>
                 <img
@@ -373,13 +423,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center max-md:mt-10">
-                <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-pink-200 rounded-[221px_221px_120px_120px] w-[200px]">
-                  <img
-                    src="URL_202"
-                    className="object-contain w-full aspect-square"
-                  />
+                <div className="w-full flex justify-center">
+                  <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-pink-200 rounded-[221px_221px_120px_120px] w-[80%]">
+                    <img
+                      src="URL_202"
+                      className="object-contain w-full aspect-square"
+                    />
+                  </div>
                 </div>
-                <div className="mt-9 text-3xl font-bold text-black max-md:mt-10 text-center">
+                <div className="mt-12 text-3xl font-bold text-black max-md:mt-10 text-center">
                   Juhi Mishra
                 </div>
                 <img
@@ -390,13 +442,15 @@ const TeamSection = () => {
             </div>
             <div className="ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-center max-md:mt-10">
-                <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-purple-200 rounded-[221px_221px_120px_120px] w-[200px]">
-                  <img
-                    src="URL_204"
-                    className="object-contain w-full aspect-square"
-                  />
+                <div className="w-full flex justify-center">
+                  <div className="flex overflow-hidden flex-col items-center px-3.5 pt-7 aspect-square bg-purple-200 rounded-[221px_221px_120px_120px] w-[80%]">
+                    <img
+                      src="URL_204"
+                      className="object-contain w-full aspect-square"
+                    />
+                  </div>
                 </div>
-                <div className="mt-9 text-3xl font-bold text-black max-md:mt-10 text-center">
+                <div className="mt-12 text-3xl font-bold text-black max-md:mt-10 text-center">
                   Jitendar Kumar
                 </div>
                 <img
