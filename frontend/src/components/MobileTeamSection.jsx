@@ -92,6 +92,9 @@ function MobileTeamSection() {
             alt="Social icon"
           />
         </div>
+
+        
+        
         <div
           className="flex flex-col items-center my-auto max-w-full w-[131px]"
           data-aos="fade-left"

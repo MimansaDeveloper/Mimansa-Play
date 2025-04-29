@@ -60,7 +60,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c905ea3bd77fb523b43b4f7b1e9a2ae471cd08f5?placeholderIfAbsent=true"
+                src="./team/Deepanshu.png"
                 alt="Deepanshu"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -71,7 +71,7 @@ const TeamSection = () => {
             </h3>
             <p className="text-gray-600 font-comic-neue">Co-Founder</p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c5d1d68935136ae50d7ce4adff7e2ca8a531ff6d?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -85,7 +85,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b259acde55ec40da2f89d436069c3f2943123722?placeholderIfAbsent=true"
+                src="./team/Ashish.png"
                 alt="Ashish"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -94,7 +94,7 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-4 font-comic-neue">Ashish</h3>
             <p className="text-gray-600 font-comic-neue">Co-Founder</p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/228f8e77cdf7a3eedd015c7cb07b1612b2b04c6d?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -108,7 +108,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="./Akshay.png"
+                src="./team/Akshay.png"
                 alt="Akshay"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -120,13 +120,13 @@ const TeamSection = () => {
               Speech Recognition
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
 
-          {/* Team Member 3 */}
+          {/* Team Member 4 */}
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
@@ -134,7 +134,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="./Dashmi.png"
+                src="./team/Dashmi.png"
                 alt="Dashmi"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -145,57 +145,7 @@ const TeamSection = () => {
               Speech-Language Pathologist & <br /> Learning Designer
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
-              alt="Social Media"
-              className="w-6 h-6 mt-2 shadow-md"
-            />
-          </div>
-
-          {/* Team Member 3 */}
-          <div
-            className="flex flex-col items-center"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div className="w-[200px] h-[220px] flex items-center justify-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/77fc17269f61c6cdce3cd362ddb20d09d092f2db?placeholderIfAbsent=true"
-                alt="Poornima"
-                className="w-[200px] max-h-[200px] object-contain rounded-md"
-              />
-            </div>
-
-            <h3 className="text-xl font-bold mt-4 font-comic-neue">Poornima</h3>
-            <p className="text-gray-600 text-center font-comic-neue">
-              Creative Consultant – Animation & Story
-            </p>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e90d157cc48d1cf07ce012315a2cf669ec77019?placeholderIfAbsent=true"
-              alt="Social Media"
-              className="w-6 h-6 mt-2 shadow-md"
-            />
-          </div>
-
-          {/* Team Member 4 */}
-          <div
-            className="flex flex-col items-center"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="w-[200px] h-[220px] flex items-center justify-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/05811781c18ab199d326f984b85080d9e79c1c82?placeholderIfAbsent=true"
-                alt="Deepak"
-                className="w-[200px] max-h-[200px] object-contain rounded-md"
-              />
-            </div>
-
-            <h3 className="text-xl font-bold mt-4 font-comic-neue">Deepak</h3>
-            <p className="text-gray-600 text-center font-comic-neue">
-              Full-Stack Engineer
-            </p>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/594499291f3eb2a2528215bf5dc2ff50e910a12a?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -205,11 +155,61 @@ const TeamSection = () => {
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div className="w-[200px] h-[220px] flex items-center justify-center">
+              <img
+                src="./team/Poornima.png"
+                alt="Poornima"
+                className="w-[200px] max-h-[200px] object-contain rounded-md"
+              />
+            </div>
+
+            <h3 className="text-xl font-bold mt-4 font-comic-neue">Poornima</h3>
+            <p className="text-gray-600 text-center font-comic-neue">
+              Creative Consultant – Animation <br /> & Story
+            </p>
+            <img
+              src="./linked.png"
+              alt="Social Media"
+              className="w-6 h-6 mt-2 shadow-md"
+            />
+          </div>
+
+          {/* Team Member 6 */}
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div className="w-[200px] h-[220px] flex items-center justify-center">
+              <img
+                src="./team/Deepak.png"
+                alt="Deepak"
+                className="w-[200px] max-h-[200px] object-contain rounded-md"
+              />
+            </div>
+
+            <h3 className="text-xl font-bold mt-4 font-comic-neue">Deepak</h3>
+            <p className="text-gray-600 text-center font-comic-neue">
+              Platform Engineer & <br /> Guitarist
+            </p>
+            <img
+              src="./linked.png"
+              alt="Social Media"
+              className="w-6 h-6 mt-2 shadow-md"
+            />
+          </div>
+
+          {/* Team Member 7 */}
+          <div
+            className="flex flex-col items-center"
+            data-aos="fade-up"
             data-aos-delay="500"
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/448b74b9b19dd7f36d078e2e0e081a5c0da194b6?placeholderIfAbsent=true"
+                src="./team/Ritesh.png"
                 alt="Rithesh"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -220,13 +220,13 @@ const TeamSection = () => {
               Applied Research Engineer - <br />Speech Recognition
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5787d54997fd1dc9c6b09ab49568fc863ab3770d?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
 
-          {/* Team Member 6 */}
+          {/* Team Member 8 */}
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
@@ -234,7 +234,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c723a830d412e57eaaa937816004d95891ff7fc?placeholderIfAbsent=true"
+                src="./team/Ramani.png"
                 alt="Ramani"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -245,13 +245,13 @@ const TeamSection = () => {
               UI/UX Designer
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7f94062d8da2a527c47e07cb12302b7cb40084d?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
 
-          {/* Team Member 6 */}
+          {/* Team Member 9 */}
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
@@ -259,7 +259,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="./Hema.png"
+                src="./team/Hema.png"
                 alt="Hema"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -270,13 +270,13 @@ const TeamSection = () => {
               Learning Presenter & Playschool <br /> Teacher
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7f94062d8da2a527c47e07cb12302b7cb40084d?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
           </div>
 
-          {/* Team Member 7 */}
+          {/* Team Member 10 */}
           <div
             className="flex flex-col items-center"
             data-aos="fade-up"
@@ -284,7 +284,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9cb06b7fd04b7e9d2a217c22ebceb0fb46b30fd?placeholderIfAbsent=true"
+                src="./team/Pranav.png"
                 alt="Pranav"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -295,7 +295,7 @@ const TeamSection = () => {
               Applied Research Engineer - <br />Speech Recognition
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b16125b45b6aeae76fb70f73f249a1dc0ef6460?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -320,7 +320,7 @@ const TeamSection = () => {
               Applied Research Engineer - <br />Speech Recognition
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b16125b45b6aeae76fb70f73f249a1dc0ef6460?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -334,7 +334,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/0f4b206d-6296-46a2-b788-854a4fd97ed8?placeholderIfAbsent=true"
+                src="./team/Hriday.png"
                 alt="Hriday"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -345,7 +345,7 @@ const TeamSection = () => {
               Games & Applications <br />Developer
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b91607672628a2f326946c907f9229624d5dd6b?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -359,7 +359,7 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1bfb834b0a625629c6901f938c3e0331837676b8?placeholderIfAbsent=true"
+                src="./team/Atharav.png"
                 alt="Atharva"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
@@ -370,7 +370,7 @@ const TeamSection = () => {
               Illustrator and 2D Animator
             </p>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea34032604b03b5c153e7970f29f7c8754cc68bd?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-2 shadow-md"
             />
@@ -407,7 +407,7 @@ const TeamSection = () => {
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/892a4b659c64f3e54c44abc1f22cad58cf35bd20?placeholderIfAbsent=true"
+                src="./team/Shouvik.png"
                 alt="Shouvik Das"
                 className="w-[150px] max-h-[150px] object-contain rounded-[68px_101px_101px_68px]"
               />
@@ -417,7 +417,7 @@ const TeamSection = () => {
               Shouvik Das
             </h3>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1ca35ccd9d617d10b1cfcc49bca2dece0ab87988?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
@@ -431,7 +431,7 @@ const TeamSection = () => {
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/883ec1d26419a91fd8b34bad47742d7f183536dc?placeholderIfAbsent=true"
+                src="./team/Chanakya.png"
                 alt="Chanakya Hridaya"
                 className="w-[150px] max-h-[150px] object-contain rounded-[41px] w-[114px]"
               />
@@ -441,7 +441,7 @@ const TeamSection = () => {
               Chanakya Hridaya
             </h3>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad380d228f6350cbaaf8d7d7850a861a74e2fde1?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
@@ -455,7 +455,7 @@ const TeamSection = () => {
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/339e20a04a839fae488319c3c743cb1fca70fb91?placeholderIfAbsent=true"
+                src="./team/Mrithunjay.png"
                 alt="Mrityunjay Kumar"
                 className="w-[150px] max-h-[150px] object-contain rounded-[41px_55px_27px_41px"
               />
@@ -465,7 +465,7 @@ const TeamSection = () => {
               Mrityunjay Kumar
             </h3>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/628e6dc6d5213a4a5f4a0536dad37a0bd6e65cd8?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
@@ -479,7 +479,7 @@ const TeamSection = () => {
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/20eeb8fc9894c4200cc964c5debc868403782579?placeholderIfAbsent=true"
+                src="./team/Harshi.png"
                 alt="Harshit Madan"
                 className="w-[150px] max-h-[150px] object-contain rounded-[101px_101px_55px_55px]"
               />
@@ -489,7 +489,7 @@ const TeamSection = () => {
               Harshit Madan
             </h3>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e31de86622288d574dc9eceb66ee101ebcd7bfe9?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
@@ -503,7 +503,7 @@ const TeamSection = () => {
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/e174e25f2ec07942b5383739fe1b9205f36401a9?placeholderIfAbsent=true"
+                src="./team/Juhi.png"
                 alt="Juhi Mishra"
                 className="w-[150px] max-h-[150px] object-contain rounded-[55px_5px_23px_27px]"
               />
@@ -513,7 +513,7 @@ const TeamSection = () => {
               Juhi Mishra
             </h3>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/77676c75ee3031bc7757690ab81d04969636b730?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
@@ -527,7 +527,7 @@ const TeamSection = () => {
           >
             <div className="w-[150px] h-[170px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/808370092ffa2773ab3d6b34d81208afa79cc57b?placeholderIfAbsent=true"
+                src="./team/Jitendra.png"
                 alt="Jitendra Kumar"
                 className="w-[150px] max-h-[150px] object-contain rounded-[55px_27px_9px_41px]"
               />
@@ -537,7 +537,7 @@ const TeamSection = () => {
               Jitendra Kumar
             </h3>
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/483f0eb37c56281dee0f915eebaad1e890379fd4?placeholderIfAbsent=true"
+              src="./linked.png"
               alt="Social Media"
               className="w-6 h-6 mt-3 shadow-md"
             />
