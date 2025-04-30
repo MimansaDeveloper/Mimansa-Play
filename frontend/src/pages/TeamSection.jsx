@@ -572,7 +572,7 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold mt-6 font-comic-neue">
               Jitendra Kumar
             </h3>
-            <a href="https://www.linkedin.com/in/jitendra-kumar-1b926014/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/search?q=jitendra+kumar&oq=jitendra+kumar&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyDQgBEC4Y1AIYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyDQgDEC4Y1AIYsQMYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgzMzg3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"

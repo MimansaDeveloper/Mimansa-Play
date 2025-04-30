@@ -488,7 +488,7 @@ function MobileTeamSection() {
             alt="Jitendra Kumar"
           />
           <div className="mt-6 font-comic-neue">Jitendra Kumar</div>
-          <a href="https://www.linkedin.com/in/jitendra-kumar-1b926014/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.google.com/search?q=jitendra+kumar&oq=jitendra+kumar&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyDQgBEC4Y1AIYsQMYgAQyDQgCEC4Y1AIYsQMYgAQyDQgDEC4Y1AIYsQMYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgzMzg3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-3.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
