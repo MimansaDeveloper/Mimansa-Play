@@ -112,7 +112,7 @@ function MobileTeamSection() {
             alt="Dashmi"
           />
           <div className="mt-4 text-base font-bold text-black font-comic-neue">
-            Deepak
+            Dashami
           </div>
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
           Speech-Language Pathologist & Learning Designer
@@ -188,10 +188,10 @@ function MobileTeamSection() {
           <img
             src="./team/Ritesh.png"
             className="object-contain self-stretch w-full rounded-md aspect-[0.92]"
-            alt="Rithesh"
+            alt="Ritesh"
           />
           <div className="mt-3 text-base font-bold text-black font-comic-neue">
-            Rithesh
+            Ritesh
           </div>
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
             Applied Research Engineer - Speech Recognition
@@ -261,17 +261,17 @@ function MobileTeamSection() {
           data-aos-delay="1100"
         >
           <img
-            src="./team/Pranav.png"
+            src="./team/Zach.png"
             className="object-contain self-stretch w-full rounded-none aspect-[0.92]"
             alt="Jack"
           />
           <div className="mt-4 text-base font-bold text-black font-comic-neue">
-            Jack
+            Zach
           </div>
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue w-[180px]">
           Applied Research Engineer - Speech Recognition
           </div>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/zach-weiner-a4ab13362" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2.5 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"

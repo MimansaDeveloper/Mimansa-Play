@@ -142,12 +142,12 @@ const TeamSection = () => {
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
                 src="./team/Dashmi.png"
-                alt="Dashmi"
+                alt="Dashami"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
 
-            <h3 className="text-xl font-bold mt-4 font-comic-neue">Dashmi</h3>
+            <h3 className="text-xl font-bold mt-4 font-comic-neue">Dashami</h3>
             <p className="text-gray-600 text-center font-comic-neue">
               Speech-Language Pathologist & <br /> Learning Designer
             </p>
@@ -223,12 +223,12 @@ const TeamSection = () => {
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
                 src="./team/Ritesh.png"
-                alt="Rithesh"
+                alt="Ritesh"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
 
-            <h3 className="text-xl font-bold mt-4 font-comic-neue">Rithesh</h3>
+            <h3 className="text-xl font-bold mt-4 font-comic-neue">Ritesh</h3>
             <p className="text-gray-600 text-center font-comic-neue">
               Applied Research Engineer - <br />Speech Recognition
             </p>
@@ -330,17 +330,16 @@ const TeamSection = () => {
           >
             <div className="w-[200px] h-[220px] flex items-center justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9cb06b7fd04b7e9d2a217c22ebceb0fb46b30fd?placeholderIfAbsent=true"
-                alt="Jack"
+                src="./team/Zach.png"
+                alt="Zach"
                 className="w-[200px] max-h-[200px] object-contain rounded-md"
               />
             </div>
-
-            <h3 className="text-xl font-bold mt-4 font-comic-neue">Jack</h3>
+            <h3 className="text-xl font-bold mt-4 font-comic-neue">Zach</h3>
             <p className="text-gray-600 text-center font-comic-neue">
               Applied Research Engineer - <br />Speech Recognition
             </p>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/zach-weiner-a4ab13362" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"
