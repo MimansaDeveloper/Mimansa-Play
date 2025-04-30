@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 function MobileTeamSection() {
   useEffect(() => {
     AOS.init({
-      duration: 600,
+      duration: 300,
       once: true,
       easing: "ease-in-out",
     });
@@ -22,13 +22,13 @@ function MobileTeamSection() {
       <div
         className="shrink-0 mt-1.5 h-0.5 border-2 border-red-400 border-solid w-[100px]"
         data-aos="fade-up"
-        data-aos-delay="100"
+        data-aos-delay="50"
       />
       <div className="flex gap-5 justify-between self-stretch mt-14 whitespace-nowrap">
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <img
             src="./team/Deepanshu.png"
@@ -52,7 +52,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="300"
+          data-aos-delay="150"
         >
           <img
             src="./team/Ashish.png"
@@ -78,7 +78,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="400"
+          data-aos-delay="200"
         >
           <img
             src="./team/Akshay.png"
@@ -104,7 +104,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center my-auto max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="500"
+          data-aos-delay="250"
         >
           <img
             src="./team/Dashmi.png"
@@ -131,7 +131,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="600"
+          data-aos-delay="300"
         >
           <img
             src="./team/Poornima.png"
@@ -157,7 +157,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center my-auto max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="700"
+          data-aos-delay="350"
         >
           <img
             src="./team/Deepak.png"
@@ -183,7 +183,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="800"
+          data-aos-delay="400"
         >
           <img
             src="./team/Ritesh.png"
@@ -207,7 +207,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="900"
+          data-aos-delay="450"
         >
           <img
             src="./team/Ramani.png"
@@ -234,7 +234,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="1000"
+          data-aos-delay="500"
         >
           <img
             src="./team/Pranav.png"
@@ -258,7 +258,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="1100"
+          data-aos-delay="550"
         >
           <img
             src="./team/Zach.png"
@@ -285,7 +285,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-right"
-          data-aos-delay="1200"
+          data-aos-delay="600"
         >
           <img
             src="./team/Hriday.png"
@@ -309,7 +309,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center self-start max-w-full w-[131px]"
           data-aos="fade-left"
-          data-aos-delay="1300"
+          data-aos-delay="650"
         >
           <img
             src="./team/Atharav.png"
@@ -336,7 +336,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[131px]"
           data-aos="fade-up"
-          data-aos-delay="1400"
+          data-aos-delay="700"
         >
           <img
             src="./team/Hema.png"
@@ -363,25 +363,25 @@ function MobileTeamSection() {
       <div
         className="shrink-0 mt-16 max-w-full h-0.5 border-2 border-solid border-zinc-300 w-[280px]"
         data-aos="fade-up"
-        data-aos-delay="1500"
+        data-aos-delay="750"
       />
       <div
         className="mt-20 text-2xl font-bold text-blue-400 font-comic-neue"
         data-aos="fade-up"
-        data-aos-delay="1600"
+        data-aos-delay="800"
       >
         Our Circle of Support
       </div>
       <div
         className="shrink-0 mt-1.5 h-0.5 border-2 border-red-400 border-solid w-[200px]"
         data-aos="fade-up"
-        data-aos-delay="1700"
+        data-aos-delay="850"
       />
       <div className="flex gap-10 mt-16 text-base font-bold text-black">
         <div
           className="flex flex-col items-center max-w-full w-[114px]"
           data-aos="fade-right"
-          data-aos-delay="1800"
+          data-aos-delay="900"
         >
           <img
             src="./team/Shouvik.png"
@@ -400,7 +400,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-left"
-          data-aos-delay="1900"
+          data-aos-delay="950"
         >
           <img
             src="./team/Chanakya.png"
@@ -421,7 +421,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-right"
-          data-aos-delay="2000"
+          data-aos-delay="1000"
         >
           <img
             src="./team/Mrithunjay.png"
@@ -440,7 +440,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-left"
-          data-aos-delay="2100"
+          data-aos-delay="1050"
         >
           <img
             src="./team/Harshi.png"
@@ -461,7 +461,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[114px]"
           data-aos="fade-right"
-          data-aos-delay="2200"
+          data-aos-delay="1100"
         >
           <img
             src="./team/Juhi.png"
@@ -480,7 +480,7 @@ function MobileTeamSection() {
         <div
           className="flex flex-col items-center max-w-full w-[150px]"
           data-aos="fade-left"
-          data-aos-delay="2300"
+          data-aos-delay="1150"
         >
           <img
             src="./team/Jitendra.png"
