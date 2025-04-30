@@ -286,7 +286,7 @@ const TeamSection = () => {
             <p className="text-gray-600 text-center font-comic-neue">
               Learning Presenter & Playschool <br /> Teacher
             </p>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.linkedin.com/in/sai-hema-abburu-09b04628" target="_blank" rel="noopener noreferrer">
             <img
               src="./linked.png"
               alt="Social Media"

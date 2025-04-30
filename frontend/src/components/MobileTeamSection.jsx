@@ -349,7 +349,7 @@ function MobileTeamSection() {
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
           Learning Presenter & Playschool Teacher
           </div>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="http://www.linkedin.com/in/sai-hema-abburu-09b04628" target="_blank" rel="noopener noreferrer">
           <img
             src="./linked.png"
             className="object-contain mt-2 aspect-square shadow-[1px_1px_3px_rgba(23,27,33,0.5)] w-[23px]"
