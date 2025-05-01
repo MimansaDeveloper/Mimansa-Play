@@ -191,6 +191,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
         </div>
       )} */}
       {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown Menu */}
       <div
         className={`lg:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40 transform origin-top transition-all duration-500 ease-in-out ${
           isMobileMenuOpen
@@ -198,7 +199,30 @@ const Navbar = ({ openPopup, scrollToSection }) => {
             : "scale-y-0 opacity-0 invisible"
         }`}
       >
-        <ul className="flex mt-[3vw] flex-col space-x-[4vw] gap-[1.5vw] text-[1rem] text-black py-4">
+        <ul className="flex mt-[3vw] flex-col space-y-[2.5vw] text-[1.125rem] leading-relaxed text-black py-6">
+          {["Home","Why Us","How it works","Testimonial","Our Team","Contact Us"].map((label, i) => (
+            <li
+              key={label}
+              onClick={() => {
+                const sections = ["home-section","slider-section","working-section","testimonial-section","team-section","contact-section"];
+                scrollToSection(sections[i]);
+                handleMenuItemClick();
+              }}
+              className="cursor-pointer px-6 py-3 hover:text-[#A964FF] font-semibold transition duration-300"
+            >
+              {label}
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* <div
+        className={`lg:hidden font-comic-neue absolute top-full left-0 w-full rounded-b-xl bg-white shadow-lg z-40 transform origin-top transition-all duration-500 ease-in-out ${
+          isMobileMenuOpen
+            ? "scale-y-100 opacity-100 visible"
+            : "scale-y-0 opacity-0 invisible"
+        }`}
+      >
+        <ul className="flex mt-[3vw] flex-col space-x-[4vw] gap-[1.5vw] text-[1.125rem] text-black py-4">
           <li
             onClick={() => {
               scrollToSection("home-section");
@@ -254,7 +278,7 @@ const Navbar = ({ openPopup, scrollToSection }) => {
             Contact Us
           </li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Buttons on Desktop */}
       <div className="hidden lg:flex items-center justify-center gap-[1.5vw]">
