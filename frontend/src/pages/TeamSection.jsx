@@ -284,7 +284,7 @@ const TeamSection = () => {
 
             <h3 className="text-xl font-bold mt-4 font-comic-neue">Hema</h3>
             <p className="text-gray-600 text-center font-comic-neue">
-              Learning Presenter & Playschool <br /> Teacher
+              Learning Presenter & Early - <br />Childhood Educator
             </p>
             <a href="http://www.linkedin.com/in/sai-hema-abburu-09b04628" target="_blank" rel="noopener noreferrer">
             <img

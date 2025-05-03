@@ -347,7 +347,7 @@ function MobileTeamSection() {
             Hema
           </div>
           <div className="text-xs font-medium text-center text-stone-600 font-comic-neue">
-          Learning Presenter & Playschool Teacher
+          Learning Presenter & Early Childhood Educator
           </div>
           <a href="http://www.linkedin.com/in/sai-hema-abburu-09b04628" target="_blank" rel="noopener noreferrer">
           <img
