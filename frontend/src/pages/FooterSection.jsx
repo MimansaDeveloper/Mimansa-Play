@@ -401,7 +401,7 @@ const FooterSection = ({ scrollToSection }) => {
             <p className="text-[4vw] text-center w text-[#A1A1A1]">
               hello@mimansaplay.com
             </p>
-            <p className="text-[4vw]  text-[#A1A1A1]">© 2024 Mimansa Kids</p>
+            <p className="text-[4vw]  text-[#A1A1A1]">© 2025 Mimansa Kids</p>
           </div>
         </div>
       </footer>
