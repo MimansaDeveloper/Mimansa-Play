@@ -230,7 +230,7 @@ const TeamSection = () => {
 
             <h3 className="text-xl font-bold mt-4 font-comic-neue">Ritesh</h3>
             <p className="text-gray-600 text-center font-comic-neue">
-              Applied Research Engineer - <br />Speech Recognition
+              Research Intern - <br />Speech Recognition
             </p>
             <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/ritesh-dwivedi-077a1522a/" target="_blank" rel="noopener noreferrer">
             <img
@@ -311,7 +311,7 @@ const TeamSection = () => {
 
             <h3 className="text-xl font-bold mt-4 font-comic-neue">Pranav</h3>
             <p className="text-gray-600 text-center font-comic-neue">
-              Applied Research Engineer - <br />Speech Recognition
+              Research Intern - <br />Speech Recognition
             </p>
             <a href="https://www.linkedin.com/in/pranav-singh-usa/" target="_blank" rel="noopener noreferrer">
             <img
@@ -337,7 +337,7 @@ const TeamSection = () => {
             </div>
             <h3 className="text-xl font-bold mt-4 font-comic-neue">Zach</h3>
             <p className="text-gray-600 text-center font-comic-neue">
-              Applied Research Engineer - <br />Speech Recognition
+              Researcn Intern - <br />Speech Recognition
             </p>
             <a href="https://www.linkedin.com/in/zach-weiner-a4ab13362" target="_blank" rel="noopener noreferrer">
             <img
