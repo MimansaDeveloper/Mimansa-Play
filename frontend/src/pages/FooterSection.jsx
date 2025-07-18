@@ -209,6 +209,9 @@ const FooterSection = ({ scrollToSection }) => {
           <p className="text-[3.5vw] lg:text-[0.9vw] text-[#A1A1A1]">
             © 2025 Mimansa Kids
           </p>
+          <p className="text-[3.5vw] lg:text-[0.9vw] text-[#A1A1A1]">
+            © Brand of Enoki Family Technologies Private Limited
+          </p>
         </div>
       </footer>
 
