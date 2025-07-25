@@ -73,6 +73,12 @@ const Navbar = ({ openPopup, scrollToSection }) => {
           Our Team
         </li>
         <li
+          onClick={() => window.open("https://stimucheck.mimansaplay.com/", "_blank")}
+          className="cursor-pointer hover:text-[#A964FF] font-semibold transition duration-300"
+        >
+          Stimucheck
+        </li>
+        <li
           onClick={() => {
             scrollToSection("contact-section");
             handleMenuItemClick();
@@ -200,12 +206,16 @@ const Navbar = ({ openPopup, scrollToSection }) => {
         }`}
       >
         <ul className="flex mt-[3vw] flex-col space-y-[2.5vw] text-[1.125rem] leading-relaxed text-black py-6">
-          {["Home","Why Us","How it works","Testimonial","Our Team","Contact Us"].map((label, i) => (
+          {["Home","Why Us","How it works","Testimonial","Our Team",  "Stimucheck","Contact Us"].map((label, i) => (
             <li
               key={label}
               onClick={() => {
-                const sections = ["home-section","slider-section","working-section","testimonial-section","team-section","contact-section"];
-                scrollToSection(sections[i]);
+                const sections = ["home-section","slider-section","working-section","testimonial-section","team-section", null,"contact-section",];
+                if (label === "Stimucheck") {
+                  window.open("https://stimucheck.mimansaplay.com/", "_blank");
+                } else {
+                  scrollToSection(sections[i]);
+                }
                 handleMenuItemClick();
               }}
               className="cursor-pointer px-6 py-3 hover:text-[#A964FF] font-semibold transition duration-300"
